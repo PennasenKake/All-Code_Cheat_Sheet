@@ -107,3 +107,5 @@ JOIN
     employees e2 ON e1.manager_id = e2.employee_id
 WHERE
     e1.employee_id <> e2.employee_id;
+
+-- https://www.instagram.com/p/DGyFJ8fSsxB/?utm_source=ig_web_copy_link
