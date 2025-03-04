@@ -127,10 +127,9 @@ print()
 # TAI TASAN     X <= 42
 
 
-# helppo if test
-
-if ika >= 18:
-    print("saa äänestää")
+# helppo if testi
+# if ika >= 18:
+#     print("saa äänestää")
 
 
 # yksinkertainen ehto
@@ -159,7 +158,7 @@ voidaan_muokata = False
 # sanakirjan luominen ja käyttö
 
 alien = {'vari': 'vihrea', 'pistetta': 5 , 'nimi': 'Zorg'}
-print("Alienin nimi on" + alien['nimi']) # tulostaa: Alienin nimi on Zorg
+print("Alienin nimi on " + alien['nimi']) # tulostaa: Alienin nimi on Zorg
 
 # aseta  uusi key-value parit sanakirjaan
 alien['x_position'] = 0
