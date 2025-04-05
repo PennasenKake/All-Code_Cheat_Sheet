@@ -1,4 +1,4 @@
-import barcode
+import Python.valmiit.barcode as barcode
 from barcode.writer import ImageWriter
 from IPhython.display import Image, display
 
