@@ -15,44 +15,8 @@ Verkkosivun otsikko, näkyy selaimen yläpalkissa. Hakukoneet käyttävät tät�
 <body> </body>
 Verkkosivun näkyvä sisältö (teksti, kuvat, linkit jne.) sijaitsee tässä.
 
+Esimerkki
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html> </html>
-Tämä tagi määrittää, että kyseessä on HTML-dokumentti. Se on verkkosivun ensimmäinen ja viimeinen rivi. 
-HTML on verkkosivujen kirjoittamisen peruskieli. 
-Tätä tagia pidetään myös juurielementtinä, eli kaikkien muiden sivun tagien vanhempana.
-
-<head> </head>
-Tämä tagi määrittelee metatietoja verkkosivusta. 
-Se sisältää verkkosivun riippuvuudet (kuten CSS-tyylit ja JavaScript-tiedostot), fonttimääritykset jne.
-
-<title> </title>
-Kuten nimestä voi päätellä, tämä tagi sisältää verkkosivun otsikon/nimen. 
-Tämän otsikon näet selaimen yläpalkissa jokaisella avatulla sivulla. 
-Hakukoneet käyttävät tätä tagia myös sivun sisällön tiivistämiseen, 
-mikä tekee siitä kätevän relevanttien hakutulosten näyttämisessä.
-
-<body> </body>
-Tämän tagin sisällä käyttäjä näkee verkkosivun sisällön. 
-Se on kaiken verkkosivun sisällön (teksti, kuvat jne.) säiliö.
-
-ESIMERKKI
 
 <html>
   <head>
@@ -64,36 +28,35 @@ ESIMERKKI
   </body>
 </html>
 
-DOKUMENTIN TIEDOT
 
-<base/> 
-Käytetään määrittämään sivustosi perus-URL. 
-Tämä tagi tekee sisäisten linkkien luomisesta sivustollasi helpompaa.
+
+2. Dokumentin metatiedot
+
+
+<base/>
+Määrittää sivuston perus-URL-osoitteen, helpottaa sisäisten linkkien käyttöä.
+Esim. <base href="http://myfirstwebsite.com" target="_blank">
 
 <meta/>
-Tämä on tärkein metatietotagi verkkosivulle. 
-Sitä voidaan käyttää hyödyllisenä tiedon antamiseen sivun tekijästä, 
-avainsanoista, alkuperäisestä julkaisupäivästä jne.
+Antaa tietoa sivusta (tekijä, avainsanat, julkaisupäivä jne.).
+Esim. <meta name="description" content="Tämä on sivuni">
 
 <link/>
-Tätä tagia käytetään ulkoisten tyylitiedostojen (stylesheets) linkittämiseen. 
-Tyypillisesti käytetään tyylien sisällyttämiseen.
+Linkittää ulkoisia tiedostoja, kuten CSS-tyylitiedostoja.
+Esim. <link rel="stylesheet" href="/css/master.css">
 
 <style> </style>
-Tätä tyylitagia voidaan käyttää vaihtoehtona ulkoiselle tyylitiedostolle tai sen täydentämiseen. 
-Se sisältää verkkosivun ulkoasun tiedot.
+Sisältää sisäisiä CSS-tyylejä verkkosivun ulkoasun määrittämiseen.
 
+Esimerkki
 
-ESIMERKKI
 
 <html>
   <head>
     <base href="http://myfirstwebsite.com" target="_blank">
     <title>Minun kaunis verkkosivuni</title>
     <link rel="stylesheet" href="/css/master.css">
-    <script type="text/javascript">
-      var dummy = 0;
-    </script>
+    <style> body { font-family: Arial; } </style>
   </head>
   <body>
     <h1>Otsikko tähän</h1>
@@ -102,252 +65,186 @@ ESIMERKKI
 </html>
 
 
+3. Tekstin muotoilu
 
-<strong>Bold text</strong> regular text
-Lihavoitua tekstiä normaalia tekstiä
+<strong> </strong>
+Lihavoi tekstiä. Esim. <strong>Lihavoitu</strong> teksti.
 
-<blockquote>
-    Anyone who has never made a mistake has never tried anything new. <cite>-Albert Einstein</cite>
-</blockquote>
+<blockquote> </blockquote>
+Lainausmerkki pitkille lainauksille.
+Esim. <blockquote>Virheistä oppii. <cite>-Tuntematon</cite></blockquote>
 
-<pre>
-    Some pre-formatted text
-</pre>
+<pre> </pre>
+Esimuotoiltu teksti, säilyttää välilyönnit ja rivinvaihdot.
+Esim. <pre>   Esimerkki   </pre>
 
-<p>A code snippet: <code>some code</code></p>
-
-
-LINKIT
-
-<a href="...">...</a>
-Ankkuritagi. Käytetään pääasiassa hyperlinkkien luomiseen.
-
-<a href="mailto:...">...</a>
-Tagi sähköpostien lähettämiseen.
-
-<a href="tel:...">...</a>
-Ankkuritagi yhteystietonumeroiden merkitsemiseen. 
-Kun ne ovat klikattavia, ne voivat olla erityisen hyödyllisiä mobiilikäyttäjille.
-
-<a name="...">...</a>
-Tätä tagia voidaan käyttää nopeaan siirtymiseen verkkosivun eri osiin.
-
-<a href="#name">...</a>
-Yllä olevan tagin muunnelma; tämä on vain tarkoitettu siirtymään verkkosivun div-elementtiin.
+<code> </code>
+Näyttää koodinpätkiä tekstissä. Esim. <p>Koodi: <code>print("Hei")</code></p>
 
 
 
-KUVAT
+4. Linkit
+
+<a href="..."> </a>
+Hyperlinkki. Esim. <a href="https://example.com">Linkki</a>
+
+<a href="mailto:..."> </a>
+Sähköpostilinkki. Esim. <a href="mailto:me@example.com">Lähetä sähköposti</a>
+
+<a href="tel:..."> </a>
+Puhelinnumerolinkki. Esim. <a href="tel:+123456789">Soita</a>
+
+<a name="..."> </a>
+Määrittää ankkurikohdan sivulla.  
+
+<a href="#name"> </a>
+Linkki sivun tiettyyn kohtaan. Esim. <a href="#section1">Siirry osioon</a>
+
+
+
+5. Kuvat
 
 <img>
-Tagi kuvien näyttämiseen verkkosivulla.
+Näyttää kuvan.  
+src="..." – Kuvan polku tai URL.  
 
-src="..."
-URL-osoite tai polku, jossa kuva sijaitsee, joko verkossa tai omalla tietokoneellasi.
+alt="..." – Vaihtoehtoinen teksti kuvan kuvaamiseen.  
 
-alt="..."
-Vaihtoehtoinen teksti, joka näytetään, kun käyttäjä vie hiiren kuvan päälle. 
-Sitä voidaan käyttää antamaan lisätietoja kuvasta.
+height="..." – Kuvan korkeus (px tai %).  
 
-height="..."
-Määrittää kuvan korkeuden pikseleissä tai prosentteina.
+width="..." – Kuvan leveys (px tai %).  
 
-width="..."
-Määrittää kuvan leveyden pikseleissä tai prosentteina.
+align="..." – Kuvan sijoittelu.  
 
-align="..."
-Kuvan suhteellinen sijoittelu. Voi muuttua muiden verkkosivun elementtien mukana.
+border="..." – Reunaviivan paksuus (oletus 0).
 
-border="..."
-Määrittää kuvan reunaviivan paksuuden. Jos arvoa ei määritetä, oletus on 0.
-
-<map> ... </map>
-Määrittää interaktiivisen (klikkattavan) kuvan.
-
-name="..."
-Kuvan ja siihen liitetyn kartan nimi.
+<map> </map>
+Klikattava kuva-alue.  
+name="..." – Kartan nimi.
 
 <area />
-Määrittää kuvan alueen (image map area).
+Määrittää klikattavan alueen.  
+shape="..." – Muoto (rect, circle jne.).  
 
-shape="..."
-Alueen muoto.
+coords="..." – Koordinaatit (esim. suorakulmiolle: x1,y1,x2,y2).
 
-coords="..."
-Muodon elintärkeiden tietojen koordinaatit. 
-Esimerkiksi suorakulmioille: vasen yläkulma, oikea alakulma; ympyröille: keskipiste, säde.
 
-Esimerkki 
+Esimerkki
+
 <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
-
 <map name="planetmap">
   <area shape="rect" coords="0,0,60,100" href="sun.htm" alt="Sun">
   <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
-  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
 </map>
 
 
+6. Upotettu sisältö
 
-UPOTETUT ATTRIUUTIT
+<object> </object>
+Upottaa ulkoista sisältöä (esim. video, toinen sivu).  
+height="...", width="..." – Koko.  
 
-height="..."
-Määrittää upotetun elementin korkeuden.
+type="..." – Sisällön tyyppi.
 
-width="..."
-Määrittää upotetun elementin leveyden.
+<embed>
+Upottaa sisältöä (esim. video).  
+src="..." – Sisällön polku.
 
-type="..."
-Upotetun sisällön tyyppi tai muoto.
-
-src="..."
-Upotetun elementin URL-osoite tai polku.
-
-ESIMERKKI
 <object width="1000" height="1000">
-    <param name="src" value="some_other_webpage.html">
-    <embed width="500" height="500" src="some_video.swf">
-    <embed src="some_video.swf" width="500" height="500" embed>
+  <param name="src" value="some_other_webpage.html">
+  <embed width="500" height="500" src="some_video.swf">
 </object>
 
 
-TAULUKOT
+7. Taulukot
+
+<table> </table> – Taulukon runko.  
+
+<caption> </caption> – Taulukon otsikko.  
+
+<thead> </thead> – Otsikkorivit.  
+
+<tbody> </tbody> – Pääsisältö.  
+
+<tfoot> </tfoot> – Alatunniste.  
+
+<tr> </tr> – Rivi.  
+
+<th> </th> – Otsikkosolu.  
+
+<td> </td> – Tavallinen solu.  
+
+<colgroup> </colgroup> – Sarakkeiden ryhmittely.  
+
+<col> – Yksittäinen sarake.
 
 
-<table> ... </table>
-Merkitsee taulukon verkkosivulla.
-
-<caption> ... </caption>
-Taulukon kuvaus sijoitetaan tämän tagin sisään.
-
-<thead> ... </thead>
-Määrittää taulukon otsikkotiedot.
-
-<tbody> ... </tbody>
-Taulukon varsinainen sisältö sijoitetaan tähän.
-
-<tfoot> ... </tfoot>
-Määrittää taulukon alatunnisteen.
-
-<tr> ... </tr>
-Merkitsee yksittäisen rivin taulukossa.
-
-<th> ... </th>
-Taulukon sarakkeen otsikon arvo.
-
-<td> ... </td>
-Yksittäinen taulukon solu. Sisältää varsinaisen tiedon/arvon.
-
-<colgroup> ... </colgroup>
-Käytetään sarakkeiden ryhmittelyyn yhdessä.
-
-<col>
-Merkitsee sarakkeen taulukossa.
-
-
-ESIMERKKI
+Esimerkki
 
 <table>
-  <colgroup span="2"></colgroup>
-  <colgroup>
-    <col>
-    <col>
-  </colgroup>
-  <tr>
-    <th>Name</th>
-    <th>Major</th>
-    <th>GPA</th>
-  </tr>
-  <tr>
-    <td>Bob</td>
-    <td>Law</td>
-    <td>3.35</td>
-  </tr>
-  <tr>
-    <td>Alice</td>
-    <td>Medicine</td>
-    <td>3.61</td>
-  </tr>
+  <caption>Opiskelijat</caption>
+  <thead>
+    <tr><th>Name</th><th>Major</th><th>GPA</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Bob</td><td>Law</td><td>3.35</td></tr>
+    <tr><td>Alice</td><td>Medicine</td><td>3.61</td></tr>
+  </tbody>
 </table>
 
-###############
 
-<header> ... </header>
-Määrittää verkkosivun yläosan (header). 
-Voidaan käyttää myös muiden sivun sisällä olevien osioiden yläosana.
+8. Semanttiset tagit
 
-<footer> ... </footer>
-Määrittää verkkosivun alatunnisteen (footer). 
-Voidaan käyttää myös muiden sivun sisällä olevien osioiden alatunnisteena.
+<header> </header> – Sivun tai osion yläosa.  
 
-<main> ... </main>
-Merkitsee verkkosivun pääsisällön.
+<footer> </footer> – Sivun tai osion alatunniste.  
 
-<article> ... </article>
-Määrittää itsenäisen artikkelin.
+<main> </main> – Pääsisältö.  
 
-<aside> ... </aside>
-Määrittää sisältöä, joka liittyy epäsuorasti ympäröivään sisältöön (esimerkiksi sivupalkki).
+<article> </article> – Itsenäinen artikkeli.  
 
-<section> ... </section>
-Määrittää verkkosivun temaattisen osion.
+<aside> </aside> – Sivupalkki tai epäsuora sisältö.  
 
-<details> ... </details>
-Käytetään lisätiedon määrittämiseen, jonka käyttäjä voi halutessaan näyttää tai piilottaa.
+<section> </section> – Temaattinen osio.  
 
-<summary> ... </summary>
-Käytetään <details>-tagin otsikkona. On aina näkyvissä käyttäjälle.
+<nav> </nav> – Navigointilinkit.
 
-<dialog> ... </dialog>
-Käytetään luomaan dialogi-ikkuna.
 
-<figure> ... </figure>
-Tagi kuvien, kaavioiden, tilastojen jne. ryhmittelyyn HTML:ssä.
+9. Interaktiiviset tagit
 
-<figcaption> ... </figcaption>
-Kuvaus, joka sijoitetaan <figure>-tagin sisään.
+<details> </details> – Näytä/piilota lisätietoja.  
 
-<mark> ... </mark>
-Käytetään tekstin tietyn osan korostamiseen.
+<summary> </summary> – <details>-tagin otsikko.  
 
-<nav> ... </nav>
-Navigointilinkit verkkosivun käyttäjälle.
+<dialog> </dialog> – Dialogi-ikkuna.  
 
-<menuitem> ... </menuitem>
-Yksittäinen kohde valikossa tai komentoluettelossa.
+<progress> </progress> – Edistymispalkki.  
 
-<meter> ... </meter>
-Mittaa dataa annetulla välillä.
+<meter> </meter> – Mittaa arvoa välillä.
 
-<progress> ... </progress>
-Tyypillisesti edistymispalkki. Tätä käytetään tehtävän etenemisen seuraamiseen.
 
-<rp> ... </rp>
-Tämä on tarkoitettu sulkuihin näytettäväksi selaimille, jotka eivät tue ruby-annotaatioita.
+Esimerkki
 
-<rt> ... </rt>
-Näyttää itäaasialaisen typografian annotaation yksityiskohdat.
-
-<ruby> ... </ruby>
-Kuvaa Ruby-annotaation itäaasialaista typografiaa varten.
-
-<time> ... </time>
-Tagi päivämäärän ja ajan muotoilua varten.
-
-<wbr>
-Rivinvaihto sisällön sisällä.
+<details>
+  <summary>Lisätietoja</summary>
+  <p>Tässä on lisätietoa.</p>
+</details>
 
 
 
-ERIKOISMERKIT
+10. Erikoismerkit
 
-&#34; & &quot; - Lainausmerkki
-&#38; & &amp; - Ja-merkki
-&#60; & &lt; - Pienempi kuin
-&#62; & &gt; - Suurempi kuin
-&#160; & &nbsp; - Sitova välilyönti
-&#169; & &copy; - Tekijänoikeusmerkki 
-&#174; & &reg; - Rekisteröity tavaramerkki
-&#8260; - Vinoviiva 
-&#64; & &commat; - @-merkki 
-&#149; & &bull; - Pieni ympyrä
-&#153; & &trade; - Tavaramerkkisymboli
+" & " – Lainausmerkki (&quot;)  
+
+& & & – Ja-merkki (&amp;)  
+
+< & < – Pienempi kuin (&lt;)  
+
+> & > – Suurempi kuin (&gt;)  
+
+© & © – Tekijänoikeus (&copy;)  
+
+® & ® – Rekisteröity tavaramerkki (&reg;)
+
+
+
