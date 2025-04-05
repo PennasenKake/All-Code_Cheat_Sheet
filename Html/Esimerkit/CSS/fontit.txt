@@ -1,0 +1,31 @@
+
+
+Fontti-aiheiset CSS-ominaisuudet:
+
+font-style
+
+normal | italic | oblique | inherit
+
+font-variant
+
+normal | small-caps | inherit
+
+font-size
+
+xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | inherit | length
+
+font-weight
+
+normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit
+
+font-size/line-height
+
+caption | icon | menu | messagebox | small-caption | status-bar
+
+font-size-adjust
+
+none | inherit | number
+
+font-family
+
+serif | sans-serif | monospace | cursive | fantasy | system-ui | emoji | math | fangsong | inherit | initial | unset

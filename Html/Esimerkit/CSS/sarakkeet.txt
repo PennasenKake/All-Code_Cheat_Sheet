@@ -1,0 +1,36 @@
+
+
+Sarakkeet (Columns):
+column-count: auto, number
+
+column-fill: auto, balance
+
+column-gap: normal, length
+
+column-rule: column-rule-width, column-rule-style, column-rule-color
+
+column-rule-style: border-style
+
+columns: column-width, column-count
+
+column-rule-width: thin, medium, thick, length
+
+column-width: auto, length
+
+column-span: 1, all
+
+Värit (Colors):
+color: inherit, color
+
+opacity: inherit, number
+
+Taulukot (Tables):
+border-collapse: collapse, separate
+
+empty-cells: show, hide
+
+border-spacing: length, length
+
+table-layout: auto, fixed
+
+caption-side: top, bottom, left, right
