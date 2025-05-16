@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="http://myfirstwebsite.com" target="_blank">
+    <title>Minun kaunis verkkosivuni</title>
+    <link rel="stylesheet" href="/css/master.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <style> 
+      body { 
+        font-family: 'Josefin Sans', sans-serif; 
+        background: linear-gradient(to bottom right, rgb(75, 16, 212), rgb(16,35,212));
+        display: flex; 
+        height: 100vh;
+        align-items: center; 
+        justify-content: center;
+        flex-direction: column;
+      } 
+      .container {
+        display: flex; 
+        flex-direction: column;
+        max-width: 400px; 
+        padding: 40px;
+        background: #fff; 
+        border-radius: 20px;
+        border: 1px solid rgb(26, 1, 247);
+        box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+      }
+
+      .el { display: flex; }
+
+      h2 { 
+        text-align: center; 
+        margin-bottom: 20px;
+      }
+
+      .inp {
+        padding: 8px; 
+        color: #000;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 800; 
+        text-align: center;
+        border: 2px solid rgb(43,43,58);
+        border-radius: 4px;
+      }
+
+      .inp:focus { 
+        outline: none;
+      }
+
+      button {
+        width: 40px; 
+        margin-left: 8px;
+        border: 2px solid rgb(43,43,58);
+        border-radius: 4px; 
+        transition: 0.2s;
+      }
+
+      button:hover {
+        background: #000; 
+        color: #fff;
+      }
+
+      .info {
+        margin-top: 40px; 
+        background: lawngreen;
+        width: 200px; 
+        padding: 12px;
+        opacity: 0; 
+        text-align: center;
+        transition: 0.15s;
+        animation: slideIn 1.5s linear forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Otsikko tähän</h1>
+
+    <div class="container">
+      <h2>Salasana Generaattori</h2>
+      <div class="el">
+        <input type="text" placeholder="Password" class="inp" id="password" />
+        <button onclick="copytext()" title="copy">
+          <i class="fa fa-copy"></i>
+        </button>
+        <button onclick="generatePassword()" title="Generate">
+          <i class="fa-solid fa-wand-magic"></i>
+        </button>
+      </div>
+    </div>
+    <div class="info">Copied to clipboard!</div>
+
+    <script>
+      const info = document.querySelector('.info');
+      const passfield = document.querySelector("#password");
+      let password = "";
+
+      function generatePassword() {
+        password = '';
+        const length = 12;
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+        let n = characters.length;
+        for (let i = 0; i < length; ++i) {
+          password += characters.charAt(Math.floor(Math.random() * n));
+        }
+        passfield.value = password;
+      }
+
+      function copytext() {
+        navigator.clipboard.writeText(password);
+        info.style.opacity = "1";
+        setTimeout(function() {
+          info.style.opacity = "0";
+        }, 1500);
+      }
+    </script>
+  </body>
+</html>
