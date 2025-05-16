@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- Linkki erilliseen CSS-tiedostoon -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Kirjautumislomake -->
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" required>
+          <label>Username</label>
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+          <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="logreg-link">
+          <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Rekisteröintilomake -->
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" required>
+          <label>Username</label>
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+          <input type="email" required>
+          <label>Email</label>
+          <i class='bx bxs-envelope'></i>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+          <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div class="logreg-link">
+          <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Info-tekstit -->
+    <div class="info-text login">
+      <p>Already a Member? Please Login.</p>
+    </div>
+    <div class="info-text register">
+      <p>Enter your details to register a new account.</p>
+    </div>
+  </div>
+
+  <!-- JavaScript lomakkeiden vaihtamiseen -->
+  <script>
+    const wrapper = document.querySelector('.wrapper');
+    const loginLink = document.querySelector('.login-link');
+    const registerLink = document.querySelector('.register-link');
+
+    // Varmistetaan, että elementit löytyvät ennen tapahtumakuuntelijoiden lisäämistä
+    if (wrapper && loginLink && registerLink) {
+      registerLink.addEventListener('click', (e) => {
+        e.preventDefault(); // Estää linkin navigoinnin
+        wrapper.classList.add('active');
+      });
+
+      loginLink.addEventListener('click', (e) => {
+        e.preventDefault(); // Estää linkin navigoinnin
+        wrapper.classList.remove('active');
+      });
+    }
+  </script>
+</body>
+</html>

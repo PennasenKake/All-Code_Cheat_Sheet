@@ -1,0 +1,222 @@
+/* Yleiset tyylit */
+body {
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Lomakkeen kehys */
+  .wrapper {
+    position: relative;
+    width: 400px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.15); /* Kevyt taustaväri parantaa luettavuutta */
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Kevyempi blur-efekti */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  /* Lomakeboksi (yhteiset tyylit) */
+  .form-box {
+    width: 100%;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Aluksi piilotettu */
+    visibility: hidden; /* Piilotettu näkyvistä */
+    transform: translateX(100%); /* Oletusarvoisesti pois näkyvistä */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease; /* Pehmeä siirtymä */
+  }
+  
+  /* Kirjautumislomake */
+  .form-box.login {
+    opacity: 1; /* Näkyvissä alussa */
+    visibility: visible; /* Näkyvissä */
+    transform: translateX(0);
+    z-index: 2; /* Varmistetaan, että lomake on päällimmäisenä */
+  }
+  
+  .wrapper.active .form-box.login {
+    opacity: 0; /* Piilotetaan siirtymässä */
+    visibility: hidden; /* Piilotetaan näkyvistä */
+    transform: translateX(-100%);
+  }
+  
+  /* Rekisteröintilomake */
+  .form-box.register {
+    opacity: 0; /* Piilotettu alussa */
+    visibility: hidden; /* Piilotettu näkyvistä */
+    transform: translateX(100%);
+    z-index: 1; /* Taustalla, kun ei aktiivinen */
+  }
+  
+  .wrapper.active .form-box.register {
+    opacity: 1; /* Näkyviin siirtymässä */
+    visibility: visible; /* Näkyvissä */
+    transform: translateX(0);
+    z-index: 2; /* Tulee päällimmäiseksi */
+  }
+  
+  /* Otsikko */
+  .form-box h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Syötekenttä */
+  .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+    top: -5px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    padding-right: 35px;
+  }
+  
+  .input-box i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+  }
+  
+  /* Painike */
+  .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #f0f0f0; /* Kevyt hover-efekti */
+  }
+  
+  /* Linkit (kirjautuminen/rekisteröinti) */
+  .logreg-link {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+  }
+  
+  .logreg-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .logreg-link p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Info-tekstit */
+  .info-text {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0; /* Aluksi piilotettu */
+    visibility: hidden; /* Piilotettu näkyvistä */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .info-text.login {
+    opacity: 1; /* Näkyvissä kirjautumisen aikana */
+    visibility: visible;
+  }
+  
+  .wrapper.active .info-text.login {
+    opacity: 0; /* Piilotetaan rekisteröinnin aikana */
+    visibility: hidden;
+  }
+  
+  .wrapper.active .info-text.register {
+    opacity: 1; /* Näkyviin rekisteröinnin aikana */
+    visibility: visible;
+  }
+  
+  /* Muista minut / Unohditko salasanan */
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .remember-forgot label input {
+    margin-right: 5px;
+  }
+  
+  /* Responsiivisuus pienemmille näytöille */
+  @media (max-width: 480px) {
+    .wrapper {
+      width: 90%; /* Skaalataan leveys pienemmille näytöille */
+      height: auto; /* Korkeus mukautuu sisällön mukaan */
+      padding: 20px; /* Lisätään hieman tilaa reunoille */
+    }
+  
+    .form-box {
+      padding: 20px; /* Vähennetään paddingia pienemmillä näytöillä */
+    }
+  
+    .form-box h2 {
+      font-size: 1.5em; /* Pienennetään otsikkoa */
+    }
+  
+    .input-box {
+      margin: 20px 0; /* Vähennetään marginaaleja */
+    }
+  
+    .btn {
+      height: 40px; /* Pienennetään painiketta */
+      font-size: 0.9em;
+    }
+  }
