@@ -1,0 +1,68 @@
+/* Tyylit koko sivulle */
+body {
+    background: #f0f0f0; /* Vaaleanharmaa taustaväri */
+    font-family: "Poppins" sans-serif; /* Käytetään Poppins-fonttia ilman serifejä */
+    display: flex; /* Käytetään flexbox-asettelua */
+    align-items: center; /* Keskitetään elementit pystysuunnassa */
+    justify-content: center; /* Keskitetään elementit vaakasuunnassa */
+    min-height: 100vh; /* Vähintään näytön korkuinen */
+    flex-direction: column; /* Elementit sijoitetaan allekkain */
+    overflow: hidden; /* Piilotetaan mahdolliset ylivuodot */
+}
+
+/* Ajastimen näyttöalueen tyylit */
+#timer {
+    font-size: 7rem; /* Suuri fonttikoko */
+    font-weight: 700; /* Paksu fontin paino */
+    text-shadow: 2px 2px #f8af5c; /* Vaalea oranssi varjo tekstille */
+    color: #f92672; /* Pinkki tekstiväri */
+    width: 400px; /* Leveys */
+    text-align: center; /* Teksti keskelle */
+    margin: 40px auto; /* Ylä- ja alamarginaali, automaattinen sivumarginaali */
+}
+
+/* PainikkeidenContainer-elementin tyylit */
+#buttons {
+    display: flex; /* Käytetään flexbox-asettelua */
+    justify-content: center; /* Keskitetään painikkeet vaakasuunnassa */
+}
+
+/* Yleiset painiketyylit */
+button {
+    background: #f92672; /* Pinkki taustaväri */
+    color: #fff; /* Valkoinen tekstiväri */
+    border: none; /* Ei reunaviivaa */
+    font-size: 2rem; /* Suuri fonttikoko */
+    font-weight: bold; /* Paksu fontin paino */
+    padding: 1.5rem 4rem; /* Sisäinen tyhjennys (ylös/alas, vasen/oikea) */
+    margin: 1rem; /* Ulkoinen marginaali */
+    cursor: pointer; /* Osoitin muuttuu kädeksi hoveroitaessa */
+    border-radius: 30px; /* Pyöristetyt kulmat */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Pehmeä varjo */
+    transition: all .2s; /* Pehmeä siirtymä kaikkiin ominaisuuksiin */
+}
+
+/* Painikkeen tyylit hover-tilassa */
+button:hover {
+    background: #f44583; /* Tummempi pinkki taustaväri hoveroitaessa */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Tummempi varjo hoveroitaessa */
+}
+
+/* Painikkeen tyylit, kun se on disabled-tilassa */
+button[disabled] {
+    opacity: .5; /* Läpinäkyvyys puoleen */
+    cursor: default; /* Osoitin palautuu oletukseksi */
+}
+
+/* Media query pienemmille näytöille (max-width: 800px) */
+@media (max-width: 800px) {
+    #timer {
+        font-size: 4rem; /* Pienempi fonttikoko */
+        width: 350px; /* Pienempi leveys */
+    }
+
+    button {
+        font-size: 1.5rem; /* Pienempi fonttikoko */
+        padding: 1rem 2rem; /* Pienempi sisäinen tyhjennys */
+    }
+}
