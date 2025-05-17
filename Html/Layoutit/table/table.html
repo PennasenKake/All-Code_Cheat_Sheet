@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Tässä osassa on CSS-tyylit, jotka on eritelty erilliseen styles.css-tiedostoon */
+        /* Voit liittää ne tähän <style>-tagien sisään, jos et halua erillistä tiedostoa */
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th onclick="sortRows('firstName', this)">
+                    First Name
+                    <i class="fas fa-sort"></i> </th>
+                <th onclick="sortRows('lastName', this)">
+                    Last Name
+                    <i class="fas fa-sort"></i>
+                </th>
+                <th onclick="sortRows('level', this)">
+                    Level
+                    <i class="fas fa-sort"></i>
+                </th>
+                <th onclick="sortRows('age', this)">
+                    Age
+                    <i class="fas fa-sort"></i>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            </tbody>
+    </table>
+
+    <script>
+        const rowsData = [
+            { firstName: "Joe", lastName: "Blogs", level: "Intermediate", age: 21 },
+            { firstName: "Alice", lastName: "Smith", level: "Beginner", age: 28 },
+            { firstName: "Bob", lastName: "Johnson", level: "Advanced", age: 35 },
+            { firstName: "Eve", lastName: "Williams", level: "Intermediate", age: 24 },
+            // Lisää tähän tarvittavat rivit
+        ];
+
+        let sortOrder = ""; // "asc" (nouseva) tai "desc" (laskeva)
+        let sortField = "firstName"; // Oletuslajittelukenttä
+        let prevField = "firstName"; // Edellinen lajiteltu kenttä
+
+        const tableBody = document.getElementById("tableBody");
+
+        // Funktio taulukon rivien luomiseen datasta
+        function renderTableRows(data) {
+            tableBody.innerHTML = ""; // Tyhjennetään taulukon body
+            data.forEach(row => {
+                const tr = tableBody.insertRow();
+                const firstNameCell = tr.insertCell();
+                const lastNameCell = tr.insertCell();
+                const levelCell = tr.insertCell();
+                const ageCell = tr.insertCell();
+
+                firstNameCell.textContent = row.firstName;
+                lastNameCell.textContent = row.lastName;
+                levelCell.textContent = row.level;
+                ageCell.textContent = row.age;
+            });
+        }
+
+        // Funktio taulukon lajitteluun
+        function sortRows(field, element) {
+            sortField = field;
+            // Jos samaa kenttää klikataan uudelleen, vaihdetaan lajittelujärjestystä
+            sortOrder = prevField === field && sortOrder === "asc" ? "desc" : "asc";
+            prevField = field;
+
+            // Poistetaan aktiivinen tila ja lajittelukuvake kaikista otsikoista
+            document.querySelectorAll("thead th").forEach(th => {
+                th.classList.remove("active");
+                th.querySelector("i").className = "fas fa-sort";
+            });
+
+            // Lisätään aktiivinen tila ja oikea lajittelukuvake klikattuun otsikkoon
+            if (element) {
+                element.classList.add("active");
+                element.querySelector("i").className = sortOrder === "asc" ? "fas fa-arrow-up" : "fas fa-arrow-down";
+            }
+
+            // Lajitellaan data
+            const sortedRows = [...rowsData].sort((a, b) => {
+                const aValue = a[field];
+                const bValue = b[field];
+
+                let comparison = 0;
+                if (typeof aValue === 'string' && typeof bValue === 'string') {
+                    comparison = aValue.localeCompare(bValue);
+                } else {
+                    comparison = aValue - bValue;
+                }
+
+                return sortOrder === "asc" ? comparison : comparison * -1;
+            });
+
+            // Renderöidään lajiteltu data taulukkoon
+            renderTableRows(sortedRows);
+        }
+
+        // Alustetaan taulukko oletuslajittelulla
+        sortRows(sortField, document.querySelector(`thead th:nth-child(1)`)); // Lajitellaan oletuksena ensimmäisen sarakkeen mukaan
+    </script>
+
+    <style>
+        /* styles.css - Tässä ovat CSS-tyylit taulukolle */
+        body {
+            color: #616678;
+            font-family: "Poppins", sans-serif; /* Lisätty yleinen sans-serif */
+            margin: 20px; /* Lisätty hieman marginaalia sivulle */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lisätty hieman varjoa taulukolle */
+            border-radius: 8px; /* Lisätty pyöristetyt kulmat */
+            overflow: hidden; /* Piilotetaan ylivuodot pyöristettyjen kulmien takia */
+        }
+
+        table thead th {
+            background-color: #f8f9fa; /* Vaalea taustaväri otsikoille */
+            color: rgb(97 102 120 / 70%); /* Tummempi otsikkotekstin väri */
+            cursor: pointer;
+            vertical-align: middle;
+            transition: background-color 0.2s ease;
+            padding: 10px 15px; /* Lisätty paddingia otsikoille */
+            font-weight: 500; /* Hieman ohuempi fontin paino otsikoille */
+            text-align: left; /* Teksti vasemmalle */
+        }
+
+        table thead th:hover {
+            background-color: #e9ecef; /* Vaaleampi tausta hoverilla */
+        }
+
+        table thead th.active {
+            background-color: #007bff; /* Sininen tausta aktiiviselle lajittelusarakkeelle */
+            color: white;
+        }
+
+        table thead th i {
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+
+        table :is(th, td) {
+            white-space: nowrap;
+            padding: 8px 15px;
+            height: 40px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        table td {
+            opacity: 0.85;
+        }
+
+        table tr {
+            border-bottom: 1px solid #dee2e6; /* Hieman vaaleampi reunaviiva riveille */
+        }
+
+        table tbody tr:last-child {
+            border-bottom: none; /* Ei reunaviivaa viimeiselle riville */
+        }
+
+        table tbody tr:nth-child(odd) {
+            background-color: #f8f9fa; /* Vaalea tausta joka toiselle riville */
+        }
+
+        table tbody tr:hover {
+            background-color: #f0f0f0; /* Hieman tummempi tausta hoverilla */
+        }
+    </style>
+</body>
+</html>

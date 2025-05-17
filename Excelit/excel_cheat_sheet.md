@@ -16,6 +16,7 @@ Tämä cheat sheet on suunniteltu insinööreille, jotka haluavat hyödyntää E
 - [10. Makrot ja VBA](#10-makrot-ja-vba)
 - [11. Lisäosat (Power Query, Solver)](#11-lisäosat-power-query-solver)
 - [12. Virheiden hallinta](#12-virheiden-hallinta)
+- [13. Talousfunktiot](#13-talousfunktiot)
 - [Esimerkki: Insinöörilaskenta](#esimerkki-insinöörilaskenta)
 
 ## Pika-aloitus
@@ -40,6 +41,9 @@ Perusfunktiot laskutoimituksiin ja datan käsittelyyn.
   Esim. `=LUKUMÄÄRÄ(A1:A10)` → Laskee, montako numeroarvoa on alueella.
 - **LUKUMÄÄRÄ.JOS (`COUNTIF`)**: Laskee ehdon täyttävät solut.  
   Esim. `=LUKUMÄÄRÄ.JOS(A1:A10; ">10")` → Laskee, montako arvoa on yli 10.
+- **JÄRJESTYS (`SEQUENCE`)**: Luo peräkkäisiä lukuja taulukkoon.  
+  Esim. `=JÄRJESTYS(5; 1; 1; 1)` → Luo sarja 1, 2, 3, 4, 5 (5 riviä, 1 sarake, alkaen 1, askel 1).  
+  **Käytännön sovellus**: Generoi rivinumerot mittaustuloksille (esim. 1–10000).
 
 #### Esimerkki
 | A     | B   | Kaava                      | Tulos |
@@ -82,6 +86,9 @@ Tilastoanalyysiä datan käsittelyyn.
   Esim. `=KORRELAATIO(A1:A10; B1:B10)`.
 - **PERCENTILE.INC**: Laskee persentiilin.  
   Esim. `=PERCENTILE.INC(A1:A10; 0.9)` → 90. persentiili.
+- **KULMAKERROIN (`SLOPE`)**: Laskee lineaarisen regression kulmakertoimen.  
+  Esim. `=KULMAKERROIN(A1:A10; B1:B10)` → Laskee A-arvojen (riippuva muuttuja) ja B-arvojen (riippumaton muuttuja) kulmakertoimen.  
+  **Käytännön sovellus**: Laske osakkeen beta-kerroin vertaamalla osakkeen tuottoja markkinaindeksiin.
 
 #### Esimerkki
 | A   | B   | Kaava                    | Tulos |
@@ -97,8 +104,11 @@ Päätöksenteko ja loogiset tarkistukset.
   Esim. `=JOS(A1>10; "Hyvä"; "Huono")`.
 - **JA, TAI (`AND`, `OR`)**: Loogiset operaatiot.  
   Esim. `=JOS(JA(A1>5; B1<10); "OK"; "Ei OK")`.
-- **JOSVIRHE (`IFERROR`)**: Käsittelee virheitä.  
-  Esim. `=JOSVIRHE(A1/B1; "Virhe")`.
+- **JOSVIRHE (`IFERROR`)**: Käsittelee virheitä. Palauttaa määritetyn arvon, jos kaava tuottaa virheen (esim. #N/A, #ARVO!, #VIITE!, #JAKO/0!, #NUM!, #NIMI?, #NULL!).  
+  Esim. `=JOSVIRHE(A1/B1; "Virhe")` → Palauttaa "Virhe", jos jako epäonnistuu.
+- **SUMMA.JOS.JOUKKO (`SUMIFS`)**: Laskee summan, joka täyttää useita ehtoja.  
+  Esim. `=SUMMA.JOS.JOUKKO(C1:C10; A1:A10; "TuoteA"; B1:B10; "Myyjä1")` → Laskee TuoteA:n myynnin Myyjä1:lle.  
+  **Käytännön sovellus**: Laske projektin kokonaiskustannukset tietyllä osastolla ja ajanjaksolla.
 - **JOS.JOUKKO (`IFS`)**: Monitasoinen ehto.  
   Esim. `=JOS.JOUKKO(A1>90; "A"; A1>80; "B"; "C")`.
 - **VALITSE (`CHOOSE`)**: Valitsee arvon listasta.  
@@ -114,10 +124,12 @@ Hae ja yhdistä dataa eri taulukoista.
 
 - **PHAKU (`VLOOKUP`)**: Hakee arvon pystysuunnassa.  
   Esim. `=PHAKU(A1; B1:C10; 2; FALSE)` → Hakee arvon A1 perusteella.
-- **INDEKSI ja VASTINE (`INDEX` ja `MATCH`)**: Joustava haku.  
-  Esim. `=INDEKSI(C1:C10; VASTINE(A1; B1:B10; 0))`.
+- **INDEKSI ja VASTINE (`INDEX` ja `MATCH`)**: Joustava haku, toimii pysty- ja vaakasuunnassa.  
+  Esim. `=INDEKSI(C1:C10; VASTINE(A1; B1:B10; 0))` → Hakee arvon A1:n perusteella.  
+  **Käytännön sovellus**: Hae mittaustuloksen arvo (esim. lämpötila) tietyn aikaleiman perusteella.
 - **XHAKU (`XLOOKUP`)**: Moderni vaihtoehto (Excel 365/2021+).  
-  Esim. `=XHAKU(A1; B1:B10; C1:C10; "Ei löydy")`.
+  Esim. `=XHAKU(A1; B1:B10; C1:C10; "Ei löydy")` → Hakee arvon A1:n perusteella, palauttaa "Ei löydy", jos ei löydy.  
+  **Käytännön sovellus**: Hae työntekijän tiedot (esim. ID, osasto) suuresta taulukosta.
 - **INDIRECT**: Dynaaminen viittaus.  
   Esim. `=INDIRECT("A"&B1)` → Viittaa soluun, jonka osoite muodostetaan.
 
@@ -184,7 +196,10 @@ Hallitse projekteja ja aikatauluja.
 - **Päivämääräfunktiot**:  
   - `=TÄMÄ.PÄIVÄ()` → Nykyinen päivä (esim. 17.5.2025).  
   - `=PÄIVÄT(A1; B1)` → Laskee päivien eron.  
-  - `=TYÖPÄIVÄT(A1; B1)` → Laskee työpäivät.
+  - `=TYÖPÄIVÄT(A1; B1)` → Laskee työpäivät.  
+  - `=KUUKAUDEN.VIIM.PÄIVÄ (`EOMONTH`)**: Palauttaa kuukauden viimeisen päivän.  
+    Esim. `=KUUKAUDEN.VIIM.PÄIVÄ("2025-05-01"; 1)` → 30.6.2025.  
+    **Käytännön sovellus**: Laske projektin eräpäivä, joka osuu aina kuun viimeiseen päivään.
 
 #### Esimerkki
 | Tehtävä   | Alku       | Kesto | Kaava                  | Tulos     |
@@ -322,4 +337,18 @@ Ratkaisu: Tarkista laskutoimitus, esim. =JOS(A1>=0; SQRT(A1); "Ei mahdollista").
 
 Vinkki: Käytä =VIRHE.TYYPPI(A1) selvittääksesi virheen tyyppi:  
 1 = #NULL!, 2 = #DIV/0!, 3 = #VALUE!, jne.
+
+13. Talousfunktiot
+Talouslaskelmat investointien ja projektien arviointiin.
+XIRR: Laskee sisäisen korkokannan epäsäännöllisille kassavirroille.
+Esim. =XIRR(A1:A5; B1:B5; 0.1) → Laskee investoinnin vuotuisen kasvunopeuden (A: kassavirrat, B: päivämäärät, 0.1: arvaus).
+Käytännön sovellus: Vertaa eri investointiprojektien tuottoja (esim. koneinvestoinnit).
+
+XNPV: Laskee nettonykyarvon epäsäännöllisille kassavirroille.
+Esim. =XNPV(0.05; A1:A5; B1:B5) → Laskee projektin nykyarvon (0.05: diskonttokorko, A: kassavirrat, B: päivämäärät).
+Käytännön sovellus: Arvioi projektin arvo tänään, kun kassavirrat tapahtuvat eri aikoina.
+
+PMT: Laskee lainan maksuerän vakioilla maksuilla ja korolla.
+Esim. =PMT(0.05/12; 60; 10000) → Laskee kuukausimaksun 10 000 € lainalle (5 % korko, 60 kk).
+Käytännön sovellus: Laske laiteleasingin kuukausimaksut.
 
