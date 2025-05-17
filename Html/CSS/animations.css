@@ -1,0 +1,38 @@
+/* css/animations-transitions.css */
+/* CSS: Animaatiot ja siirtymät (Transitions) */
+
+/* ==== ANIMAATIOT ==== */
+
+/* Esimerkki yksinkertaisesta animaatiosta */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-box {
+    animation-name: fadeIn;            /* none | IDENT (animaation nimi) */
+    animation-duration: 2s;            /* time, esim. 500ms tai 2s */
+    animation-timing-function: ease;   /* ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n) */
+    animation-delay: 0.5s;             /* aika ennen animaation alkamista */
+    animation-iteration-count: 3;      /* number | infinite */
+    animation-direction: alternate;    /* normal | alternate | reverse | alternate-reverse */
+    animation-play-state: running;     /* running | paused */
+}
+
+/* ==== SIIRTYMÄT ==== */
+
+.transition-box {
+    transition-property: all;                  /* all | none | esim. 'background-color' */
+    transition-duration: 0.3s;                 /* time */
+    transition-timing-function: ease-in-out;   /* ease | linear | ease-in | etc. */
+    transition-delay: 0s;                      /* time */
+}
+
+.transition-box:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}

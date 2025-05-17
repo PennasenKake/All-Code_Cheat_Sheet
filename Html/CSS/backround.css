@@ -1,0 +1,71 @@
+/* css/background.css */
+/* Taustaan liittyvät CSS-ominaisuudet ja esimerkit */
+
+/* Yhdistetty taustaominaisuus (shorthand) */
+.example-background {
+    background: url("bg.jpg") no-repeat center center / cover;
+    /* muoto: background: image repeat position / size */
+}
+
+/* background-image: Taustakuva */
+.bg-image {
+    background-image: url("tausta.jpg");
+    /* Voi olla myös: linear-gradient(...) tai radial-gradient(...) */
+}
+
+/* background-position: Kuva-asettelu */
+.bg-position {
+    background-image: url("tausta.jpg");
+    background-position: center center;
+    /* Vaihtoehdot: top left, center right, bottom center, 20px 40px jne. */
+}
+
+/* background-size: Kuva koko */
+.bg-size {
+    background-size: cover;
+    /* Mahdolliset arvot:
+       - length (esim. 100px 200px)
+       - prosentti (esim. 50% 50%)
+       - cover (täyttää alueen)
+       - contain (mahtuu sisään) */
+}
+
+/* background-repeat: Toistaminen */
+.bg-repeat {
+    background-repeat: no-repeat;
+    /* Vaihtoehdot: repeat | repeat-x | repeat-y | no-repeat */
+}
+
+/* background-attachment: Kiinnitys vieritykseen */
+.bg-attachment {
+    background-attachment: fixed;
+    /* Vaihtoehdot: scroll | fixed | local */
+}
+
+/* background-origin: Mistä taustakuva alkaa */
+.bg-origin {
+    background-origin: content-box;
+    /* Vaihtoehdot: border-box | padding-box | content-box */
+}
+
+/* background-clip: Mihin asti taustaväri tai -kuva ulottuu */
+.bg-clip {
+    background-clip: padding-box;
+    /* Vaihtoehdot: border-box | padding-box | content-box */
+}
+
+/* background-color: Taustaväri */
+.bg-color {
+    background-color: #f0f0f0;
+    /* Vaihtoehdot: väri (esim. #fff, red, rgba(...)) tai transparent */
+}
+
+/* Esimerkki gradient-taustasta */
+.gradient-bg {
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+}
+
+/* Kaikki yhdessä (shorthand) */
+.full-bg {
+    background: url("bg.jpg") no-repeat center center / contain fixed border-box;
+}

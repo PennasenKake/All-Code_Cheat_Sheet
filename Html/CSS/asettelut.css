@@ -1,0 +1,145 @@
+/* css/layout-visibility.css */
+/* CSS-ominaisuudet liittyen asetteluun ja näkyvyyteen */
+
+/* FLOAT */
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-none {
+    float: none;
+}
+/* Vaihtoehdot: left | right | none */
+
+/* HEIGHT & WIDTH */
+.set-height {
+    height: 300px; /* auto | % | px | em jne. */
+}
+.set-width {
+    width: 100%; /* auto | % | px jne. */
+}
+.max-height {
+    max-height: 500px; /* none | % | px jne. */
+}
+.max-width {
+    max-width: 90%; /* none | % | px jne. */
+}
+.min-height {
+    min-height: 200px; /* % | px jne. */
+}
+
+/* MARGIN */
+.margins {
+    margin: 10px 20px 30px 40px; /* top, right, bottom, left */
+}
+.margin-top {
+    margin-top: 20px; /* auto | % | px jne. */
+}
+.margin-right {
+    margin-right: auto;
+}
+.margin-bottom {
+    margin-bottom: 10%;
+}
+.margin-left {
+    margin-left: 15px;
+
+/* PADDING */
+.padding {
+    padding: 5px 10px 15px 20px; /* top, right, bottom, left */
+}
+.padding-top {
+    padding-top: 20px; /* % | px jne. */
+}
+.padding-right {
+    padding-right: 1em;
+}
+.padding-bottom {
+    padding-bottom: 10px;
+}
+.padding-left {
+    padding-left: 5%;
+}
+
+/* DISPLAY */
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+.display-inline-block {
+    display: inline-block;
+}
+/* Muita vaihtoehtoja:
+   inline | list-item | table | inline-table | table-row-group | table-cell
+   inline-flex | inline-grid | contents | etc.
+*/
+
+/* OVERFLOW */
+.overflow-auto {
+    overflow: auto;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+/* overflow-x ja overflow-y */
+.overflow-x-visible {
+    overflow-x: visible;
+}
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+/* Huom: "no-display" ja "no-content" eivät ole kelvollisia CSS-arvoja */
+
+/* overflow-style (vain IE/vanhat selaimet) */
+.overflow-style {
+    overflow-style: auto; /* marquee-line | marquee-block (ei suositeltu) */
+}
+
+/* VISIBILITY */
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+.collapse {
+    visibility: collapse; /* käytetään lähinnä taulukkoelementeissä */
+}
+
+/* CLEAR */
+.clear-left {
+    clear: left;
+}
+.clear-right {
+    clear: right;
+}
+.clear-both {
+    clear: both;
+}
+.clear-none {
+    clear: none;
+}
+
+/* ROTATION (ei ole standardoitu ominaisuus – käytä transform: rotate) */
+.rotate-45 {
+    transform: rotate(45deg); /* CSS3-yhteensopiva */
+}
+/* "rotation" ja "rotation-point" eivät ole virallisia ominaisuuksia – käytä transform-origin */
+
+.rotate-origin-example {
+    transform-origin: 50% 0%;
+    transform: rotate(30deg);
+}
+
+/* TRANSITION */
+.transition {
+    transition: all 0.5s ease-in-out; /* transition-property, transition-duration, transition-timing-function */
+}
+}

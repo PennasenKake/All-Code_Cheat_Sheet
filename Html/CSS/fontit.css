@@ -1,0 +1,53 @@
+/* css/fonts.css */
+/* CSS-ominaisuudet: Fontit ja typografia */
+
+/* === font-style === */
+/* Mahdolliset arvot: normal | italic | oblique | inherit */
+.font-style-example {
+    font-style: italic;
+}
+
+/* === font-variant === */
+/* Mahdolliset arvot: normal | small-caps | inherit */
+.font-variant-example {
+    font-variant: small-caps;
+}
+
+/* === font-size === */
+/* Arvot: xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | length | % | inherit */
+.font-size-example {
+    font-size: large;
+}
+
+/* === font-weight === */
+/* Arvot: normal | bold | bolder | lighter | 100–900 (satojen välein) | inherit */
+.font-weight-example {
+    font-weight: 600;
+}
+
+/* === font-size/line-height shorthand === */
+/* Muoto: font-size / line-height */
+/* Esimerkki: */
+.font-size-lineheight-example {
+    font: 16px/1.5 Arial, sans-serif;
+}
+
+/* === font-size-adjust === */
+/* Arvot: none | number | inherit */
+.font-size-adjust-example {
+    font-size-adjust: 0.5;
+}
+
+/* === font-family === */
+/* Arvot: serif | sans-serif | monospace | cursive | fantasy | system-ui | emoji | math | fangsong | inherit | initial | unset */
+/* Usein määritetään useita fontteja fallback-tarkoituksessa */
+.font-family-example {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+/* === font shorthand === */
+/* Lyhyt muoto: font: style variant weight size/line-height family */
+/* Esimerkki: */
+.font-shorthand-example {
+    font: italic small-caps bold 18px/1.4 "Georgia", serif;
+}

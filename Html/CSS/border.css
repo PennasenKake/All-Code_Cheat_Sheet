@@ -1,0 +1,79 @@
+/* css/borders.css */
+/* Reuna-ominaisuudet elementtien kehystämiseen */
+
+/* Esimerkki borderin lyhyestä muodosta */
+.example-border {
+    border: 2px solid #000; /* paksuus tyyli väri */
+}
+
+/* border-width: Määrittää reunan paksuuden */
+/* Mahdolliset arvot: thin | medium | thick | esim. '2px' */
+/* Esimerkki: border-width: 2px; */
+
+/* border-style: Määrittää reunan tyylin */
+/* Mahdolliset arvot: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset */
+/* Esimerkki: border-style: dashed; */
+
+/* border-color: Määrittää reunan värin */
+/* Mahdolliset arvot: väri (esim. '#000' tai 'red') */
+/* Esimerkki: border-color: red; */
+
+/* Vasen reuna */
+.example-left-border {
+    border-left: 2px solid red;
+}
+
+/* Oikea reuna */
+.example-right-border {
+    border-right: 2px dashed blue;
+}
+
+/* Yläreuna */
+.example-top-border {
+    border-top: 3px double green;
+}
+
+/* Alareuna */
+.example-bottom-border {
+    border-bottom: 1px dotted gray;
+}
+
+/* box-shadow: Varjo reunan ympärille */
+/* Esimerkki: */
+.example-shadow {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* border-collapse: Taulukoiden reunojen yhdistäminen */
+/* Mahdolliset arvot: collapse | separate */
+.example-table {
+    border-collapse: collapse;
+}
+
+/* border-image: Kuvan käyttäminen reunana */
+/* Esimerkki: */
+.example-image-border {
+    border: 10px solid transparent;
+    border-image: url("border.png") 30 stretch;
+}
+
+/* border-radius: Pyöristetyt kulmat */
+/* Esimerkki: */
+.example-rounded {
+    border-radius: 10px;
+}
+
+/* Kulmakohtaiset pyöristykset */
+.example-rounded-corners {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+}
+
+/* Esimerkki: Pyöristetty reuna varjolla */
+.bordered-box {
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}

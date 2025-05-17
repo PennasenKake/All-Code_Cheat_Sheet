@@ -1,0 +1,88 @@
+/* css/layout-tables-colors.css */
+/* CSS-ominaisuuksia: Sarakkeet, värit ja taulukot */
+
+/* === SARAKKEET (COLUMNS) === */
+
+/* column-count: määrittää kuinka monta saraketta sisältö jaetaan */
+.columns-count-example {
+    column-count: 3;
+}
+
+/* column-fill: miten sisältö jakautuu sarakkeisiin */
+.columns-fill-example {
+    column-fill: balance;
+}
+
+/* column-gap: sarakkeiden väliin jäävä tila */
+.columns-gap-example {
+    column-gap: 2rem;
+}
+
+/* column-rule: yhdistetty muoto leveydelle, tyylille ja värille */
+.columns-rule-example {
+    column-rule: 2px solid #888;
+}
+
+/* column-rule-style: kuten border-style */
+.columns-rule-style-example {
+    column-rule-style: dotted;
+}
+
+/* columns: yhdistetty column-width ja column-count */
+.columns-shorthand-example {
+    columns: 200px 3;
+}
+
+/* column-rule-width: sarakkeen jakoviivan paksuus */
+.columns-rule-width-example {
+    column-rule-width: medium;
+}
+
+/* column-width: sarakkeen leveys */
+.columns-width-example {
+    column-width: 250px;
+}
+
+/* column-span: määrittää venyykö elementti usean sarakkeen yli */
+.columns-span-example {
+    column-span: all;
+}
+
+/* === VÄRIT (COLORS) === */
+
+/* color: tekstin väri */
+.color-example {
+    color: #336699;
+}
+
+/* opacity: elementin läpinäkyvyys (0 = täysin läpinäkyvä, 1 = täysin näkyvä) */
+.opacity-example {
+    opacity: 0.75;
+}
+
+/* === TAULUKOT (TABLES) === */
+
+/* border-collapse: määrittää yhdistetäänkö vierekkäisten solujen reunat */
+.table-collapse-example {
+    border-collapse: collapse;
+}
+
+/* empty-cells: näytetäänkö tyhjät solut */
+.table-empty-cells-example {
+    empty-cells: hide;
+}
+
+/* border-spacing: väli vierekkäisten solujen välillä (jos border-collapse: separate) */
+.table-border-spacing-example {
+    border-spacing: 10px 15px;
+}
+
+/* table-layout: automaattinen vai kiinteä sarakeleveys */
+.table-layout-example {
+    table-layout: fixed;
+}
+
+/* caption-side: määrittää taulukon otsikon sijainnin */
+.table-caption-side-example {
+    caption-side: bottom;
+}

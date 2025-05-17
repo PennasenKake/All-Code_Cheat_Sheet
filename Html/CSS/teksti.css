@@ -1,0 +1,108 @@
+/* css/text.css */
+/* Tekstiin liittyvät CSS-ominaisuudet */
+
+/* direction: tekstin lukusuunta */
+.text-direction-rtl {
+    direction: rtl;
+}
+
+/* hanging-punctuation: riippuva välimerkki (ei kaikissa selaimissa tuettu) */
+.text-hanging-start {
+    hanging-punctuation: start;
+}
+
+/* letter-spacing: kirjainten välinen tila */
+.text-letter-spacing {
+    letter-spacing: 0.1em;
+}
+
+/* text-outline: tekstin ääriviivat (epästandardi, ei yleinen tuki) */
+/* Huom: ei virallinen CSS-ominaisuus useimmissa selaimissa */
+.text-outline {
+    /* text-outline: 1px 1px red; */ /* Esimerkki, ei yleisesti tuettu */
+}
+
+/* unicode-bidi: käytetään yhdessä 'direction'-ominaisuuden kanssa */
+.text-bidi-override {
+    unicode-bidi: bidi-override;
+}
+
+/* white-space: määrittää miten välilyöntejä ja rivinvaihtoja käsitellään */
+.text-whitespace-pre {
+    white-space: pre;
+}
+
+/* white-space-collapse: HTML/CSS Draft-ominaisuus (ei tuettu laajasti) */
+/* Esimerkkinä jätetty kommentiksi */
+/*
+.text-white-space-collapse {
+    white-space-collapse: preserve;
+}
+*/
+
+/* punctuation-trim: ei laajasti tuettu ominaisuus */
+.text-punctuation-trim {
+    /* punctuation-trim: start; */
+}
+
+/* text-align: tekstin tasaus */
+.text-align-center {
+    text-align: center;
+}
+
+/* text-align-last: viimeisen rivin tasaus */
+.text-align-last-right {
+    text-align-last: right;
+}
+
+/* text-decoration: tekstin koristelu */
+.text-underline {
+    text-decoration: underline;
+}
+
+/* text-shadow: tekstin varjo */
+.text-shadow-example {
+    text-shadow: 1px 1px 2px #666;
+}
+
+/* word-break: miten pitkät sanat katkaistaan */
+.text-break-word {
+    word-break: break-word;
+}
+
+/* word-wrap: sallitaanko rivinvaihto pitkille sanoille (nyk. overflow-wrap) */
+.text-word-wrap {
+    word-wrap: break-word;
+}
+
+/* text-emphasis: painotustyyli (tuettu lähinnä Aasiassa) */
+.text-emphasis-dot {
+    text-emphasis: dot;
+}
+
+/* text-indent: sisennys ensimmäiselle riville */
+.text-indent {
+    text-indent: 2em;
+}
+
+/* text-justify: tekstin tasausmenetelmä (ei laajasti tuettu) */
+.text-justify {
+    text-justify: inter-word;
+}
+
+/* text-transform: tekstin muuntaminen isoiksi tai pieniksi kirjaimiksi */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* text-wrap: ehdotettu ominaisuus (ei vielä laajassa käytössä) */
+/*
+.text-wrap {
+    text-wrap: suppress;
+}
+*/
+
+/* word-spacing: sanavälien säätö */
+.text-word-spacing {
+    word-spacing: 0.25em;
+}
