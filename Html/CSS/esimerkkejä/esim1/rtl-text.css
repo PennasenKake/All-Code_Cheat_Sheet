@@ -1,0 +1,10 @@
+/* Oikealta vasemmalle kirjoitettu teksti */
+.rtl-teksti {
+  direction: rtl;
+  unicode-bidi: embed;
+  font-family: 'Arial', sans-serif;
+  background-color: #eef6f7;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
