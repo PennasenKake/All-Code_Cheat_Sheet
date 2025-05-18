@@ -1,0 +1,42 @@
+<!-- examples/forms.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake-esimerkki</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        form { max-width: 500px; margin: 20px auto; }
+        label { display: block; margin-bottom: 5px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; }
+        input[type="submit"] { background-color: #0066cc; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lomake-esimerkki</h1>
+        <form>
+            <label for="username">Käyttäjänimi:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Salasana:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="color">Suosikkiväri:</label>
+            <input type="color" id="color" name="color">
+
+            <label for="role">Rooli:</label>
+            <select id="role" name="role">
+                <option value="user">Käyttäjä</option>
+                <option value="admin">Ylläpitäjä</option>
+            </select>
+
+            <label for="comments">Kommentit:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <input type="submit" value="Lähetä">
+        </form>
+    </div>
+</body>
+</html>

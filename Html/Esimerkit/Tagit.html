@@ -1,250 +1,363 @@
+<!-- examples/tags.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tagit - Esimerkit</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #333; }
+        pre, code { background-color: #f4f4f4; padding: 5px; }
+        section { margin-bottom: 20px; }
+        table { border-collapse: collapse; width: 100%; }
+        table, th, td { border: 1px solid #ccc; padding: 8px; }
+        /* Lisätyt tyylit kuville */
+        .image-container { margin: 10px 0; }
+        .image-container img { max-width: 100%; height: auto; }
+        .zoomable-image { transition: transform 0.3s ease; }
+        .zoomable-image:hover { transform: scale(1.2); }
+    </style>
+</head>
+<body>
+    <h1>HTML Tagit - Esimerkit</h1>
 
-HTML-Hakemisto
+    <!-- 1. Perusrakenne -->
+    <section>
+        <h2>1. Perusrakenne</h2>
+        <p><strong>&lt;html&gt;</strong>: Määrittää HTML-dokumentin juurielementin. Kaikki muut tagit ovat tämän sisällä.</p>
+        <p><strong>&lt;head&gt;</strong>: Sisältää metatietoja (otsikko, CSS, JavaScript), jotka eivät näy suoraan käyttäjälle.</p>
+        <p><strong>&lt;title&gt;</strong>: Määrittää sivun otsikon, joka näkyy selaimen välilehdessä.</p>
+        <p><strong>&lt;body&gt;</strong>: Sisältää sivun näkyvän sisällön (teksti, kuvat, linkit jne.).</p>
+        <h3>Esimerkki:</h3>
+        <pre>
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Oma verkkosivuni&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hei maailma!&lt;/h1&gt;
+        &lt;p&gt;Tämä on minun ensimmäinen verkkosivuni.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </section>
 
-1. Perusrakenne
+    <!-- 2. Dokumentin metatiedot -->
+    <section>
+        <h2>2. Dokumentin metatiedot</h2>
+        <p><strong>&lt;base&gt;</strong>: Määrittää perus-URL-osoitteen sisäisille linkeille.</p>
+        <p><strong>&lt;meta&gt;</strong>: Antaa metatietoja (kuvaus, avainsanat, Open Graph -tagit).</p>
+        <p><strong>&lt;link&gt;</strong>: Linkittää ulkoisia resursseja, kuten CSS-tiedostoja.</p>
+        <p><strong>&lt;style&gt;</strong>: Sisältää sisäisiä CSS-tyylejä.</p>
+        <h3>Esimerkki:</h3>
+        <pre>
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;base href="http://myfirstwebsite.com" target="_blank"&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="description" content="Tämä on minun sivuni"&gt;
+        &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+        &lt;meta property="og:title" content="Minun kaunis sivuni"&gt;
+        &lt;meta property="og:description" content="Tervetuloa sivulleni!"&gt;
+        &lt;title&gt;Minun kaunis sivuni&lt;/title&gt;
+        &lt;link rel="stylesheet" href="/css/master.css"&gt;
+        &lt;style&gt;
+            body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+            h1 { color: #333; }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Otsikko&lt;/h1&gt;
+        &lt;p&gt;Tässä on &lt;a href="/about"&gt;linkki&lt;/a&gt; meistä-sivulle.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </section>
 
-<html> </html>
-Määrittää HTML-dokumentin. Kaikki muut tagit ovat tämän sisällä. Se on verkkosivun juurielementti.
+    <!-- 3. Tekstin muotoilu -->
+    <section>
+        <h2>3. Tekstin muotoilu</h2>
+        <p><strong>&lt;strong&gt;</strong>: Lihavoi tekstiä (semanttisesti merkitsee tärkeää tekstiä).</p>
+        <p><strong>&lt;blockquote&gt;</strong>: Pitkät lainaukset.</p>
+        <p><strong>&lt;cite&gt;</strong>: Lainauksen lähde.</p>
+        <p><strong>&lt;pre&gt;</strong>: Esimuotoiltu teksti (säilyttää välilyönnit ja rivinvaihdot).</p>
+        <p><strong>&lt;code&gt;</strong>: Näyttää koodinpätkiä.</p>
+        <h3>Esimerkki:</h3>
+        <p><strong>Lihavoitu</strong> teksti.</p>
+        <blockquote>Virheistä oppii. <cite>-Tuntematon</cite></blockquote>
+        <pre>
+    Esimerkki
+    Rivinvaihto säilyy
+        </pre>
+        <p>Koodi: <code>print("Hei")</code></p>
+    </section>
 
-<head> </head>
-Sisältää metatietoja, kuten riippuvuudet (CSS, JavaScript), fontit ja otsikon. Ei näy suoraan käyttäjälle.
+    <!-- 4. Linkit -->
+    <section>
+        <h2>4. Linkit</h2>
+        <p><strong>&lt;a href="..."&gt;</strong>: Hyperlinkki toiseen sivuun tai resurssiin.</p>
+        <p><strong>&lt;a href="mailto:..."&gt;</strong>: Sähköpostilinkki.</p>
+        <p><strong>&lt;a href="tel:..."&gt;</strong>: Puhelinnumerolinkki.</p>
+        <p><strong>&lt;a href="#id"&gt;</strong>: Linkki sivun tiettyyn kohtaan (käytä &lt;div id="..."&gt; ankkurina).</p>
+        <h3>Esimerkki:</h3>
+        <p><a href="https://example.com">Linkki ulkoiselle sivulle</a></p>
+        <p><a href="mailto:me@example.com">Lähetä sähköposti</a></p>
+        <p><a href="tel:+123456789">Soita</a></p>
+        <p><a href="#section-example">Siirry osioon</a></p>
+        <div id="section-example">
+            <h3>Tämä on osio</h3>
+            <p>Tänne siirryttiin linkistä.</p>
+        </div>
+    </section>
 
-<title> </title>
-Verkkosivun otsikko, näkyy selaimen yläpalkissa. Hakukoneet käyttävät tätä sisällön tiivistämiseen.
+    <!-- 5. Kuvat -->
+    <section>
+        <h2>5. Kuvat</h2>
+        <p>Kuvien käsittely HTML:ssä sisältää peruskuvat, klikattavat alueet, responsiiviset kuvat ja optimoinnin.</p>
 
-<body> </body>
-Verkkosivun näkyvä sisältö (teksti, kuvat, linkit jne.) sijaitsee tässä.
+        <!-- 5.1 Peruskuvat -->
+        <h3>5.1 Peruskuvat</h3>
+        <p><strong>&lt;img&gt;</strong>: Näyttää kuvan. Pakolliset attribuutit: <code>src</code>, <code>alt</code>.</p>
+        <p><strong>Attribuutit:</strong></p>
+        <ul>
+            <li><code>src="..."</code>: Kuvan polku tai URL.</li>
+            <li><code>alt="..."</code>: Vaihtoehtoinen teksti saavutettavuutta varten.</li>
+            <li><code>height="..."</code>: Korkeus (px tai %).</li>
+            <li><code>width="..."</code>: Leveys (px tai %).</li>
+            <li><code>loading="lazy"</code>: Lataa kuva vasta, kun se tulee näkyviin (optimoi suorituskykyä).</li>
+        </ul>
+        <h4>Esimerkki:</h4>
+        <div class="image-container">
+            <img src="kuva.jpg" alt="Esimerkkikuva tiedostosta kuva.jpg" width="150" height="126" loading="lazy">
+        </div>
 
-Esimerkki
+        <!-- 5.2 Klikattavat kuva-alueet -->
+        <h3>5.2 Klikattavat kuva-alueet</h3>
+        <p><strong>&lt;map&gt;</strong> ja <strong>&lt;area&gt;</strong>: Mahdollistavat klikattavat alueet kuvassa.</p>
+        <p><strong>Attribuutit:</strong></p>
+        <ul>
+            <li><code>usemap="#mapname"</code>: Linkittää kuvan karttaan (käytetään &lt;img&gt;-tagissa).</li>
+            <li><code>shape="rect|circle|poly"</code>: Alueen muoto.</li>
+            <li><code>coords="..."</code>: Alueen koordinaatit (esim. suorakulmiolle: x1,y1,x2,y2).</li>
+            <li><code>href="..."</code>: Linkki, johon alue ohjaa.</li>
+        </ul>
+        <h4>Esimerkki:</h4>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/145x126" width="145" height="126" alt="Planets" usemap="#planetmap" loading="lazy">
+            <map name="planetmap">
+                <area shape="rect" coords="0,0,60,100" href="https://example.com/sun" alt="Sun">
+                <area shape="circle" coords="90,58,3" href="https://example.com/mercury" alt="Mercury">
+            </map>
+        </div>
 
+        <!-- 5.3 Responsiiviset kuvat -->
+        <h3>5.3 Responsiiviset kuvat</h3>
+        <p><strong>&lt;picture&gt;</strong> ja <strong>&lt;source&gt;</strong>: Mahdollistavat eri kuvien lataamisen näytön koon tai laitteen mukaan.</p>
+        <p><strong>Attribuutit:</strong></p>
+        <ul>
+            <li><code>media="..."</code>: Media query, joka määrittää, milloin lähdekuvaa käytetään.</li>
+            <li><code>srcset="..."</code>: Kuvan polku.</li>
+        </ul>
+        <h4>Esimerkki:</h4>
+        <div class="image-container">
+            <picture>
+                <source media="(max-width: 600px)" srcset="https://via.placeholder.com/150">
+                <source media="(max-width: 1200px)" srcset="https://via.placeholder.com/300">
+                <img src="https://via.placeholder.com/600" alt="Responsiivinen kuva" loading="lazy">
+            </picture>
+        </div>
 
-<html>
-  <head>
-    <title>Oma ensimmäinen verkkosivuni</title>
-  </head>
-  <body>
-    <h1>Otsikko tähän</h1>
-    <p>Tässä on vähän tekstiä.</p>
-  </body>
+        <!-- 5.4 Interaktiiviset kuvat -->
+        <h3>5.4 Interaktiiviset kuvat</h3>
+        <p>Kuviin voidaan lisätä interaktiivisuutta CSS:llä, kuten zoomaus hover-tilassa.</p>
+        <h4>Esimerkki:</h4>
+        <div class="image-container">
+            <img src="kuva.jpg" alt="Zoomauskuva tiedostosta kuva.jpg" class="zoomable-image" width="150" height="126" loading="lazy">
+        </div>
+
+        <!-- 5.5 Kuvan optimointi -->
+        <h3>5.5 Kuvan optimointi</h3>
+        <p>Kuvien latauksen optimointi parantaa sivun suorituskykyä:</p>
+        <ul>
+            <li><code>loading="lazy"</code>: Lataa kuvan vain, kun se tulee näkyviin.</li>
+            <li><code>decoding="async"</code>: Dekoodaa kuva asynkronisesti, jotta sivu latautuu nopeammin.</li>
+        </ul>
+        <h4>Esimerkki:</h4>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Optimoitu kuva" loading="lazy" decoding="async">
+        </div>
+    </section>
+
+    <!-- 6. Upotettu sisältö -->
+    <section>
+        <h2>6. Upotettu sisältö</h2>
+        <p><strong>&lt;iframe&gt;</strong>: Upottaa ulkoisen sivun tai sisällön.</p>
+        <p><strong>&lt;video&gt;</strong>: Upottaa videon.</p>
+        <p><strong>&lt;object&gt;</strong> ja <strong>&lt;embed&gt;</strong>: Upottaa ulkoista sisältöä (vanhempi tapa, ei suositella).</p>
+        <h3>Esimerkki:</h3>
+        <p>iFrame:</p>
+        <iframe src="https://example.com" width="300" height="150" title="Esimerkkisivu"></iframe>
+        <p>Video:</p>
+        <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Selaimesi ei tue videota.
+        </video>
+    </section>
+
+    <!-- 7. Taulukot -->
+    <section>
+        <h2>7. Taulukot</h2>
+        <p><strong>&lt;table&gt;</strong>: Taulukon runko.</p>
+        <p><strong>&lt;caption&gt;</strong>: Taulukon otsikko.</p>
+        <p><strong>&lt;thead&gt;</strong>, <strong>&lt;tbody&gt;</strong>, <strong>&lt;tfoot&gt;</strong>: Taulukon osat.</p>
+        <p><strong>&lt;tr&gt;</strong>: Rivi.</p>
+        <p><strong>&lt;th&gt;</strong>: Otsikkosolu.</p>
+        <p><strong>&lt;td&gt;</strong>: Tavallinen solu.</p>
+        <p><strong>&lt;colgroup&gt;</strong> ja <strong>&lt;col&gt;</strong>: Sarakkeiden ryhmittely.</p>
+        <h3>Esimerkki:</h3>
+        <table>
+            <caption>Opiskelijat</caption>
+            <colgroup>
+                <col style="background-color: #f0f0f0;">
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr><th>Nimi</th><th>Pääaine</th><th>GPA</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Bob</td><td>Laki</td><td>3.35</td></tr>
+                <tr><td>Alice</td><td>Lääketiede</td><td>3.61</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="3">Keskiarvo: 3.48</td></tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- 8. Lomakkeet -->
+    <section>
+        <h2>8. Lomakkeet</h2>
+        <p><strong>&lt;form&gt;</strong>: Lomakkeen runko.</p>
+        <p><strong>&lt;label&gt;</strong>: Syöttökentän nimi.</p>
+        <p><strong>&lt;input&gt;</strong>: Syöttökenttä (esim. teksti, sähköposti, salasana).</p>
+        <p><strong>&lt;select&gt;</strong> ja <strong>&lt;option&gt;</strong>: Alasvetovalikko.</p>
+        <p><strong>&lt;textarea&gt;</strong>: Monirivinen tekstikenttä.</p>
+        <h3>Esimerkki:</h3>
+        <form>
+            <label for="name">Nimi:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Sähköposti:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Viesti:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <label for="category">Kategoria:</label><br>
+            <select id="category" name="category">
+                <option value="general">Yleinen</option>
+                <option value="support">Tuki</option>
+            </select><br>
+            <input type="submit" value="Lähetä">
+        </form>
+    </section>
+
+    <!-- 9. Semanttiset tagit -->
+    <section>
+        <h2>9. Semanttiset tagit</h2>
+        <p><strong>&lt;header&gt;</strong>: Sivun tai osion yläosa.</p>
+        <p><strong>&lt;footer&gt;</strong>: Sivun tai osion alatunniste.</p>
+        <p><strong>&lt;main&gt;</strong>: Pääsisältö.</p>
+        <p><strong>&lt;article&gt;</strong>: Itsenäinen artikkeli.</p>
+        <p><strong>&lt;aside&gt;</strong>: Sivupalkki tai epäsuora sisältö.</p>
+        <p><strong>&lt;section&gt;</strong>: Temaattinen osio.</p>
+        <p><strong>&lt;nav&gt;</strong>: Navigointilinkit.</p>
+        <p><strong>&lt;figure&gt;</strong> ja <strong>&lt;figcaption&gt;</strong>: Kuva ja sen kuvateksti.</p>
+        <h3>Esimerkki:</h3>
+        <header>
+            <h2>Sivun otsikko</h2>
+            <nav>
+                <a href="#home">Etusivu</a> |
+                <a href="#about">Tietoa</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h3>Osio</h3>
+                <p>Tämä on osio.</p>
+            </section>
+            <article>
+                <h3>Artikkeli</h3>
+                <p>Tämä on artikkeli.</p>
+            </article>
+            <aside>
+                <h3>Sivupalkki</h3>
+                <p>Tässä on lisätietoa.</p>
+            </aside>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Esimerkkikuva">
+                <figcaption>Kuvateksti tähän.</figcaption>
+            </figure>
+        </main>
+        <footer>
+            <p>© 2025 Sivusto</p>
+        </footer>
+    </section>
+
+    <!-- 10. Interaktiiviset tagit -->
+    <section>
+        <h2>10. Interaktiiviset tagit</h2>
+        <p><strong>&lt;details&gt;</strong> ja <strong>&lt;summary&gt;</strong>: Näytä/piilota sisältöä.</p>
+        <p><strong>&lt;dialog&gt;</strong>: Dialogi-ikkuna (vaatii JavaScriptin).</p>
+        <p><strong>&lt;progress&gt;</strong>: Edistymispalkki.</p>
+        <p><strong>&lt;meter&gt;</strong>: Mittaa arvoa tietyllä välillä.</p>
+        <h3>Esimerkki:</h3>
+        <details>
+            <summary>Lisätietoja</summary>
+            <p>Tässä on lisätietoa.</p>
+        </details>
+        <p>Dialogi:</p>
+        <button onclick="document.getElementById('myDialog').showModal()">Avaa dialogi</button>
+        <dialog id="myDialog">
+            <p>Tämä on dialogi!</p>
+            <button onclick="document.getElementById('myDialog').close()">Sulje</button>
+        </dialog>
+        <p>Edistyminen:</p>
+        <progress value="70" max="100">70%</progress>
+        <p>Mittari:</p>
+        <meter value="0.6" min="0" max="1">60%</meter>
+    </section>
+
+    <!-- 11. Skriptit -->
+    <section>
+        <h2>11. Skriptit</h2>
+        <p><strong>&lt;script&gt;</strong>: Lisää JavaScript-koodia tai linkittää ulkoisen JS-tiedoston.</p>
+        <h3>Esimerkki:</h3>
+        <p>Klikkaa nähdäksesi tervehdyksen:</p>
+        <button onclick="showGreeting()">Tervehdi</button>
+        <p id="greeting"></p>
+        <script>
+            function showGreeting() {
+                document.getElementById("greeting").innerText = "Hei, maailma!";
+            }
+        </script>
+    </section>
+
+    <!-- 12. Erikoismerkit -->
+    <section>
+        <h2>12. Erikoismerkit</h2>
+        <p>Erikoismerkit kirjoitetaan HTML-entiteetteinä:</p>
+        <ul>
+            <li>&quot; → &quot;</li>
+            <li>&amp; → &amp;</li>
+            <li>&lt; → &lt;</li>
+            <li>&gt; → &gt;</li>
+            <li>&copy; → &copy;</li>
+            <li>&reg; → &reg;</li>
+        </ul>
+        <h3>Esimerkki:</h3>
+        <p>Copyright &copy; 2025 &amp; Kaikki oikeudet pidätetään.</p>
+    </section>
+</body>
 </html>
-
-
-
-2. Dokumentin metatiedot
-
-
-<base/>
-Määrittää sivuston perus-URL-osoitteen, helpottaa sisäisten linkkien käyttöä.
-Esim. <base href="http://myfirstwebsite.com" target="_blank">
-
-<meta/>
-Antaa tietoa sivusta (tekijä, avainsanat, julkaisupäivä jne.).
-Esim. <meta name="description" content="Tämä on sivuni">
-
-<link/>
-Linkittää ulkoisia tiedostoja, kuten CSS-tyylitiedostoja.
-Esim. <link rel="stylesheet" href="/css/master.css">
-
-<style> </style>
-Sisältää sisäisiä CSS-tyylejä verkkosivun ulkoasun määrittämiseen.
-
-Esimerkki
-
-
-<html>
-  <head>
-    <base href="http://myfirstwebsite.com" target="_blank">
-    <title>Minun kaunis verkkosivuni</title>
-    <link rel="stylesheet" href="/css/master.css">
-    <style> body { font-family: Arial; } </style>
-  </head>
-  <body>
-    <h1>Otsikko tähän</h1>
-    <p>Tässä on <a href="/about">linkki meistä-sivulle</a>.</p>
-  </body>
-</html>
-
-
-3. Tekstin muotoilu
-
-<strong> </strong>
-Lihavoi tekstiä. Esim. <strong>Lihavoitu</strong> teksti.
-
-<blockquote> </blockquote>
-Lainausmerkki pitkille lainauksille.
-Esim. <blockquote>Virheistä oppii. <cite>-Tuntematon</cite></blockquote>
-
-<pre> </pre>
-Esimuotoiltu teksti, säilyttää välilyönnit ja rivinvaihdot.
-Esim. <pre>   Esimerkki   </pre>
-
-<code> </code>
-Näyttää koodinpätkiä tekstissä. Esim. <p>Koodi: <code>print("Hei")</code></p>
-
-
-
-4. Linkit
-
-<a href="..."> </a>
-Hyperlinkki. Esim. <a href="https://example.com">Linkki</a>
-
-<a href="mailto:..."> </a>
-Sähköpostilinkki. Esim. <a href="mailto:me@example.com">Lähetä sähköposti</a>
-
-<a href="tel:..."> </a>
-Puhelinnumerolinkki. Esim. <a href="tel:+123456789">Soita</a>
-
-<a name="..."> </a>
-Määrittää ankkurikohdan sivulla.  
-
-<a href="#name"> </a>
-Linkki sivun tiettyyn kohtaan. Esim. <a href="#section1">Siirry osioon</a>
-
-
-
-5. Kuvat
-
-<img>
-Näyttää kuvan.  
-src="..." – Kuvan polku tai URL.  
-
-alt="..." – Vaihtoehtoinen teksti kuvan kuvaamiseen.  
-
-height="..." – Kuvan korkeus (px tai %).  
-
-width="..." – Kuvan leveys (px tai %).  
-
-align="..." – Kuvan sijoittelu.  
-
-border="..." – Reunaviivan paksuus (oletus 0).
-
-<map> </map>
-Klikattava kuva-alue.  
-name="..." – Kartan nimi.
-
-<area />
-Määrittää klikattavan alueen.  
-shape="..." – Muoto (rect, circle jne.).  
-
-coords="..." – Koordinaatit (esim. suorakulmiolle: x1,y1,x2,y2).
-
-
-Esimerkki
-
-<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
-<map name="planetmap">
-  <area shape="rect" coords="0,0,60,100" href="sun.htm" alt="Sun">
-  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
-</map>
-
-
-6. Upotettu sisältö
-
-<object> </object>
-Upottaa ulkoista sisältöä (esim. video, toinen sivu).  
-height="...", width="..." – Koko.  
-
-type="..." – Sisällön tyyppi.
-
-<embed>
-Upottaa sisältöä (esim. video).  
-src="..." – Sisällön polku.
-
-<object width="1000" height="1000">
-  <param name="src" value="some_other_webpage.html">
-  <embed width="500" height="500" src="some_video.swf">
-</object>
-
-
-7. Taulukot
-
-<table> </table> – Taulukon runko.  
-
-<caption> </caption> – Taulukon otsikko.  
-
-<thead> </thead> – Otsikkorivit.  
-
-<tbody> </tbody> – Pääsisältö.  
-
-<tfoot> </tfoot> – Alatunniste.  
-
-<tr> </tr> – Rivi.  
-
-<th> </th> – Otsikkosolu.  
-
-<td> </td> – Tavallinen solu.  
-
-<colgroup> </colgroup> – Sarakkeiden ryhmittely.  
-
-<col> – Yksittäinen sarake.
-
-
-Esimerkki
-
-<table>
-  <caption>Opiskelijat</caption>
-  <thead>
-    <tr><th>Name</th><th>Major</th><th>GPA</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Bob</td><td>Law</td><td>3.35</td></tr>
-    <tr><td>Alice</td><td>Medicine</td><td>3.61</td></tr>
-  </tbody>
-</table>
-
-
-8. Semanttiset tagit
-
-<header> </header> – Sivun tai osion yläosa.  
-
-<footer> </footer> – Sivun tai osion alatunniste.  
-
-<main> </main> – Pääsisältö.  
-
-<article> </article> – Itsenäinen artikkeli.  
-
-<aside> </aside> – Sivupalkki tai epäsuora sisältö.  
-
-<section> </section> – Temaattinen osio.  
-
-<nav> </nav> – Navigointilinkit.
-
-
-9. Interaktiiviset tagit
-
-<details> </details> – Näytä/piilota lisätietoja.  
-
-<summary> </summary> – <details>-tagin otsikko.  
-
-<dialog> </dialog> – Dialogi-ikkuna.  
-
-<progress> </progress> – Edistymispalkki.  
-
-<meter> </meter> – Mittaa arvoa välillä.
-
-
-Esimerkki
-
-<details>
-  <summary>Lisätietoja</summary>
-  <p>Tässä on lisätietoa.</p>
-</details>
-
-
-
-10. Erikoismerkit
-
-" & " – Lainausmerkki (&quot;)  
-
-& & & – Ja-merkki (&amp;)  
-
-< & < – Pienempi kuin (&lt;)  
-
-> & > – Suurempi kuin (&gt;)  
-
-© & © – Tekijänoikeus (&copy;)  
-
-® & ® – Rekisteröity tavaramerkki (&reg;)
-
-
-
