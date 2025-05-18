@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia-esimerkit</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+        section { margin-bottom: 40px; }
+        video, audio, iframe, object, canvas, svg { display: block; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multimedia-esimerkit</h1>
+
+        <section>
+            <h2>Ääni</h2>
+            <audio controls preload="metadata" aria-label="Äänisoitin">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Selaimesi ei tue audio-elementtiä.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video</h2>
+            <video controls width="400" poster="https://via.placeholder.com/400x225" loading="lazy" aria-label="Videosoitin">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Selaimesi ei tue video-tagia.
+            </video>
+        </section>
+
+        <section>
+            <h2>Mediaresurssit (<source>-tagit)</h2>
+            <video controls aria-label="Videosoitin eri resoluutioilla">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" media="(max-width: 600px)">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Selaimesi ei tue video-tagia.
+            </video>
+            <p>Tässä esimerkissä käytetään kahta <code>&lt;source&gt;</code>-tagia saman videon näyttämiseen eri näytönleveyksillä.</p>
+        </section>
+
+        <section>
+            <h2>Tekstitykset (<track>-tagi)</h2>
+            <video controls width="400" aria-label="Videosoitin englanninkielisillä tekstityksillä">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <track src="https://www.w3schools.com/html/subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+                Selaimesi ei tue video-tagia.
+            </video>
+            <p>Tässä esimerkissä on englanninkieliset tekstitykset, jotka näkyvät oletuksena.</p>
+        </section>
+
+        <section>
+            <h2>Upotukset (<code>&lt;iframe&gt;</code> ja <code>&lt;object&gt;</code>)</h2>
+            <h3>iFrame (YouTube-video)</h3>
+            <iframe src="https://www.youtube.com/embed/37" width="560" height="315" title="YouTube-video" allowfullscreen aria-label="Upotettu YouTube-video"></iframe>
+            
+            <h3>Object (PDF)</h3>
+            <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf" width="600" height="400" aria-label="Upotettu PDF-dokumentti">
+                Selaimesi ei tue PDF-tiedostojen upottamista.
+            </object>
+        </section>
+
+        <section>
+            <h2>Grafiikka (<code>&lt;canvas&gt;</code> ja <code>&lt;svg&gt;</code>)</h2>
+            <h3>Canvas</h3>
+            <canvas id="piirtoalusta" width="200" height="100" aria-label="Canvas-piirtoalusta">
+                Selaimesi ei tue Canvas-elementtiä.
+            </canvas>
+            <script>
+                const canvas = document.getElementById('piirtoalusta');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'green';
+                ctx.fillRect(10, 10, 50, 50);
+            </script>
+
+            <h3>SVG</h3>
+            <svg width="100" height="100" aria-label="SVG-grafiikka">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="lightblue" />
+                <text x="20" y="55" font-size="15" fill="black">SVG</text>
+            </svg>
+        </section>
+
+        <section>
+            <h2>Responsiiviset kuvat (<code>&lt;picture&gt;</code> ja <code>&lt;source&gt;</code>)</h2>
+            <picture>
+                <source srcset="https://via.placeholder.com/150" media="(max-width: 600px)" type="image/webp" sizes="100vw">
+                <source srcset="https://via.placeholder.com/300" type="image/webp" sizes="50vw">
+                <img src="https://via.placeholder.com/600" alt="Responsiivinen kuva" loading="lazy">
+            </picture>
+            <p>Tässä esimerkissä käytetään <code>&lt;picture&gt;</code>-elementtiä ja <code>&lt;source&gt;</code>-tageja tarjoamaan eri kokoisia ja tyyppisiä kuvia näytön leveyden mukaan.</p>
+        </section>
+
+        <section>
+            <h2>Kuvat (<code>&lt;img&gt;</code>-tagi)</h2>
+            <img src="kuva.jpg" alt="Esimerkkikuva" loading="lazy" decoding="async">
+        </section>
+
+        <p><a href="../projektit/website1.html">Takaisin etusivulle</a></p>
+    </div>
+</body>
+</html>

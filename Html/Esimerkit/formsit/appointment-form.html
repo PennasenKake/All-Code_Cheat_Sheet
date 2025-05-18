@@ -1,0 +1,42 @@
+<!-- Esimerkit/appointment-form.html -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajanvarauslomake</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+        form { max-width: 500px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="submit"] { background-color: #0066cc; color: white; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #005bb5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ajanvarauslomake</h1>
+        <form action="#" method="POST">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+
+            <label for="date">Päivämäärä:</label>
+            <input type="date" id="date" name="date" required aria-required="true">
+
+            <label for="time">Aika:</label>
+            <input type="time" id="time" name="time" required aria-required="true">
+
+            <label for="service">Palvelu:</label>
+            <select id="service" name="service">
+                <option value="consultation">Konsultaatio</option>
+                <option value="maintenance">Huolto</option>
+                <option value="installation">Asennus</option>
+            </select>
+
+            <input type="submit" value="Varaa aika">
+        </form>
+        <p><a href="../index.html">Takaisin etusivulle</a></p>
+    </div>
+</body>
+</html>

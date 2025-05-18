@@ -1,0 +1,52 @@
+<!-- Esimerkit/feedback-form.html -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palautelomake</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+        form { max-width: 500px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; }
+        label { display: block; margin-bottom: 5px; }
+        textarea { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="submit"] { background-color: #0066cc; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #005bb5; }
+        .rating { display: flex; gap: 5px; margin-bottom: 15px; }
+        .rating input { display: none; }
+        .rating label { font-size: 24px; cursor: pointer; color: #ccc; }
+        .rating input:checked ~ label { color: #ffd700; }
+        .rating label:hover, .rating label:hover ~ label { color: #ffd700; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Palautelomake</h1>
+        <form action="#" method="POST">
+            <label for="experience">Kuinka tyytyväinen olet kokemukseesi?</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+
+            <label for="feedback">Palaute:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Kirjoita palautteesi tähän..." required aria-required="true"></textarea>
+
+            <label>
+                <input type="checkbox" name="contact" value="yes"> Haluan, että minuun otetaan yhteyttä
+            </label>
+
+            <input type="submit" value="Lähetä palaute">
+        </form>
+        <p><a href="../index.html">Takaisin etusivulle</a></p>
+    </div>
+</body>
+</html>

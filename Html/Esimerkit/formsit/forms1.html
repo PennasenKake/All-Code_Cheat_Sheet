@@ -1,0 +1,105 @@
+<!-- Esimerkit/registration-form.html -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekisteröintilomake</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <style>
+        form { max-width: 500px; margin: 20px auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="submit"] { background-color: #0066cc; color: white; border: none; cursor: pointer; }
+        input[type="submit"]:hover { background-color: #005bb5; }
+        .error { color: red; font-size: 0.9em; display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rekisteröintilomake</h1>
+        <form action="#" method="POST" onsubmit="return validateForm()">
+            <label for="fullname">Koko nimi:</label>
+            <input type="text" id="fullname" name="fullname" required aria-required="true">
+            <span class="error" id="fullname-error">Syötä koko nimesi.</span>
+
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            <span class="error" id="email-error">Syötä kelvollinen sähköpostiosoite.</span>
+
+            <label for="phone">Puhelinnumero:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" placeholder="+358123456789">
+            <span class="error" id="phone-error">Syötä kelvollinen puhelinnumero.</span>
+
+            <label for="password">Salasana:</label>
+            <input type="password" id="password" name="password" required aria-required="true">
+            <span class="error" id="password-error">Salasanan tulee olla vähintään 8 merkkiä.</span>
+
+            <label for="country">Maa:</label>
+            <select id="country" name="country">
+                <option value="">Valitse maa</option>
+                <option value="fi">Suomi</option>
+                <option value="se">Ruotsi</option>
+                <option value="no">Norja</option>
+            </select>
+
+            <label>
+                <input type="checkbox" name="terms" required aria-required="true"> Hyväksyn käyttöehdot
+            </label>
+
+            <input type="submit" value="Rekisteröidy">
+        </form>
+        <p><a href="../index.html">Takaisin etusivulle</a></p>
+    </div>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+
+            // Nimi
+            const fullname = document.getElementById("fullname").value;
+            const fullnameError = document.getElementById("fullname-error");
+            if (fullname.length < 2) {
+                fullnameError.style.display = "block";
+                isValid = false;
+            } else {
+                fullnameError.style.display = "none";
+            }
+
+            // Sähköposti
+            const email = document.getElementById("email").value;
+            const emailError = document.getElementById("email-error");
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                emailError.style.display = "block";
+                isValid = false;
+            } else {
+                emailError.style.display = "none";
+            }
+
+            // Puhelinnumero
+            const phone = document.getElementById("phone").value;
+            const phoneError = document.getElementById("phone-error");
+            const phonePattern = /^[0-9]{10,15}$/;
+            if (phone && !phonePattern.test(phone)) {
+                phoneError.style.display = "block";
+                isValid = false;
+            } else {
+                phoneError.style.display = "none";
+            }
+
+            // Salasana
+            const password = document.getElementById("password").value;
+            const passwordError = document.getElementById("password-error");
+            if (password.length < 8) {
+                passwordError.style.display = "block";
+                isValid = false;
+            } else {
+                passwordError.style.display = "none";
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>

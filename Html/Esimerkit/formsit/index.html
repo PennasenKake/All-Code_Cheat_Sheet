@@ -1,0 +1,104 @@
+<!-- Esimerkit/formsit/index.html -->
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esimerkkejä erilaisista HTML-lomakkeista.">
+    <title>Lomakkeet - Esimerkit</title>
+    <link rel="stylesheet" href="../../CSS/styles.css">
+    <style>
+        header { background-color: #1a1a1a; color: white; text-align: center; padding: 40px 20px; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline-block; margin: 0 15px; }
+        nav ul li a { color: white; font-weight: bold; }
+        nav ul li a:hover { color: #00aaff; }
+        section { padding: 40px 20px; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .card a { color: #0066cc; font-weight: bold; }
+        footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 600px) { nav ul li { display: block; margin: 10px 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lomakkeet</h1>
+        <nav aria-label="Päävalikko">
+            <ul>
+                <li><a href="#lomakkeet">Lomakkeet</a></li>
+                <li><a href="../../index.html">Takaisin etusivulle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="lomakkeet" aria-labelledby="lomakkeet-heading">
+            <h2 id="lomakkeet-heading">HTML-lomakkeiden esimerkit</h2>
+            <p>Tässä osiossa on esitelty erilaisia HTML-lomakkeita, joita voit käyttää web-kehityksessä. Kokeile ja tutustu!</p>
+            <div class="grid">
+                <div class="card">
+                    <article>
+                        <h3>Peruslomake</h3>
+                        <p>Yksinkertainen lomake perustiedoilla.</p>
+                        <a href="forms.html" aria-label="Tutustu peruslomakkeeseen">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Rekisteröintilomake</h3>
+                        <p>Lomake, joka sisältää validaation ja erilaisia syöttötyyppejä.</p>
+                        <a href="forms1.html" aria-label="Tutustu rekisteröintilomakkeeseen">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Hakulomake</h3>
+                        <p>Lomake, joka simuloi hakutoimintoa.</p>
+                        <a href="forms2.html" aria-label="Tutustu hakulomakkeeseen">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Palautelomake</h3>
+                        <p>Lomake tähtiarvioinnilla ja tekstikentällä.</p>
+                        <a href="feedback-form.html" aria-label="Tutustu palautelomakkeeseen">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Tiedostojen latauslomake</h3>
+                        <p>Lomake tiedostojen lataamiseen ja esikatseluun.</p>
+                        <a href="file-upload-form.html" aria-label="Tutustu tiedostojen latauslomakkeeseen">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Ajanvarauslomake</h3>
+                        <p>Lomake päivämäärän ja ajan varaamiseen.</p>
+                        <a href="appointment-form.html" aria-label="Tutustu ajanvarauslomakkeeseen">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Lomake 1</h3>
+                        <p>Lisäesimerkki lomakkeesta (forms1).</p>
+                        <a href="forms.html" aria-label="Tutustu lomakkeeseen 1">Tutustu</a>
+                    </article>
+                </div>
+                <div class="card">
+                    <article>
+                        <h3>Lomake 2</h3>
+                        <p>Lisäesimerkki lomakkeesta (forms2).</p>
+                        <a href="forms.html" aria-label="Tutustu lomakkeeseen 2">Tutustu</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer aria-label="Alatunniste">
+        <p>© 2025 All-Code Cheat Sheet</p>
+    </footer>
+</body>
+</html>
