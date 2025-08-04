@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kivi, Paperi, Sakset -peli Web Development Tips #107 -oppaasta.">
+    <title>Web Development Tips #107 - Kivi, Paperi, Sakset</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .score-board {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .score-board div {
+            text-align: center;
+        }
+
+        .score-board span {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        #reset-btn {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        #reset-btn:hover {
+            background-color: #c82333;
+        }
+
+        #choices {
+            text-align: center;
+        }
+
+        #choices h3 {
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .buttons button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #005bb5;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        #result {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #result p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        #result p span {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        #result-message {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .result-win {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .result-lose {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .result-tie {
+            background-color: #ffc107;
+            color: #333;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .buttons {
+                flex-direction: column;
+            }
+
+            .buttons button {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Development Tips #107</h1>
+        <h2>Kivi, Paperi, Sakset</h2>
+    </header>
+
+    <main class="container">
+        <section id="score" aria-labelledby="score-heading">
+            <h3 id="score-heading">Pistetilanne</h3>
+            <div class="score-board">
+                <div>
+                    <span id="computer-score">1</span>
+                    <p>Tietokone</p>
+                </div>
+                <div>
+                    <span id="user-score">2</span>
+                    <p>Sinun pisteesi</p>
+                </div>
+            </div>
+            <button id="reset-btn">Nollaa pistetilanne</button>
+        </section>
+
+        <section id="choices" aria-labelledby="choices-heading">
+            <h3 id="choices-heading">Tee valintasi</h3>
+            <div class="buttons">
+                <button id="rock-btn" aria-label="Valitse Kivi">
+                    <span class="icon">✊</span> Kivi
+                </button>
+                <button id="paper-btn" aria-label="Valitse Paperi">
+                    <span class="icon">✋</span> Paperi
+                </button>
+                <button id="scissors-btn" aria-label="Valitse Sakset">
+                    <span class="icon">✌️</span> Sakset
+                </button>
+            </div>
+        </section>
+
+        <section id="result" aria-live="polite">
+            <p id="user-choice">Valitsit <span>PAPERI</span></p>
+            <p id="comp-choice">Tietokone valitsi <span>KIVI</span></p>
+            <div id="result-message" class="result-win">VOITIT</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Web Development Tips</p>
+    </footer>
+
+    <script>
+        // Alusta pistetilanne
+        let userScore = 2; // Pelaajan aloituspisteet kuvan mukaisesti
+        let computerScore = 1; // Tietokoneen aloituspisteet kuvan mukaisesti
+
+        // Hae DOM-elementit
+        const userScoreElement = document.getElementById("user-score"); // Pelaajan pistetilanne-elementti
+        const computerScoreElement = document.getElementById("computer-score"); // Tietokoneen pistetilanne-elementti
+        const userChoiceElement = document.getElementById("user-choice"); // Pelaajan valinta-teksti
+        const compChoiceElement = document.getElementById("comp-choice"); // Tietokoneen valinta-teksti
+        const resultMessageElement = document.getElementById("result-message"); // Tulosviesti
+        const rockBtn = document.getElementById("rock-btn"); // Kivi-painike
+        const paperBtn = document.getElementById("paper-btn"); // Paperi-painike
+        const scissorsBtn = document.getElementById("scissors-btn"); // Sakset-painike
+        const resetBtn = document.getElementById("reset-btn"); // Nollauspainike
+
+        // Mahdolliset valinnat
+        const choices = ["rock", "paper", "scissors"]; // Taulukko pelin valinnoista
+
+        // Funktio tietokoneen valinnan arpomiseen
+        function getComputerChoice() {
+            const num = Math.floor(Math.random() * 3); // Arvo satunnainen luku väliltä 0-2
+            return choices[num]; // Palauta satunnainen valinta (kivi, paperi tai sakset)
+        }
+
+        // Funktio voittajan määrittämiseen
+        function determineWinner(userChoice, computerChoice) {
+            if (userChoice === computerChoice) {
+                return "tie"; // Jos valinnat ovat samat, tasapeli
+            }
+
+            // Tarkista, voittaako pelaaja
+            if (
+                (userChoice === "rock" && computerChoice === "scissors") ||
+                (userChoice === "paper" && computerChoice === "rock") ||
+                (userChoice === "scissors" && computerChoice === "paper")
+            ) {
+                userScore++; // Lisää pelaajan pisteitä
+                return "win"; // Pelaaja voittaa
+            } else {
+                computerScore++; // Lisää tietokoneen pisteitä
+                return "lose"; // Pelaaja häviää
+            }
+        }
+
+        // Funktio käyttöliittymän päivittämiseen
+        function updateUI(userChoice, computerChoice, result) {
+            // Päivitä valinnat
+            userChoiceElement.innerHTML = `Valitsit <span>${userChoice.toUpperCase()}</span>`;
+            compChoiceElement.innerHTML = `Tietokone valitsi <span>${computerChoice.toUpperCase()}</span>`;
+
+            // Päivitä pistetilanne
+            userScoreElement.textContent = userScore;
+            computerScoreElement.textContent = computerScore;
+
+            // Päivitä tulosviesti
+            if (result === "win") {
+                resultMessageElement.textContent = "VOITIT";
+                resultMessageElement.className = "result-win";
+                // Poista kommentti, jos sinulla on äänitiedostot
+                // winSound.play();
+            } else if (result === "lose") {
+                resultMessageElement.textContent = "HÄVISIT";
+                resultMessageElement.className = "result-lose";
+                // Poista kommentti, jos sinulla on äänitiedostot
+                // loseSound.play();
+            } else {
+                resultMessageElement.textContent = "TASAPELI";
+                resultMessageElement.className = "result-tie";
+                // Poista kommentti, jos sinulla on äänitiedostot
+                // tieSound.play();
+            }
+        }
+
+        // Funktio pelikierroksen käsittelyyn
+        function playRound(userChoice) {
+            const computerChoice = getComputerChoice(); // Hae tietokoneen valinta
+            const result = determineWinner(userChoice, computerChoice); // Määritä voittaja
+            updateUI(userChoice, computerChoice, result); // Päivitä käyttöliittymä
+        }
+
+        // Lisää tapahtumankuuntelijat painikkeille
+        rockBtn.addEventListener("click", () => playRound("rock")); // Kivi-painikkeen klikkaus
+        paperBtn.addEventListener("click", () => playRound("paper")); // Paperi-painikkeen klikkaus
+        scissorsBtn.addEventListener("click", () => playRound("scissors")); // Sakset-painikkeen klikkaus
+
+        // Lisää tapahtumankuuntelija nollauspainikkeelle
+        resetBtn.addEventListener("click", () => {
+            userScore = 0; // Nollaa pelaajan pisteet
+            computerScore = 0; // Nollaa tietokoneen pisteet
+            updateUI("rock", "rock", "tie"); // Palauta käyttöliittymä tasapeliin
+        });
+
+        // Alustava näyttö (kuvan mukainen tilanne)
+        updateUI("paper", "rock", "win");
+
+        // Valinnainen: Lisää äänitehosteet (poista kommentit ja lisää äänitiedostot)
+        /*
+        const winSound = new Audio("win.mp3"); // Voittoääni
+        const loseSound = new Audio("lose.mp3"); // Häviöääni
+        const tieSound = new Audio("tie.mp3"); // Tasapeliääni
+        */
+    </script>
+</body>
+</html>
