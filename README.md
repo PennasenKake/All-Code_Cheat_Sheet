@@ -1,85 +1,56 @@
 # All-Code_Cheat_Sheet
-Laaja koodi cheat sheet kirjasto, monta eri kieltä ja esimerkkejä, metodeja, selitykset SUOMEKSI 
 
+Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksineen suomeksi. Kokoelma sisältää sekä tiiviitä komento-/syntaksimuistilappuja että pidempiä esimerkkiprojekteja.
 
+## Sisällysluettelo
 
-Kuinka koodata oikeita projekteja tunnissa
+### Bash
+- `bash_cheat_sheet.md` — Bashin perusteet: muuttujat, merkkijonot, taulukot, ehtolauseet, silmukat, funktiot, tiedostojen käsittely ja hyödyllisten komentojen lista.
 
-Ennen kuin aloitat
+### C#
+- Ei vielä sisältöä.
 
-Koodataanko kokonainen projekti tunnissa?
-Kuulostaa hullulta, eikö? 
+### Docker_
+- `docker` — Dockerin CLI-peruskomennot: konttien ja kuvien hallinta, verkko/portit, tilastot ja siivous.
 
-Mutta useimmat ihmiset epäonnistuvat.
-He tuhlaavat liikaa aikaa työkalujen asentamiseen, täydellisen koodin kirjoittamiseen ja pienten, alussa merkityksettömien yksityiskohtien korjaamiseen. Siksi he eivät koskaan saa projektia valmiiksi. 
+### Excelit
+- `excel_cheat_sheet.md` — Excelin kaavat ja toiminnot.
+- `excel_shortcuts.md` — Pikanäppäimet.
+- `gantt_chart_instructions.md` — Gantt-kaavion tekeminen Excelissä.
 
-Nopeus on tärkeää.
-Jos keskityt vain olennaiseen, voit saada toimivan projektin valmiiksi paljon nopeammin kuin uskotkaan. 
+### Html
+- `CSS/` — CSS-muistiinpanoja ja -esimerkkejä (animaatiot, asettelut, fontit, tekstityylit, sarakkeet), sekä alikansio `esimerkkejä/` pienillä valmiilla harjoituksilla.
+- `Esimerkit/` — HTML-peruselementtien esimerkkejä (taulukot, multimedia, to-do-lista), lomake-esimerkit `formsit/`-alikansiossa.
+- `Layoutit/` — Sivupohjan osia (footer, header, navbar, table) — osa alikansioista vielä tyhjiä.
+- `projektit/` — Pieniä valmiita HTML/CSS/JS-projekteja: ajastin, kirjautumislomake, kivi-paperi-sakset, salasanageneraattori, esimerkkisivusto.
 
-Avain on yksinkertaisuus.
-Kyse on siitä, että poistat turhat vaiheet ja pidät asiat suoraviivaisina. 
+### Java
+- `hello_world.java` — Peruspohja.
+- `esimerkit/`, `notes/` — Ei vielä sisältöä.
 
-Näin se tehdään:
-________________________________________
-1. Ohita asennuksen painajainen
-Älä tuhlaa ensimmäisiä 30 minuuttia asennuksiin.
-Projektin alussa ei kannata käyttää aikaa kehitysympäristöjen, tietokantojen ja muiden monimutkaisten asetusten säätämiseen. 
-Vaihda asennukset valmiisiin ratkaisuihin.
-Käytä valmiita työkaluja, malleja tai palveluita, jotta voit hypätä suoraan koodaamiseen. Tässä muutama vinkki:
-•	Tarvitsetko verkkosivun?
-Käytä valmista mallia, jossa on jo perusstailaus ja asettelu.
-•	Tarvitsetko API:n?
-Käytä kehittäjäystävällistä kehystä, joka hoitaa reitityksen ja autentikoinnin puolestasi (esim. JSON-tiedosto tai Firebase).
-•	Tarvitsetko MySQL-tietokannan?
-Aloita yksinkertaisella JSON-tiedostolla tai pilvipalvelulla, kuten Firebase.
-________________________________________
+### JavaScript
+- `perusteet/` — JS:n perusteet aihealueittain (muuttujat, funktiot, luokat, DOM, async/await, virheenkäsittely, moduulit ym.), oma README.
+- `framework/React/` — React-esimerkkejä (hooks, konteksti, lomakkeet, listan renderöinti, muistiinpanoja).
+- `Socket/` — Socket.io-esimerkkejä ja muistiinpanoja (chat-palvelin, namespacet, huoneet).
+- `Axios/` — Axios-muistiinpanot.
+- `valmiit/` — Pieniä valmiita apufunktioita (esim. salasana, tiedostonlataus).
+- `esimerkit/`, `notes/`, `projects/` — Ei vielä sisältöä.
 
+### MFK kaavat
+- `Fysiikka/kaavat.txt`, `Kemia/kaavat.txt`, `Matematiikka/kaavat.txt` — Matematiikan, fysiikan ja kemian kaavakokoelmat.
 
-2. Varasta rakenne
-Monimutkainen projekti voi lannistaa sinut ja aiheuttaa kaaoksen.
-Sen sijaan, että miettisit kaiken itse, kopioi toimiva rakenne. 
-Hyödynnä muiden kehittäjien työtä.
-Etsi suosikkisovelluksestasi rakenne (esim. Google To-Do: tehtävälista, projekti, hyvin järjestetty ulkoasu) ja käytä sitä pohjana. 
-Tämä tekee koodistasi helpomman jäsentää, skaalata ja laajentaa. 
-Esimerkiksi: Jos haluat tehdä muistilista-sovelluksen, ota mallia seuraavasta rakenteesta ja kopioi se yhteen tiedostoon:
-•	src/
-•	main.ts – Pääkoodi
-•	components/ – Uudelleenkäytettävät käyttöliittymäkomponentit
-•	services/ – API-kutsut ja logiikka
-•	assets/ – Fontit, kuvat ja ikonit
-________________________________________
+### Python
+- `hello_world.py` — Peruspohja.
+- `perusteet/` — Python-perusteet aihealueittain (listat, sanakirjat, funktiot, tiedostojen käsittely, virheenkäsittely, async/await ym.).
+- `frameworks/FastApi/` — FastAPI koottuna yhteen paikkaan: teoriaa ja huomioita (`fastapi.md`), käytännön tutoriaali asennuksesta esimerkkeihin (`fastapi_esimerkit.md`), sekä pieni esimerkkiprojekti reiteillä, malleilla ja testeillä (`main.py`, `item.py`, `item_routes.py`, `basic_routes.py`, `user.py`, `test_main.py`, `requirements.txt`, `README.MD`).
+- `projects/` — Harjoitusprojekteja: hirsipuu, ristinolla, shakki, matopeli, viivakoodi, IP-osoitteet, squid game -klooni sekä `kartta.html` (iso, valmiiksi renderöity Plotly-karttavisualisointi).
 
-3. Koodaa ensin, korjaa myöhemmin
-Useimmat kehittäjät jäävät jumiin yrittäessään tehdä kaiken täydellisesti alusta alkaen.
-Tämä ei ole järkevää, sillä projektin alussa sen tulisi olla yksinkertainen, toimiva ja skaalautuva. 
-Käytä kovakoodausta (hardcoding) aluksi:
-•	Jos tarvitset dataa, kovakoodaa arvot.
-Esim. sen sijaan, että asennat tietokannan, kovakoodaa arvot suoraan koodiin: userCount = 2.
-•	Jos tarvitset API:n, kovakoodaa vastaukset.
-Esim. sen sijaan, että yhdistät oikean API:n, palauta kiinteä tulos: return { status: "success" }.
-•	Jos haluat tehdä napin, kovakoodaa toiminto.
-Esim. sen sijaan, että luot monimutkaisen logiikan, aseta toiminto suoraan: onClick={() => alert("Nappi toimii!")}.
-•	Jos tarvitset käyttäjän autentikoinnin, kovakoodaa se.
-Esim. sen sijaan, että asennat JWT-tarkistuksen (JSON Web Token), tee yksinkertainen tarkistus: if (user === "admin").
-Kun olet saanut toimivan version valmiiksi, palaa takaisin ja tee siitä joustava.
-Avain on saada tekninen pohja toimimaan ensin, jotta voit keskittyä innovointiin.
+### SQL
+- `join` — JOIN-tyyppien esimerkit.
+- `kommennot` — SQL-peruskomennot.
+- `esimerkit/`, `notes/`, `projects/` — Ei vielä sisältöä.
 
+## Muuta
 
-4. Käytä tekoälyä, mutta älä luota siihen
-
-Tekoälytyökalut, kuten Cursor ja Claude, voivat kirjoittaa koodia nopeasti,
-
-mutta ne tekevät myös virheitä.
-
-Monet ihmiset luottavat liikaa tekoälyyn ja tuhlaavat tunteja rikkinäisen koodin korjaamiseen.
-
-Sen sijaan, käytä tekoälyä viisaasti:
-
-✅ Anna tekoälyn hoitaa toistuvia tehtäviä (kuten pohjakoodin luominen).
-✅ Käytä tekoälyä yksinkertaiseen logiikkaan, mutta tarkista aina, onko siinä järkeä.
-❌ Älä anna tekoälyn kirjoittaa monimutkaista logiikkaa, koska se tekee usein hienovaraisia virheitä, jotka voivat rikkoa projektisi.
-❌ Älä anna tekoälyn kirjoittaa montaa ominaisuutta kerralla, koska se saattaa poistaa vanhempia, rakentamiasi ominaisuuksia.
-
-Ajattele tekoälyä kuin nuorempaa kehittäjää:
-
-se voi auttaa nopeuttamaan asioita, mutta sinun on silti tarkistettava ja ohjattava sitä.
+- `IDEAT.md` — Tyhjä muistiinpano tulevia ideoita varten.
+- `.gitattributes` — Pakottaa rivinvaihdot LF-muotoon kaikissa tiedostoissa, jotta versionhallinta pysyy siistinä eri käyttöjärjestelmien (Windows/Mac/Linux) välillä.
