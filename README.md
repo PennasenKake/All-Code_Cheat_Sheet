@@ -10,10 +10,6 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 - [Bash Cheat Sheet](Bash/bash_cheat_sheet.md)
 
-### C#
-
-Ei viela sisaltoa.
-
 ### Docker_
 
 - [docker](Docker_/docker.md)
