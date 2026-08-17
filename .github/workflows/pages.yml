@@ -1,0 +1,39 @@
+name: Päivitä sisällysluettelo, navigaatio ja tunnisteet
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regeneroi README, _sidebar.md ja tags.md
+        run: |
+          python3 scripts/add_tags.py
+          python3 scripts/generate_tags_page.py
+          python3 scripts/generate_sidebar.py
+          python3 scripts/generate_readme.py
+
+      - name: Committaa muutokset, jos niitä syntyi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md _sidebar.md tags.md
+          git add -A -- '*.md'
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia."
+          else
+            git commit -m "Päivitä sisällysluettelo, navigaatio ja tunnisteet automaattisesti"
+            git push
+          fi

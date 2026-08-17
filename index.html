@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <title>All-Code Cheat Sheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <meta name="description" content="Koodin muistilappuja ja esimerkkejä usealle eri kielelle, suomeksi." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root {
+      --theme-color: #1f6feb;
+    }
+    .app-name-link img { height: 24px; }
+    body { -webkit-font-smoothing: antialiased; }
+  </style>
+</head>
+<body>
+  <div id="app">Ladataan…</div>
+  <script>
+    window.$docsify = {
+      name: 'All-Code Cheat Sheet',
+      repo: 'PennasenKake/All-Code_Cheat_Sheet',
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 2,
+      auto2top: true,
+      homepage: 'README.md',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Hae muistilapuista…',
+        noData: 'Ei tuloksia.',
+        depth: 3,
+      },
+      copyCode: {
+        buttonText: 'Kopioi',
+        errorText: 'Virhe',
+        successText: 'Kopioitu',
+      },
+      formatUpdated: '{MM}/{DD}/{YYYY}',
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-docker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+</body>
+</html>

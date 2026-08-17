@@ -4,53 +4,70 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 ## Sisällysluettelo
 
+<!-- TOC:START -->
+
 ### Bash
-- `bash_cheat_sheet.md` — Bashin perusteet: muuttujat, merkkijonot, taulukot, ehtolauseet, silmukat, funktiot, tiedostojen käsittely ja hyödyllisten komentojen lista.
+
+- [Bash Cheat Sheet](Bash/bash_cheat_sheet.md)
 
 ### C#
-- Ei vielä sisältöä.
+
+Ei viela sisaltoa.
 
 ### Docker_
-- `docker` — Dockerin CLI-peruskomennot: konttien ja kuvien hallinta, verkko/portit, tilastot ja siivous.
+
+- [docker](Docker_/docker.md)
 
 ### Excelit
-- `excel_cheat_sheet.md` — Excelin kaavat ja toiminnot.
-- `excel_shortcuts.md` — Pikanäppäimet.
-- `gantt_chart_instructions.md` — Gantt-kaavion tekeminen Excelissä.
+
+- [Excel Cheat Sheet insinööreille](Excelit/excel_cheat_sheet.md)
+- [Excel-pikanäppäimet insinööreille](Excelit/excel_shortcuts.md)
+- [Gantt-kaavio-ohjeet](Excelit/gantt_chart_instructions.md)
 
 ### Html
-- `CSS/` — CSS-muistiinpanoja ja -esimerkkejä (animaatiot, asettelut, fontit, tekstityylit, sarakkeet), sekä alikansio `esimerkkejä/` pienillä valmiilla harjoituksilla.
-- `Esimerkit/` — HTML-peruselementtien esimerkkejä (taulukot, multimedia, to-do-lista), lomake-esimerkit `formsit/`-alikansiossa.
-- `Layoutit/` — Sivupohjan osia (footer, header, navbar, table) — osa alikansioista vielä tyhjiä.
-- `projektit/` — Pieniä valmiita HTML/CSS/JS-projekteja: ajastin, kirjautumislomake, kivi-paperi-sakset, salasanageneraattori, esimerkkisivusto.
+
+- [HTML-multimediatagit](Html/Esimerkit/multimedia.md)
+- [layouts](Html/Layoutit/layouts.md)
 
 ### Java
-- `hello_world.java` — Peruspohja.
-- `esimerkit/`, `notes/` — Ei vielä sisältöä.
+
+Ei viela sisaltoa.
 
 ### JavaScript
-- `perusteet/` — JS:n perusteet aihealueittain (muuttujat, funktiot, luokat, DOM, async/await, virheenkäsittely, moduulit ym.), oma README.
-- `framework/React/` — React-esimerkkejä (hooks, konteksti, lomakkeet, listan renderöinti, muistiinpanoja).
-- `Socket/` — Socket.io-esimerkkejä ja muistiinpanoja (chat-palvelin, namespacet, huoneet).
-- `Axios/` — Axios-muistiinpanot.
-- `valmiit/` — Pieniä valmiita apufunktioita (esim. salasana, tiedostonlataus).
-- `esimerkit/`, `notes/`, `projects/` — Ei vielä sisältöä.
+
+- [axios](JavaScript/Axios/axios.md)
+- [Socket.IO Chat -esimerkki](JavaScript/Socket/notes.md)
+- [socket_io](JavaScript/Socket/socket_io.md)
+- [README](JavaScript/perusteet/README.md)
 
 ### MFK kaavat
-- `Fysiikka/kaavat.txt`, `Kemia/kaavat.txt`, `Matematiikka/kaavat.txt` — Matematiikan, fysiikan ja kemian kaavakokoelmat.
+
+- [kaavat](MFK kaavat/Fysiikka/kaavat.md)
+- [kaavat](MFK kaavat/Kemia/kaavat.md)
+- [kaavat](MFK kaavat/Matematiikka/kaavat.md)
 
 ### Python
-- `hello_world.py` — Peruspohja.
-- `perusteet/` — Python-perusteet aihealueittain (listat, sanakirjat, funktiot, tiedostojen käsittely, virheenkäsittely, async/await ym.).
-- `frameworks/FastApi/` — FastAPI koottuna yhteen paikkaan: teoriaa ja huomioita (`fastapi.md`), käytännön tutoriaali asennuksesta esimerkkeihin (`fastapi_esimerkit.md`), sekä pieni esimerkkiprojekti reiteillä, malleilla ja testeillä (`main.py`, `item.py`, `item_routes.py`, `basic_routes.py`, `user.py`, `test_main.py`, `requirements.txt`, `README.MD`).
-- `projects/` — Harjoitusprojekteja: hirsipuu, ristinolla, shakki, matopeli, viivakoodi, IP-osoitteet, squid game -klooni sekä `kartta.html` (iso, valmiiksi renderöity Plotly-karttavisualisointi).
+
+- [FastAPI Esimerkkisovellus](Python/frameworks/FastApi/README.md)
+- [fastapi](Python/frameworks/FastApi/fastapi.md)
+- [fastapi_esimerkit](Python/frameworks/FastApi/fastapi_esimerkit.md)
 
 ### SQL
-- `join` — JOIN-tyyppien esimerkit.
-- `kommennot` — SQL-peruskomennot.
-- `esimerkit/`, `notes/`, `projects/` — Ei vielä sisältöä.
+
+- [join](SQL/join.md)
+- [komennot](SQL/komennot.md)
+
+<!-- TOC:END -->
 
 ## Muuta
 
 - `IDEAT.md` — Tyhjä muistiinpano tulevia ideoita varten.
 - `.gitattributes` — Pakottaa rivinvaihdot LF-muotoon kaikissa tiedostoissa, jotta versionhallinta pysyy siistinä eri käyttöjärjestelmien (Windows/Mac/Linux) välillä.
+- `scripts/generate_readme.py` — Regeneroi yllä olevan sisällysluettelon automaattisesti kansiorakenteesta.
+- `scripts/generate_sidebar.py` — Regeneroi sivuston `_sidebar.md`-navigaation.
+- `scripts/add_tags.py` — Lisää cheat sheet -tiedostoihin automaattisia tunnisteita (tags) hakua varten.
+- `scripts/generate_tags_page.py` — Rakentaa `tags.md`-sivun tunnisteiden perusteella.
+
+## Selattava sivusto
+
+Repo on myös selattavissa hakutoiminnolla varustettuna sivustona osoitteessa **https://pennasenkake.github.io/All-Code_Cheat_Sheet/** (Docsify, ei erillistä build-vaihetta). `.github/workflows/pages.yml` päivittää sisällysluettelon, navigaation ja tunnisteet automaattisesti aina kun main-haaraan pushataan.

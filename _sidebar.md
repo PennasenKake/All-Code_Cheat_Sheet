@@ -1,0 +1,30 @@
+- [Etusivu](/)
+- [Tunnisteet (tags)](tags.md)
+
+- Bash
+  - [Bash Cheat Sheet](Bash/bash_cheat_sheet.md)
+- Docker_
+  - [docker](Docker_/docker.md)
+- Excelit
+  - [Excel Cheat Sheet insinööreille](Excelit/excel_cheat_sheet.md)
+  - [Excel-pikanäppäimet insinööreille](Excelit/excel_shortcuts.md)
+  - [Gantt-kaavio-ohjeet](Excelit/gantt_chart_instructions.md)
+- Html
+  - [HTML-multimediatagit](Html/Esimerkit/multimedia.md)
+  - [layouts](Html/Layoutit/layouts.md)
+- JavaScript
+  - [axios](JavaScript/Axios/axios.md)
+  - [Socket.IO Chat -esimerkki](JavaScript/Socket/notes.md)
+  - [socket_io](JavaScript/Socket/socket_io.md)
+  - [README](JavaScript/perusteet/README.md)
+- MFK kaavat
+  - [kaavat](MFK kaavat/Fysiikka/kaavat.md)
+  - [kaavat](MFK kaavat/Kemia/kaavat.md)
+  - [kaavat](MFK kaavat/Matematiikka/kaavat.md)
+- Python
+  - [FastAPI Esimerkkisovellus](Python/frameworks/FastApi/README.md)
+  - [fastapi](Python/frameworks/FastApi/fastapi.md)
+  - [fastapi_esimerkit](Python/frameworks/FastApi/fastapi_esimerkit.md)
+- SQL
+  - [join](SQL/join.md)
+  - [komennot](SQL/komennot.md)
