@@ -1,3 +1,4 @@
+<!-- tags: sql, komennot -->
 
 -- PERUSKOMMENNOT
 

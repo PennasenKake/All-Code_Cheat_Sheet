@@ -1,3 +1,4 @@
+<!-- tags: mfk-kaavat, fysiikka -->
 Fysiikka
 
 Johdanto

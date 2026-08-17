@@ -1,3 +1,10 @@
+<!-- tags: bash -->
+
+# Bash Cheat Sheet
+
+Bashin perusteet kommentoituna: muuttujat, merkkijonot, taulukot, ehtolauseet, silmukat, funktiot, tiedostojen käsittely ja hyödyllisten komentojen lista.
+
+```bash
 #!/bin/bash
 # Tämä on kommentti Bash-skriptissä. Kommentit alkavat aina #-merkillä.
 
@@ -184,3 +191,4 @@ fi
 # echo: tulosta tekstiä
 # printf: tulosta muotoiltua tekstiä
 # exit: lopeta skripti
+```

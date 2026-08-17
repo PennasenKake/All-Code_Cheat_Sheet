@@ -1,3 +1,4 @@
+<!-- tags: docker -->
 Docker CLI - Peruskomennot
 ==========================
 Konttien hallinta (Containers):

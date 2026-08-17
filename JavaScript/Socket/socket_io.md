@@ -1,3 +1,4 @@
+<!-- tags: javascript, socket, io -->
 
 Socket.IO - Reaaliaikainen kommunikointi
 

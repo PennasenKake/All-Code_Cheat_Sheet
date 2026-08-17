@@ -1,3 +1,4 @@
+<!-- tags: excelit, gantt, chart, instructions -->
 # Gantt-kaavio-ohjeet
 
 Tämä on ohje Gantt-kaavion käyttöön Excelissä. Sopii projektinhallintaan, kuten insinöörityöskentelyssä aikataulujen seurantaan.

@@ -1,3 +1,4 @@
+<!-- tags: excelit, excel -->
 # Excel Cheat Sheet insinööreille
 
 Tämä cheat sheet on suunniteltu insinööreille, jotka haluavat hyödyntää Exceliä laskelmien, datan analysoinnin, visualisoinnin ja automatisoinnin apuna. Sisältää perus- ja edistyneitä toimintoja, esimerkkejä ja vinkkejä.

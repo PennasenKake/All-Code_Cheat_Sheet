@@ -1,3 +1,4 @@
+<!-- tags: python, frameworks, fastapi -->
 
 # FastAPI Esimerkkisovellus
 

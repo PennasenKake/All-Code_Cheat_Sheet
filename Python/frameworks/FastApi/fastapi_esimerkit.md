@@ -1,3 +1,4 @@
+<!-- tags: python, frameworks, fastapi -->
 Mikä on FastAPI?
 
 FastAPI on moderni, nopea (korkean suorituskyvyn) verkkokehys API:en rakentamiseen Python 3.7+:lla. Se on rakennettu Starlette-kirjaston päälle ja käyttää Pydantic-kirjastoa datan validointiin.

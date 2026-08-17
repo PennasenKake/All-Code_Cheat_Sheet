@@ -1,3 +1,4 @@
+<!-- tags: javascript -->
 
 📁 JavaScript Cheat Sheet – README
 Tämä hakemisto sisältää perustason JavaScript-koodiesimerkkejä, 

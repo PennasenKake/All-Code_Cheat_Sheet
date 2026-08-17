@@ -1,3 +1,4 @@
+<!-- tags: javascript, socket -->
 socketio-chat-example/
 ├── server/                          # Palvelinpuolen koodit (Node.js)
 │   ├── src/                        # Lähdekoodit
