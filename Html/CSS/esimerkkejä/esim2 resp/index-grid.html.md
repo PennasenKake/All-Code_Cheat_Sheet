@@ -1,0 +1,28 @@
+<!-- tags: html, css, esim2-resp -->
+
+# index-grid.html
+
+[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/esimerkkejä/esim2 resp/index-grid.html)
+
+```html
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsiivinen ruudukko</title>
+  <link rel="stylesheet" href="grid.css" />
+</head>
+<body>
+
+  <h1>Responsiivinen ruudukko</h1>
+
+  <div class="container">
+    <div class="item">Ruudukko 1</div>
+    <div class="item">Ruudukko 2</div>
+    <div class="item">Ruudukko 3</div>
+  </div>
+
+</body>
+</html>
+```

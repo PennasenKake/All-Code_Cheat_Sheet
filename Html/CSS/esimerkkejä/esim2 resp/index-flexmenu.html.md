@@ -1,0 +1,26 @@
+<!-- tags: html, css, esim2-resp -->
+
+# index-flexmenu.html
+
+[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/esimerkkejä/esim2 resp/index-flexmenu.html)
+
+```html
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsiivinen Flexbox-valikko</title>
+  <link rel="stylesheet" href="flexmenu.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#">Etusivu</a>
+    <a href="#">Palvelut</a>
+    <a href="#">Yhteystiedot</a>
+  </nav>
+
+</body>
+</html>
+```

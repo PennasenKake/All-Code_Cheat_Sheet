@@ -1,0 +1,17 @@
+<!-- tags: css, html, esim1 -->
+
+# text-emphasis.css
+
+[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/esimerkkejä/esim1/text-emphasis.css)
+
+```css
+/* Tekstin korostus */
+.korostus {
+  text-emphasis: circle red;
+  text-emphasis-position: under;
+  font-size: 1.2rem;
+  padding: 8px;
+  border: 1px dashed red;
+  display: inline-block;
+}
+```

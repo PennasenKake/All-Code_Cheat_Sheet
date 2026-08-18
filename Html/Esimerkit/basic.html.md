@@ -1,0 +1,25 @@
+<!-- tags: html -->
+
+# basic.html
+
+[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/basic.html)
+
+```html
+<!-- examples/basic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perus-HTML-sivu</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tervetuloa</h1>
+        <p>Tämä on yksinkertainen HTML-sivu.</p>
+        <a href="https://example.com">Linkki</a>
+    </div>
+</body>
+</html>
+```
