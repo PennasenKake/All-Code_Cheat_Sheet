@@ -18,9 +18,10 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Regeneroi README, _sidebar.md ja tags.md
+      - name: Regeneroi README, _sidebar.md, tags.md ja koodisivut
         run: |
           python3 scripts/add_tags.py
+          python3 scripts/generate_code_pages.py
           python3 scripts/generate_tags_page.py
           python3 scripts/generate_sidebar.py
           python3 scripts/generate_readme.py
@@ -34,6 +35,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Ei muutoksia."
           else
-            git commit -m "Päivitä sisällysluettelo, navigaatio ja tunnisteet automaattisesti"
+            git commit -m "Päivitä sisällysluettelo, navigaatio, tunnisteet ja koodisivut automaattisesti"
             git push
           fi

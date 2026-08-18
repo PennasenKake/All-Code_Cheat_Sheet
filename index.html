@@ -6,12 +6,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <meta name="description" content="Koodin muistilappuja ja esimerkkejä usealle eri kielelle, suomeksi." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
   <style>
     :root {
-      --theme-color: #1f6feb;
+      --accent: #3457d5;
+      --accent-dark: #24399b;
+      --bg: #ffffff;
+      --bg-soft: #f6f8fb;
+      --text: #1c2333;
+      --text-soft: #5b6577;
+      --border: #e6e9f0;
+      --code-bg: #f3f5fa;
+      --theme-color: var(--accent);
     }
-    .app-name-link img { height: 24px; }
-    body { -webkit-font-smoothing: antialiased; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12151d;
+        --bg-soft: #1a1e29;
+        --text: #e7eaf2;
+        --text-soft: #99a1b3;
+        --border: #2a3040;
+        --code-bg: #1a1e29;
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    pre, code, kbd {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+    }
+
+    /* --- Sivupalkki --- */
+    .sidebar {
+      background: var(--bg-soft);
+      border-right: 1px solid var(--border);
+    }
+    .sidebar-nav a {
+      color: var(--text-soft);
+      border-radius: 6px;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .sidebar-nav a:hover {
+      color: var(--accent);
+      background: rgba(52, 87, 213, 0.08);
+    }
+    .sidebar-nav li.active > a {
+      color: var(--accent);
+      font-weight: 600;
+      background: rgba(52, 87, 213, 0.1);
+    }
+    .sidebar-nav > ul > li > a {
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.01em;
+    }
+    .sidebar ul li ul {
+      border-left: 1px solid var(--border);
+      margin-left: 8px;
+      padding-left: 4px;
+    }
+
+    /* --- Sisältöalue --- */
+    .markdown-section {
+      max-width: 780px;
+      padding: 30px 40px 80px;
+    }
+    .markdown-section h1 {
+      font-size: 2.1rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4em;
+    }
+    .markdown-section h2 {
+      font-size: 1.5rem;
+      margin-top: 2.2em;
+      padding-top: 0.4em;
+      border-top: 1px solid var(--border);
+    }
+    .markdown-section p, .markdown-section li {
+      line-height: 1.7;
+      color: var(--text);
+    }
+    .markdown-section a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(52, 87, 213, 0.35);
+    }
+    .markdown-section a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    /* --- Koodilohkot --- */
+    .markdown-section pre {
+      background: var(--code-bg) !important;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    .markdown-section code {
+      background: var(--code-bg);
+      border-radius: 4px;
+      padding: 0.15em 0.4em;
+    }
+    .markdown-section pre > code {
+      padding: 0;
+      background: transparent;
+    }
+
+    /* --- Haku --- */
+    .search input {
+      border-radius: 8px !important;
+      border: 1px solid var(--border) !important;
+      background: var(--bg) !important;
+    }
+    .search .results-panel {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    /* --- Etusivu (cover) --- */
+    section.cover {
+      background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+    }
+    section.cover h1 {
+      color: var(--text);
+    }
+    section.cover h1 small {
+      color: var(--accent);
+    }
+    section.cover blockquote {
+      color: var(--text-soft);
+    }
+    section.cover .cover-main > p:last-child a {
+      border-radius: 8px;
+      border: 2px solid var(--accent);
+      transition: transform 0.15s ease;
+    }
+    section.cover .cover-main > p:last-child a:last-child {
+      background: transparent;
+      color: var(--accent);
+    }
+    section.cover .cover-main > p:last-child a:hover {
+      transform: translateY(-2px);
+    }
+
+    /* --- Sivutus (pagination) --- */
+    .pagination-item-label {
+      color: var(--text-soft);
+    }
+    .pagination-item-title {
+      color: var(--accent);
+    }
+
+    /* --- Mobiili --- */
+    @media (max-width: 768px) {
+      .markdown-section {
+        padding: 20px 20px 60px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -21,32 +178,61 @@
       name: 'All-Code Cheat Sheet',
       repo: 'PennasenKake/All-Code_Cheat_Sheet',
       loadSidebar: '_sidebar.md',
+      coverpage: '_coverpage.md',
+      onlyCover: false,
       subMaxLevel: 2,
       auto2top: true,
       homepage: 'README.md',
+      loadNavbar: false,
       search: {
         maxAge: 86400000,
         paths: 'auto',
         placeholder: 'Hae muistilapuista…',
         noData: 'Ei tuloksia.',
-        depth: 3,
+        depth: 4,
       },
       copyCode: {
         buttonText: 'Kopioi',
         errorText: 'Virhe',
         successText: 'Kopioitu',
       },
+      pagination: {
+        crossChapter: true,
+        crossChapterText: true,
+      },
       formatUpdated: '{MM}/{DD}/{YYYY}',
+      plugins: [
+        function (hook) {
+          // suurenna kuvat klikkaamalla (medium-zoom), ladattu erikseen alla
+          hook.doneEach(function () {
+            if (window.mediumZoom) {
+              window.mediumZoom('.markdown-section img', {
+                background: 'rgba(12, 15, 20, 0.9)',
+              });
+            }
+          });
+        },
+      ],
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-jsx.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-typescript.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-docker.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
 </body>
 </html>
