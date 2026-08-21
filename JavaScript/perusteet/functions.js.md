@@ -2,7 +2,7 @@
 
 # functions.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/functions.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/functions.js)
 
 ```javascript
 // Perusfunktio

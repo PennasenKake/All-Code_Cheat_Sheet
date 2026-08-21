@@ -2,7 +2,7 @@
 
 # grid.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/esimerkkejä/esim2 resp/grid.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css)
 
 ```css
 /* css/grid.css */

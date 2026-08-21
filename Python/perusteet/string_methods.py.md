@@ -2,7 +2,7 @@
 
 # string_methods.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/string_methods.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/string_methods.py)
 
 ```python
 # string_methods.py

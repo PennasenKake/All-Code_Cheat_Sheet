@@ -2,7 +2,7 @@
 
 # file-upload-form.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/formsit/file-upload-form.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/formsit/file-upload-form.html)
 
 ```html
 <!-- Esimerkit/file-upload-form.html -->

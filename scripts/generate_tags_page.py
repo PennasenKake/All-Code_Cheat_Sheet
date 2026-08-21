@@ -10,6 +10,7 @@ Kaytto:
 import re
 from collections import defaultdict
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 TAGS_PAGE = ROOT / "tags.md"
@@ -60,7 +61,7 @@ def main():
         lines.append(f"## {tag}")
         lines.append("")
         for title, rel in sorted(by_tag[tag]):
-            lines.append(f"- [{title}]({rel})")
+            lines.append(f"- [{title}]({quote(rel, safe='/')})")
         lines.append("")
 
     TAGS_PAGE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")

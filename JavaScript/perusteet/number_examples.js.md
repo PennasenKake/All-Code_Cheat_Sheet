@@ -2,7 +2,7 @@
 
 # number_examples.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/number_examples.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/number_examples.js)
 
 ```javascript
 // Peruslaskutoimituksia

@@ -16,8 +16,10 @@ Kaytto:
 """
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
+GITHUB_REPO = "PennasenKake/All-Code_Cheat_Sheet"
 
 SKIP_DIRS = {".git", ".github", "scripts", "_site", "site"}
 
@@ -44,7 +46,7 @@ MAX_EMBED_BYTES = 200_000  # isommat (esim. valmiiksi renderoidut export-tiedost
 # repon JUURESSA olevat infratiedostot (ei sisallytetä koodisivuiksi) -
 # huom: polku tarkistetaan vain juuresta, joten esim. Html/.../index.html
 # (oikea esimerkkitiedosto) käsitellään edelleen normaalisti
-ROOT_SKIP_FILES = {"index.html"}
+ROOT_SKIP_FILES = {"index.html", "categories.json"}
 
 STOP_WORDS = {
     "readme", "notes", "esimerkit", "esimerkkeja", "esimerkkejä", "projects",
@@ -88,10 +90,14 @@ def build_code_page(src: Path, lang: str) -> str:
     while fence in text:
         fence += "`"
     rel = src.relative_to(ROOT).as_posix()
+    # tama linkki vie oikeasti GitHubiin (ei sivuston sisaiseen reittiin),
+    # jotta alkuperainen tiedosto nakyy sellaisenaan eika docsifyn yrittamana
+    # (ja siksi rikkoutuvana) markdown-renderointina
+    github_url = f"https://github.com/{GITHUB_REPO}/blob/main/{quote(rel, safe='/')}"
     return (
         f"{tag_line}"
         f"# {src.name}\n\n"
-        f"[Näytä alkuperäinen tiedosto GitHubissa]({rel})\n\n"
+        f"[Näytä alkuperäinen tiedosto GitHubissa]({github_url})\n\n"
         f"{fence}{lang}\n"
         f"{text.rstrip(chr(10))}\n"
         f"{fence}\n"
@@ -102,7 +108,8 @@ def build_image_page(src: Path) -> str:
     tags = guess_tags(src, "kuva")
     tag_line = f"<!-- tags: {', '.join(tags)} -->\n\n" if tags else ""
     rel = src.relative_to(ROOT).as_posix()
-    return f"{tag_line}# {src.name}\n\n![{src.name}]({rel})\n"
+    href = quote(rel, safe="/")
+    return f"{tag_line}# {src.name}\n\n![{src.name}]({href})\n"
 
 
 def iter_source_files():

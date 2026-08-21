@@ -2,7 +2,7 @@
 
 # Tagit.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/Tagit.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/Tagit.html)
 
 ```html
 <!-- examples/tags.html -->

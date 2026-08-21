@@ -2,7 +2,7 @@
 
 # loops_and_conditions.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/loops_and_conditions.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/loops_and_conditions.py)
 
 ```python
 

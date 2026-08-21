@@ -2,7 +2,7 @@
 
 # MyComponent.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/framework/React/MyComponent.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/framework/React/MyComponent.js)
 
 ```javascript
 import React from 'react';

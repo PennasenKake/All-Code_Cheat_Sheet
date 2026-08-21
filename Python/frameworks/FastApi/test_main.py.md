@@ -2,7 +2,7 @@
 
 # test_main.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/frameworks/FastApi/test_main.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/frameworks/FastApi/test_main.py)
 
 ```python
 # src/tests/test_main.py

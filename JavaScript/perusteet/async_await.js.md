@@ -2,7 +2,7 @@
 
 # async_await.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/async_await.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/async_await.js)
 
 ```javascript
 // Asynkroninen funktio ja odotus

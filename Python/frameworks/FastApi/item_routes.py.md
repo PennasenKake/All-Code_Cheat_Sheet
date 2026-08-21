@@ -2,7 +2,7 @@
 
 # item_routes.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/frameworks/FastApi/item_routes.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/frameworks/FastApi/item_routes.py)
 
 ```python
 # src/routes/item_routes.py

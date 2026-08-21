@@ -2,7 +2,7 @@
 
 # loops_and_conditions.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/loops_and_conditions.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/loops_and_conditions.js)
 
 ```javascript
 // Ehto

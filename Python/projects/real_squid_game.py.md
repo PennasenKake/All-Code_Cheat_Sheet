@@ -2,7 +2,7 @@
 
 # real_squid_game.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/projects/real_squid_game.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/projects/real_squid_game.py)
 
 ```python
 

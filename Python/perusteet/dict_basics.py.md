@@ -2,7 +2,7 @@
 
 # dict_basics.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/dict_basics.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/dict_basics.py)
 
 ```python
 # dict_basics.py

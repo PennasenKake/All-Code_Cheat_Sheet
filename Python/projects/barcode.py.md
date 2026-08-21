@@ -2,7 +2,7 @@
 
 # barcode.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/projects/barcode.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/projects/barcode.py)
 
 ```python
 import Python.valmiit.barcode as barcode

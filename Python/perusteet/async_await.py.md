@@ -2,7 +2,7 @@
 
 # async_await.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/async_await.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/async_await.py)
 
 ```python
 # async_await.py

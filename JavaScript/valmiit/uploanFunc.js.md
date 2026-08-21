@@ -2,7 +2,7 @@
 
 # uploanFunc.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/valmiit/uploanFunc.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/valmiit/uploanFunc.js)
 
 ```javascript
 

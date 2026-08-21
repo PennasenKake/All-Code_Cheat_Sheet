@@ -8,6 +8,7 @@ Kaytto:
 """
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 SIDEBAR = ROOT / "_sidebar.md"
@@ -55,8 +56,9 @@ def build_sidebar() -> str:
         lines.append(f"- {d.name}")
         for f in files:
             rel = f.relative_to(ROOT).as_posix()
+            href = quote(rel, safe="/")
             title = first_heading_or_name(f)
-            lines.append(f"  - [{title}]({rel})")
+            lines.append(f"  - [{title}]({href})")
 
     return "\n".join(lines).rstrip() + "\n"
 

@@ -2,7 +2,7 @@
 
 # item.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/frameworks/FastApi/item.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/frameworks/FastApi/item.py)
 
 ```python
 # src/models/item.py

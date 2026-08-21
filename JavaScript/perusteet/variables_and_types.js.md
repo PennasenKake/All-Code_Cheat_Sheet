@@ -2,7 +2,7 @@
 
 # variables_and_types.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/variables_and_types.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/variables_and_types.js)
 
 ```javascript
 // muuttujien määrittely ja tyypit

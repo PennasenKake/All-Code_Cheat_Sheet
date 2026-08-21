@@ -2,7 +2,7 @@
 
 # file_handling.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/file_handling.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/file_handling.py)
 
 ```python
 # file_handling.py

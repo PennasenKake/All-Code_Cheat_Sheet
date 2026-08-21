@@ -2,7 +2,7 @@
 
 # callbacks.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/callbacks.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/callbacks.js)
 
 ```javascript
 // Callback-funktiot

@@ -26,27 +26,27 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [asettelut.css](Html/CSS/asettelut.css.md)
 - [backround.css](Html/CSS/backround.css.md)
 - [border.css](Html/CSS/border.css.md)
-- [code-style.css](Html/CSS/esimerkkejä/esim1/code-style.css.md)
-- [flexmenu.css](Html/CSS/esimerkkejä/esim2 resp/flexmenu.css.md)
+- [code-style.css](Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md)
+- [flexmenu.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md)
 - [fontit.css](Html/CSS/fontit.css.md)
-- [grid.css](Html/CSS/esimerkkejä/esim2 resp/grid.css.md)
-- [highlight-heading.css](Html/CSS/esimerkkejä/esim1/highlight-heading.css.md)
-- [hyphenation.css](Html/CSS/esimerkkejä/esim1/hyphenation.css.md)
-- [image.css](Html/CSS/esimerkkejä/esim2 resp/image.css.md)
-- [index-flexmenu.html](Html/CSS/esimerkkejä/esim2 resp/index-flexmenu.html.md)
-- [index-grid.html](Html/CSS/esimerkkejä/esim2 resp/index-grid.html.md)
-- [index-image.html](Html/CSS/esimerkkejä/esim2 resp/index-image.html.md)
-- [index.html](Html/CSS/esimerkkejä/esim1/index.html.md)
-- [kuva.jpg](Html/CSS/esimerkkejä/esim2 resp/kuva.jpg.md)
-- [rtl-text.css](Html/CSS/esimerkkejä/esim1/rtl-text.css.md)
+- [grid.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md)
+- [highlight-heading.css](Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md)
+- [hyphenation.css](Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md)
+- [image.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md)
+- [index-flexmenu.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-flexmenu.html.md)
+- [index-grid.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md)
+- [index-image.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md)
+- [index.html](Html/CSS/esimerkkej%C3%A4/esim1/index.html.md)
+- [kuva.jpg](Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md)
+- [rtl-text.css](Html/CSS/esimerkkej%C3%A4/esim1/rtl-text.css.md)
 - [sarakkeet.css](Html/CSS/sarakkeet.css.md)
 - [style.css](Html/projektit/Ajastin/style.css.md)
 - [styles.css](Html/CSS/styles.css.md)
 - [styles.css](Html/projektit/loginform/styles.css.md)
 - [teksti.css](Html/CSS/teksti.css.md)
-- [text-align-last.css](Html/CSS/esimerkkejä/esim1/text-align-last.css.md)
-- [text-emphasis.css](Html/CSS/esimerkkejä/esim1/text-emphasis.css.md)
-- [text-style.css](Html/CSS/esimerkkejä/esim1/text-style.css.md)
+- [text-align-last.css](Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md)
+- [text-emphasis.css](Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md)
+- [text-style.css](Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md)
 
 ## docker
 
@@ -54,24 +54,24 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## esim1
 
-- [code-style.css](Html/CSS/esimerkkejä/esim1/code-style.css.md)
-- [highlight-heading.css](Html/CSS/esimerkkejä/esim1/highlight-heading.css.md)
-- [hyphenation.css](Html/CSS/esimerkkejä/esim1/hyphenation.css.md)
-- [index.html](Html/CSS/esimerkkejä/esim1/index.html.md)
-- [rtl-text.css](Html/CSS/esimerkkejä/esim1/rtl-text.css.md)
-- [text-align-last.css](Html/CSS/esimerkkejä/esim1/text-align-last.css.md)
-- [text-emphasis.css](Html/CSS/esimerkkejä/esim1/text-emphasis.css.md)
-- [text-style.css](Html/CSS/esimerkkejä/esim1/text-style.css.md)
+- [code-style.css](Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md)
+- [highlight-heading.css](Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md)
+- [hyphenation.css](Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md)
+- [index.html](Html/CSS/esimerkkej%C3%A4/esim1/index.html.md)
+- [rtl-text.css](Html/CSS/esimerkkej%C3%A4/esim1/rtl-text.css.md)
+- [text-align-last.css](Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md)
+- [text-emphasis.css](Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md)
+- [text-style.css](Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md)
 
 ## esim2-resp
 
-- [flexmenu.css](Html/CSS/esimerkkejä/esim2 resp/flexmenu.css.md)
-- [grid.css](Html/CSS/esimerkkejä/esim2 resp/grid.css.md)
-- [image.css](Html/CSS/esimerkkejä/esim2 resp/image.css.md)
-- [index-flexmenu.html](Html/CSS/esimerkkejä/esim2 resp/index-flexmenu.html.md)
-- [index-grid.html](Html/CSS/esimerkkejä/esim2 resp/index-grid.html.md)
-- [index-image.html](Html/CSS/esimerkkejä/esim2 resp/index-image.html.md)
-- [kuva.jpg](Html/CSS/esimerkkejä/esim2 resp/kuva.jpg.md)
+- [flexmenu.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md)
+- [grid.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md)
+- [image.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md)
+- [index-flexmenu.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-flexmenu.html.md)
+- [index-grid.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md)
+- [index-image.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md)
+- [kuva.jpg](Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md)
 
 ## excel
 
@@ -142,7 +142,7 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## fysiikka
 
-- [kaavat](MFK kaavat/Fysiikka/kaavat.md)
+- [kaavat](MFK%20kaavat/Fysiikka/kaavat.md)
 
 ## gantt
 
@@ -158,32 +158,32 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [backround.css](Html/CSS/backround.css.md)
 - [basic.html](Html/Esimerkit/basic.html.md)
 - [border.css](Html/CSS/border.css.md)
-- [code-style.css](Html/CSS/esimerkkejä/esim1/code-style.css.md)
+- [code-style.css](Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md)
 - [feedback-form.html](Html/Esimerkit/formsit/feedback-form.html.md)
 - [file-upload-form.html](Html/Esimerkit/formsit/file-upload-form.html.md)
-- [flexmenu.css](Html/CSS/esimerkkejä/esim2 resp/flexmenu.css.md)
+- [flexmenu.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md)
 - [fontit.css](Html/CSS/fontit.css.md)
 - [forms.html](Html/Esimerkit/formsit/forms.html.md)
 - [forms1.html](Html/Esimerkit/formsit/forms1.html.md)
 - [forms2.html](Html/Esimerkit/formsit/forms2.html.md)
-- [grid.css](Html/CSS/esimerkkejä/esim2 resp/grid.css.md)
-- [highlight-heading.css](Html/CSS/esimerkkejä/esim1/highlight-heading.css.md)
-- [hyphenation.css](Html/CSS/esimerkkejä/esim1/hyphenation.css.md)
-- [image.css](Html/CSS/esimerkkejä/esim2 resp/image.css.md)
-- [index-flexmenu.html](Html/CSS/esimerkkejä/esim2 resp/index-flexmenu.html.md)
-- [index-grid.html](Html/CSS/esimerkkejä/esim2 resp/index-grid.html.md)
-- [index-image.html](Html/CSS/esimerkkejä/esim2 resp/index-image.html.md)
-- [index.html](Html/CSS/esimerkkejä/esim1/index.html.md)
+- [grid.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md)
+- [highlight-heading.css](Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md)
+- [hyphenation.css](Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md)
+- [image.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md)
+- [index-flexmenu.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-flexmenu.html.md)
+- [index-grid.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md)
+- [index-image.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md)
+- [index.html](Html/CSS/esimerkkej%C3%A4/esim1/index.html.md)
 - [index.html](Html/Esimerkit/formsit/index.html.md)
 - [index.html](Html/projektit/Ajastin/index.html.md)
-- [kuva.jpg](Html/CSS/esimerkkejä/esim2 resp/kuva.jpg.md)
+- [kuva.jpg](Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md)
 - [kuva.jpg](Html/Esimerkit/kuva.jpg.md)
 - [layouts](Html/Layoutit/layouts.md)
 - [loginForm.html](Html/projektit/loginform/loginForm.html.md)
 - [main.js](Html/projektit/Ajastin/main.js.md)
 - [multimedia.html](Html/Esimerkit/multimedia.html.md)
 - [rps.html](Html/projektit/rps.html.md)
-- [rtl-text.css](Html/CSS/esimerkkejä/esim1/rtl-text.css.md)
+- [rtl-text.css](Html/CSS/esimerkkej%C3%A4/esim1/rtl-text.css.md)
 - [salasanageneraattori.html](Html/projektit/salasanageneraattori.html.md)
 - [sarakkeet.css](Html/CSS/sarakkeet.css.md)
 - [style.css](Html/projektit/Ajastin/style.css.md)
@@ -192,9 +192,9 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [table.html](Html/Layoutit/table/table.html.md)
 - [tables.html](Html/Esimerkit/tables.html.md)
 - [teksti.css](Html/CSS/teksti.css.md)
-- [text-align-last.css](Html/CSS/esimerkkejä/esim1/text-align-last.css.md)
-- [text-emphasis.css](Html/CSS/esimerkkejä/esim1/text-emphasis.css.md)
-- [text-style.css](Html/CSS/esimerkkejä/esim1/text-style.css.md)
+- [text-align-last.css](Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md)
+- [text-emphasis.css](Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md)
+- [text-style.css](Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md)
 - [to-do.html](Html/Esimerkit/to-do.html.md)
 - [website1.html](Html/projektit/website1.html.md)
 
@@ -273,7 +273,7 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## kemia
 
-- [kaavat](MFK kaavat/Kemia/kaavat.md)
+- [kaavat](MFK%20kaavat/Kemia/kaavat.md)
 
 ## komennot
 
@@ -281,7 +281,7 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## kuva
 
-- [kuva.jpg](Html/CSS/esimerkkejä/esim2 resp/kuva.jpg.md)
+- [kuva.jpg](Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md)
 - [kuva.jpg](Html/Esimerkit/kuva.jpg.md)
 
 ## layoutit
@@ -300,13 +300,13 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## matematiikka
 
-- [kaavat](MFK kaavat/Matematiikka/kaavat.md)
+- [kaavat](MFK%20kaavat/Matematiikka/kaavat.md)
 
 ## mfk-kaavat
 
-- [kaavat](MFK kaavat/Fysiikka/kaavat.md)
-- [kaavat](MFK kaavat/Kemia/kaavat.md)
-- [kaavat](MFK kaavat/Matematiikka/kaavat.md)
+- [kaavat](MFK%20kaavat/Fysiikka/kaavat.md)
+- [kaavat](MFK%20kaavat/Kemia/kaavat.md)
+- [kaavat](MFK%20kaavat/Matematiikka/kaavat.md)
 
 ## multimedia
 

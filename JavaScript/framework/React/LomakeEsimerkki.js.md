@@ -2,7 +2,7 @@
 
 # LomakeEsimerkki.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/framework/React/LomakeEsimerkki.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/framework/React/LomakeEsimerkki.js)
 
 ```javascript
 

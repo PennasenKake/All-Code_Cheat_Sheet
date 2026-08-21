@@ -2,7 +2,7 @@
 
 # helloWorld.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/helloWorld.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/helloWorld.js)
 
 ```javascript
 

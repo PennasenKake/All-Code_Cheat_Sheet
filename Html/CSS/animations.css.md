@@ -2,7 +2,7 @@
 
 # animations.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/animations.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/animations.css)
 
 ```css
 /* css/animations-transitions.css */

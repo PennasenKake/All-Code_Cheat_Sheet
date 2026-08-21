@@ -2,7 +2,7 @@
 
 # json_examples.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/json_examples.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/json_examples.js)
 
 ```javascript
 // JSON - JavaScript Object Notation

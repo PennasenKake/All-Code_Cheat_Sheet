@@ -2,7 +2,7 @@
 
 # template_literals.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/template_literals.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/template_literals.js)
 
 ```javascript
 // Template literal -merkkijonot

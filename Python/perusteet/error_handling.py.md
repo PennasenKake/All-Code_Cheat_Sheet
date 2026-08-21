@@ -2,7 +2,7 @@
 
 # error_handling.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/error_handling.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/error_handling.py)
 
 ```python
 # error_handling.py

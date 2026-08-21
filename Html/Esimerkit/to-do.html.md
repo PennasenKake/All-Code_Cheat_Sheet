@@ -2,7 +2,7 @@
 
 # to-do.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/to-do.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/to-do.html)
 
 ```html
 <!-- Javascript/esimerkit/todo-mini.html -->

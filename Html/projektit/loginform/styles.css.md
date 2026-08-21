@@ -2,7 +2,7 @@
 
 # styles.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/projektit/loginform/styles.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/projektit/loginform/styles.css)
 
 ```css
 /* Yleiset tyylit */

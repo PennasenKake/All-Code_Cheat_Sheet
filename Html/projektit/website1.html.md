@@ -2,7 +2,7 @@
 
 # website1.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/projektit/website1.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/projektit/website1.html)
 
 ```html
 <!-- projects/website1.html -->

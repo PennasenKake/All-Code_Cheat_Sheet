@@ -2,7 +2,7 @@
 
 # password.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/valmiit/password.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/valmiit/password.js)
 
 ```javascript
 

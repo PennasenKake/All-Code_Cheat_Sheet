@@ -2,7 +2,7 @@
 
 # styles.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/styles.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/styles.css)
 
 ```css
 /* css/styles.css */

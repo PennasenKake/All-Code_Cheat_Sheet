@@ -2,7 +2,7 @@
 
 # main.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/projektit/Ajastin/main.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/projektit/Ajastin/main.js)
 
 ```javascript
 // Haetaan HTML-elementit ID:n perusteella

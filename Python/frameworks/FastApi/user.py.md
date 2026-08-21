@@ -2,7 +2,7 @@
 
 # user.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/frameworks/FastApi/user.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/frameworks/FastApi/user.py)
 
 ```python
 # src/models/user.py

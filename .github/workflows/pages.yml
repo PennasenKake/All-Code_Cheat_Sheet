@@ -18,23 +18,24 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Regeneroi README, _sidebar.md, tags.md ja koodisivut
+      - name: Regeneroi README, _sidebar.md, tags.md, koodisivut ja kategoriat
         run: |
           python3 scripts/add_tags.py
           python3 scripts/generate_code_pages.py
           python3 scripts/generate_tags_page.py
           python3 scripts/generate_sidebar.py
           python3 scripts/generate_readme.py
+          python3 scripts/generate_categories.py
 
       - name: Committaa muutokset, jos niitä syntyi
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md _sidebar.md tags.md
+          git add README.md _sidebar.md tags.md categories.json
           git add -A -- '*.md'
           if git diff --cached --quiet; then
             echo "Ei muutoksia."
           else
-            git commit -m "Päivitä sisällysluettelo, navigaatio, tunnisteet ja koodisivut automaattisesti"
+            git commit -m "Päivitä sisällysluettelo, navigaatio, tunnisteet, koodisivut ja kategoriat automaattisesti"
             git push
           fi

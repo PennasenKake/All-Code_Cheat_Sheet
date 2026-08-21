@@ -2,7 +2,7 @@
 
 # namespace-server.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/Socket/namespace-server.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/Socket/namespace-server.js)
 
 ```javascript
 // server/src/namespace-server.js

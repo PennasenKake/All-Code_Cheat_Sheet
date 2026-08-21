@@ -2,7 +2,7 @@
 
 # basic_routes.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/frameworks/FastApi/basic_routes.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/frameworks/FastApi/basic_routes.py)
 
 ```python
 # src/routes/basic_routes.py

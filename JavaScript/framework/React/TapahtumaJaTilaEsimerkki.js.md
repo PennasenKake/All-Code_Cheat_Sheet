@@ -2,7 +2,7 @@
 
 # TapahtumaJaTilaEsimerkki.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/framework/React/TapahtumaJaTilaEsimerkki.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/framework/React/TapahtumaJaTilaEsimerkki.js)
 
 ```javascript
 import React, { useState } from 'react';

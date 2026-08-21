@@ -2,7 +2,7 @@
 
 # tables.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/tables.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/tables.html)
 
 ```html
 <!-- examples/tables.html -->

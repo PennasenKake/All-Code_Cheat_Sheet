@@ -2,7 +2,7 @@
 
 # ChatRoom.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/Socket/ChatRoom.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/Socket/ChatRoom.js)
 
 ```javascript
 // client/src/components/ChatRoom.js

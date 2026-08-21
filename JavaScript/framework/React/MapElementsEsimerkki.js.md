@@ -2,7 +2,7 @@
 
 # MapElementsEsimerkki.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/framework/React/MapElementsEsimerkki.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/framework/React/MapElementsEsimerkki.js)
 
 ```javascript
 

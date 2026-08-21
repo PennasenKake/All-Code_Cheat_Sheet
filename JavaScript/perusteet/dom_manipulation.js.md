@@ -2,7 +2,7 @@
 
 # dom_manipulation.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/dom_manipulation.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/dom_manipulation.js)
 
 ```javascript
 // Oletetaan, että HTML:ssä on <div id="laatikko"></div>

@@ -2,7 +2,7 @@
 
 # object_basics.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/object_basics.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/object_basics.js)
 
 ```javascript
 // Olio (object)

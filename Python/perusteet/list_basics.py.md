@@ -2,7 +2,7 @@
 
 # list_basics.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/list_basics.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/list_basics.py)
 
 ```python
 # list_basics.py

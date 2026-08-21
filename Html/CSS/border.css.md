@@ -2,7 +2,7 @@
 
 # border.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/border.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/border.css)
 
 ```css
 /* css/borders.css */

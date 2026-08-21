@@ -2,7 +2,7 @@
 
 # chat-server.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/Socket/chat-server.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/Socket/chat-server.js)
 
 ```javascript
 // server/src/chat-server.js

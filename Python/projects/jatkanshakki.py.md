@@ -2,7 +2,7 @@
 
 # jatkanshakki.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/projects/jatkanshakki.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/projects/jatkanshakki.py)
 
 ```python
 import pygame as pg

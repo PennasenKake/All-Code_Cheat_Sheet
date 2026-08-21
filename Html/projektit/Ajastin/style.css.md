@@ -2,7 +2,7 @@
 
 # style.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/projektit/Ajastin/style.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/projektit/Ajastin/style.css)
 
 ```css
 /* Tyylit koko sivulle */

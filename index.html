@@ -5,41 +5,51 @@
   <title>All-Code Cheat Sheet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <meta name="description" content="Koodin muistilappuja ja esimerkkejä usealle eri kielelle, suomeksi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
   <style>
     :root {
-      --accent: #3457d5;
-      --accent-dark: #24399b;
-      --bg: #ffffff;
-      --bg-soft: #f6f8fb;
-      --text: #1c2333;
-      --text-soft: #5b6577;
-      --border: #e6e9f0;
-      --code-bg: #f3f5fa;
+      --accent: #6366f1;
+      --accent-2: #a855f7;
+      --accent-dark: #4f46e5;
+      --bg: #09090b;
+      --bg-soft: #131316;
+      --bg-elevated: #18181b;
+      --text: #f4f4f5;
+      --text-soft: #a1a1aa;
+      --text-faint: #71717a;
+      --border: #27272a;
+      --code-bg: #131316;
       --theme-color: var(--accent);
     }
 
-    @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: light) {
       :root {
-        --bg: #12151d;
-        --bg-soft: #1a1e29;
-        --text: #e7eaf2;
-        --text-soft: #99a1b3;
-        --border: #2a3040;
-        --code-bg: #1a1e29;
+        --bg: #ffffff;
+        --bg-soft: #f6f6f8;
+        --bg-elevated: #ffffff;
+        --text: #18181b;
+        --text-soft: #52525b;
+        --text-faint: #8a8a93;
+        --border: #e4e4e7;
+        --code-bg: #f6f6f8;
       }
     }
 
+    * { box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       background: var(--bg);
       color: var(--text);
     }
 
     pre, code, kbd {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+      font-family: 'JetBrains Mono', "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
     }
 
     /* --- Sivupalkki --- */
@@ -49,45 +59,52 @@
     }
     .sidebar-nav a {
       color: var(--text-soft);
-      border-radius: 6px;
+      border-radius: 8px;
       transition: background 0.15s ease, color 0.15s ease;
     }
     .sidebar-nav a:hover {
-      color: var(--accent);
-      background: rgba(52, 87, 213, 0.08);
+      color: var(--text);
+      background: var(--bg-elevated);
     }
     .sidebar-nav li.active > a {
-      color: var(--accent);
+      color: #fff;
       font-weight: 600;
-      background: rgba(52, 87, 213, 0.1);
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
     }
     .sidebar-nav > ul > li > a {
       font-weight: 600;
       text-transform: none;
       letter-spacing: 0.01em;
+      color: var(--text);
     }
     .sidebar ul li ul {
       border-left: 1px solid var(--border);
       margin-left: 8px;
       padding-left: 4px;
     }
+    .sidebar-nav strong, .app-name-link {
+      color: var(--text) !important;
+    }
 
     /* --- Sisältöalue --- */
     .markdown-section {
-      max-width: 780px;
+      max-width: 820px;
       padding: 30px 40px 80px;
     }
     .markdown-section h1 {
       font-size: 2.1rem;
+      font-weight: 800;
       border-bottom: 1px solid var(--border);
       padding-bottom: 0.4em;
     }
     .markdown-section h2 {
       font-size: 1.5rem;
+      font-weight: 700;
       margin-top: 2.2em;
       padding-top: 0.4em;
       border-top: 1px solid var(--border);
     }
+    .markdown-section h3 { font-weight: 700; }
     .markdown-section p, .markdown-section li {
       line-height: 1.7;
       color: var(--text);
@@ -95,7 +112,7 @@
     .markdown-section a {
       color: var(--accent);
       text-decoration: none;
-      border-bottom: 1px solid rgba(52, 87, 213, 0.35);
+      border-bottom: 1px solid rgba(99, 102, 241, 0.35);
     }
     .markdown-section a:hover {
       border-bottom-color: var(--accent);
@@ -105,59 +122,169 @@
     .markdown-section pre {
       background: var(--code-bg) !important;
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 12px;
     }
     .markdown-section code {
-      background: var(--code-bg);
-      border-radius: 4px;
+      background: var(--bg-elevated);
+      border-radius: 5px;
       padding: 0.15em 0.4em;
+      font-size: 0.85em;
     }
     .markdown-section pre > code {
       padding: 0;
       background: transparent;
     }
+    .docsify-copy-code-button {
+      background: var(--bg-elevated) !important;
+      border: 1px solid var(--border) !important;
+      color: var(--text-soft) !important;
+      border-radius: 6px !important;
+    }
+    .docsify-copy-code-button:hover {
+      color: #fff !important;
+      background: var(--accent) !important;
+      border-color: var(--accent) !important;
+    }
 
     /* --- Haku --- */
+    .search {
+      margin-bottom: 10px;
+    }
     .search input {
-      border-radius: 8px !important;
+      border-radius: 10px !important;
       border: 1px solid var(--border) !important;
-      background: var(--bg) !important;
+      background: var(--bg-elevated) !important;
+      color: var(--text) !important;
+    }
+    .search input:focus {
+      outline: none !important;
+      border-color: var(--accent) !important;
     }
     .search .results-panel {
-      background: var(--bg);
+      background: var(--bg-elevated);
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 10px;
     }
+    .search a { color: var(--text) !important; }
+    .search .matching-post p { color: var(--text-soft) !important; }
+    .search h2 { border-bottom: 1px solid var(--border); }
 
     /* --- Etusivu (cover) --- */
     section.cover {
-      background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.25), transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.2), transparent 45%),
+        var(--bg) !important;
+    }
+    section.cover .cover-main {
+      max-width: 880px;
+    }
+    .cover-badge {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.6rem;
+      box-shadow: 0 8px 30px rgba(99, 102, 241, 0.35);
     }
     section.cover h1 {
       color: var(--text);
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--text) 30%, var(--accent) 75%, var(--accent-2) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     section.cover h1 small {
       color: var(--accent);
+      -webkit-text-fill-color: var(--accent);
     }
     section.cover blockquote {
       color: var(--text-soft);
+      font-size: 1.05rem;
+    }
+    .cover-meta {
+      color: var(--text-faint);
+      font-size: 0.85rem;
+      margin-top: -0.5em;
     }
     section.cover .cover-main > p:last-child a {
-      border-radius: 8px;
-      border: 2px solid var(--accent);
-      transition: transform 0.15s ease;
+      border-radius: 10px;
+      border: 1.5px solid var(--accent);
+      color: var(--text);
+      transition: transform 0.15s ease, background 0.15s ease;
     }
-    section.cover .cover-main > p:last-child a:last-child {
-      background: transparent;
-      color: var(--accent);
+    section.cover .cover-main > p:last-child a:first-child {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border-color: transparent;
+      color: #fff;
     }
     section.cover .cover-main > p:last-child a:hover {
       transform: translateY(-2px);
     }
 
+    /* --- Kategoriakortit (etusivu) --- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      max-width: 880px;
+      margin: 2.2em auto;
+      text-align: left;
+    }
+    .category-grid:empty::before {
+      content: attr(data-loading);
+      grid-column: 1 / -1;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 0.85rem;
+    }
+    .category-card {
+      display: block;
+      padding: 16px;
+      border-radius: 14px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      text-decoration: none !important;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .category-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--card-accent, var(--accent));
+    }
+    .category-card .badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    .category-card .name {
+      display: block;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    .category-card .count {
+      display: block;
+      color: var(--text-faint);
+      font-size: 0.78rem;
+      margin-top: 2px;
+    }
+
     /* --- Sivutus (pagination) --- */
     .pagination-item-label {
-      color: var(--text-soft);
+      color: var(--text-faint);
     }
     .pagination-item-title {
       color: var(--accent);
@@ -167,6 +294,9 @@
     @media (max-width: 768px) {
       .markdown-section {
         padding: 20px 20px 60px;
+      }
+      .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       }
     }
   </style>
@@ -207,9 +337,41 @@
           hook.doneEach(function () {
             if (window.mediumZoom) {
               window.mediumZoom('.markdown-section img', {
-                background: 'rgba(12, 15, 20, 0.9)',
+                background: 'rgba(9, 9, 11, 0.9)',
               });
             }
+          });
+        },
+        function (hook) {
+          // etusivun kategoriakortit: luetaan categories.json ja renderöidään
+          // kortit suoraan selaimessa, jotta ne pysyvät aina ajan tasalla
+          hook.doneEach(function () {
+            var grid = document.getElementById('category-grid');
+            if (!grid || grid.dataset.loaded) return;
+            grid.dataset.loaded = '1';
+
+            function hexToRgba(hex, alpha) {
+              var h = hex.replace('#', '');
+              var r = parseInt(h.substring(0, 2), 16);
+              var g = parseInt(h.substring(2, 4), 16);
+              var b = parseInt(h.substring(4, 6), 16);
+              return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
+            }
+
+            fetch('categories.json')
+              .then(function (r) { return r.json(); })
+              .then(function (categories) {
+                grid.innerHTML = categories.map(function (c) {
+                  return '<a class="category-card" href="' + c.href + '" style="--card-accent:' + c.color + '">' +
+                    '<span class="badge" style="color:' + c.color + ';background:' + hexToRgba(c.color, 0.16) + '">' + c.badge + '</span>' +
+                    '<span class="name">' + c.display + '</span>' +
+                    '<span class="count">' + c.count + ' tiedostoa</span>' +
+                    '</a>';
+                }).join('');
+              })
+              .catch(function () {
+                grid.dataset.loaded = '';
+              });
           });
         },
       ],

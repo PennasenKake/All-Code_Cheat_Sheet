@@ -2,7 +2,7 @@
 
 # forms1.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/formsit/forms1.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/formsit/forms1.html)
 
 ```html
 <!-- Esimerkit/registration-form.html -->

@@ -2,7 +2,7 @@
 
 # loginForm.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/projektit/loginform/loginForm.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/projektit/loginform/loginForm.html)
 
 ```html
 <!DOCTYPE html>

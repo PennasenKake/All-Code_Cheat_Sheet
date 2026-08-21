@@ -2,7 +2,7 @@
 
 # index-grid.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/esimerkkejä/esim2 resp/index-grid.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html)
 
 ```html
 <!DOCTYPE html>

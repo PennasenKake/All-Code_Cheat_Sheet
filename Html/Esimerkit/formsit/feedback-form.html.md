@@ -2,7 +2,7 @@
 
 # feedback-form.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/formsit/feedback-form.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/formsit/feedback-form.html)
 
 ```html
 <!-- Esimerkit/feedback-form.html -->

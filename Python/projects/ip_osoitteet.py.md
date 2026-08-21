@@ -2,7 +2,7 @@
 
 # ip_osoitteet.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/projects/ip_osoitteet.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/projects/ip_osoitteet.py)
 
 ```python
 # IP-OSOITTEIDEN KÄSITTELY PYTHONILLA

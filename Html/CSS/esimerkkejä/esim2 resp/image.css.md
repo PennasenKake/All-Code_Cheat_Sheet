@@ -2,7 +2,7 @@
 
 # image.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/esimerkkejä/esim2 resp/image.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css)
 
 ```css
 /* css/image.css */

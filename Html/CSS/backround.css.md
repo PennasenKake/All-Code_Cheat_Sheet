@@ -2,7 +2,7 @@
 
 # backround.css
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/CSS/backround.css)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/CSS/backround.css)
 
 ```css
 /* css/background.css */

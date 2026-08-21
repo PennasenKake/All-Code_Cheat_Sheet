@@ -2,7 +2,7 @@
 
 # string_methods.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/string_methods.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/string_methods.js)
 
 ```javascript
 // Merkkijonoja ja niiden käsittelyä

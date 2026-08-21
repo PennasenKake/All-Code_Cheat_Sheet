@@ -2,7 +2,7 @@
 
 # ReducerEsimerkki.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/framework/React/ReducerEsimerkki.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/framework/React/ReducerEsimerkki.js)
 
 ```javascript
 

@@ -17,6 +17,7 @@ Kaytto:
 """
 import re
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
@@ -69,8 +70,11 @@ def build_toc() -> str:
             continue
         for f in files:
             rel = f.relative_to(ROOT).as_posix()
+            # polun välilyönnit ym. pitää enkoodata, muuten markdown-linkki
+            # katkeaa ensimmäiseen välilyöntiin (esim. "MFK kaavat/...")
+            href = quote(rel, safe="/")
             title = first_heading_or_name(f)
-            lines.append(f"- [{title}]({rel})")
+            lines.append(f"- [{title}]({href})")
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"

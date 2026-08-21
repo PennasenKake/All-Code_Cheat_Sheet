@@ -2,7 +2,7 @@
 
 # user_input.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/user_input.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/user_input.py)
 
 ```python
 # user_input.py

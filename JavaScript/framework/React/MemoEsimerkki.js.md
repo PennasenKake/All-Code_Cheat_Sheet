@@ -2,7 +2,7 @@
 
 # MemoEsimerkki.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/framework/React/MemoEsimerkki.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/framework/React/MemoEsimerkki.js)
 
 ```javascript
 /*

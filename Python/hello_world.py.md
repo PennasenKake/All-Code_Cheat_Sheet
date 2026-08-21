@@ -2,7 +2,7 @@
 
 # hello_world.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/hello_world.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/hello_world.py)
 
 ```python
 

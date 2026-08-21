@@ -2,7 +2,7 @@
 
 # classes_and_objects.js
 
-[Näytä alkuperäinen tiedosto GitHubissa](JavaScript/perusteet/classes_and_objects.js)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/JavaScript/perusteet/classes_and_objects.js)
 
 ```javascript
 // Luokat ja oliot (ES6-luokat)

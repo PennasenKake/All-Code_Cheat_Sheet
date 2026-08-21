@@ -2,7 +2,7 @@
 
 # number_examples.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/perusteet/number_examples.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/perusteet/number_examples.py)
 
 ```python
 # number_examples.py

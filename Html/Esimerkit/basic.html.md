@@ -2,7 +2,7 @@
 
 # basic.html
 
-[Näytä alkuperäinen tiedosto GitHubissa](Html/Esimerkit/basic.html)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Html/Esimerkit/basic.html)
 
 ```html
 <!-- examples/basic.html -->

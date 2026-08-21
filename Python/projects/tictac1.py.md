@@ -2,7 +2,7 @@
 
 # tictac1.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](Python/projects/tictac1.py)
+[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/projects/tictac1.py)
 
 ```python
 import pygame as pg
