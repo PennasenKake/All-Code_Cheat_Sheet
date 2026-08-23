@@ -169,10 +169,6 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [join](SQL/join.md)
 - [komennot](SQL/komennot.md)
 
-### _to_delete
-
-Ei viela sisaltoa.
-
 <!-- TOC:END -->
 
 ## Muuta

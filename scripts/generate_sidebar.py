@@ -13,7 +13,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 SIDEBAR = ROOT / "_sidebar.md"
 
-SKIP_DIRS = {".git", ".github", "scripts", "_site", "site"}
+SKIP_DIRS = {".git", ".github", "scripts", "_site", "site", "_to_delete", "_to_delete_trash"}
 SKIP_FILES = {"tags.md", "requirements.txt", ".gitattributes"}
 CONTENT_EXTS = {".md", ".txt"}
 

@@ -15,7 +15,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 TAGS_PAGE = ROOT / "tags.md"
 
-SKIP_DIRS = {".git", ".github", "scripts", "_site", "site"}
+SKIP_DIRS = {".git", ".github", "scripts", "_site", "site", "_to_delete", "_to_delete_trash"}
 TAG_RE = re.compile(r"^<!--\s*tags:\s*(.+?)\s*-->\s*$", re.IGNORECASE)
 HEADING_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 

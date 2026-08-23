@@ -21,7 +21,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 GITHUB_REPO = "PennasenKake/All-Code_Cheat_Sheet"
 
-SKIP_DIRS = {".git", ".github", "scripts", "_site", "site"}
+SKIP_DIRS = {".git", ".github", "scripts", "_site", "site", "_to_delete", "_to_delete_trash"}
 
 # paate -> (kieli fenced-koodilohkoa varten)
 CODE_LANGS = {
