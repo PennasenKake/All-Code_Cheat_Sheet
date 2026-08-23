@@ -142,7 +142,7 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## fysiikka
 
-- [kaavat](MFK%20kaavat/Fysiikka/kaavat.md)
+- [Fysiikka](MFK%20kaavat/Fysiikka/kaavat.md)
 
 ## gantt
 
@@ -273,7 +273,7 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## kemia
 
-- [kaavat](MFK%20kaavat/Kemia/kaavat.md)
+- [Kemia](MFK%20kaavat/Kemia/kaavat.md)
 
 ## komennot
 
@@ -300,13 +300,13 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## matematiikka
 
-- [kaavat](MFK%20kaavat/Matematiikka/kaavat.md)
+- [Matematiikka](MFK%20kaavat/Matematiikka/kaavat.md)
 
 ## mfk-kaavat
 
-- [kaavat](MFK%20kaavat/Fysiikka/kaavat.md)
-- [kaavat](MFK%20kaavat/Kemia/kaavat.md)
-- [kaavat](MFK%20kaavat/Matematiikka/kaavat.md)
+- [Fysiikka](MFK%20kaavat/Fysiikka/kaavat.md)
+- [Kemia](MFK%20kaavat/Kemia/kaavat.md)
+- [Matematiikka](MFK%20kaavat/Matematiikka/kaavat.md)
 
 ## multimedia
 

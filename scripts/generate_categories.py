@@ -13,8 +13,30 @@ Kaytto:
     python3 scripts/generate_categories.py
 """
 import json
+import re
 from pathlib import Path
 from urllib.parse import quote
+
+TAG_COMMENT_RE = re.compile(r"^<!--\s*tags:.*-->\s*$", re.IGNORECASE)
+HEADING_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
+
+
+def strip_leading_comment(text: str) -> str:
+    lines = text.splitlines()
+    while lines and TAG_COMMENT_RE.match(lines[0].strip()):
+        lines.pop(0)
+    return "\n".join(lines)
+
+
+def first_heading_or_name(path: Path) -> str:
+    try:
+        text = strip_leading_comment(path.read_text(encoding="utf-8", errors="ignore"))
+    except OSError:
+        return path.stem
+    m = HEADING_RE.search(text)
+    if m:
+        return m.group(1).strip()
+    return path.stem
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -57,6 +79,11 @@ def build_categories():
         # docsify purkaa hash-reitit decodeURIComponentilla, joten polun
         # välilyönnit ym. pitää enkoodata (mutta ei kauttaviivoja)
         href = "#/" + quote(first, safe="/")
+        preview = []
+        for f in files[:4]:
+            title = first_heading_or_name(f)
+            if title not in preview:
+                preview.append(title)
         categories.append({
             "name": d.name,
             "display": display,
@@ -64,6 +91,7 @@ def build_categories():
             "color": color,
             "count": len(files),
             "href": href,
+            "preview": preview,
         })
     return categories
 

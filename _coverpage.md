@@ -1,12 +1,15 @@
 <div class="cover-badge">{ }</div>
 
-# All-Code Cheat Sheet
+<h1 class="cover-hero">Koodia, kaavoja ja esimerkkejä.<br><span class="grad-text">Kaikki yhdessä paikassa.</span></h1>
 
-> Koodin muistilappuja, valmiita esimerkkejä ja pieniä projekteja usealla eri kielellä — suomeksi selitettynä. Kopioi, muokkaa ja käytä.
+> Muistilappuja, valmiita esimerkkejä ja pieniä projekteja usealla eri kielellä — suomeksi selitettynä. Kopioi, muokkaa ja käytä.
 
 <p class="cover-meta">Haku toimii suoraan otsikoista ja koodista · Päivittyy automaattisesti aina kun repoon pushataan</p>
 
 <div id="category-grid" class="category-grid" data-loading="Ladataan hakemistoja…"></div>
 
-[Selaa muistilappuja](#/README)
-[GitHub](https://github.com/PennasenKake/All-Code_Cheat_Sheet)
+<p class="cover-buttons"><a href="#/README">Selaa muistilappuja</a><a href="https://github.com/PennasenKake/All-Code_Cheat_Sheet" target="_blank" rel="noopener">GitHub</a></p>
+
+<p class="showcase-label">Esimerkki hakemistosta</p>
+
+<div id="featured-example" class="featured-example"></div>

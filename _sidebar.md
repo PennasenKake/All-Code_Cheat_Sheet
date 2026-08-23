@@ -110,9 +110,9 @@
   - [password.js](JavaScript/valmiit/password.js.md)
   - [uploanFunc.js](JavaScript/valmiit/uploanFunc.js.md)
 - MFK kaavat
-  - [kaavat](MFK%20kaavat/Fysiikka/kaavat.md)
-  - [kaavat](MFK%20kaavat/Kemia/kaavat.md)
-  - [kaavat](MFK%20kaavat/Matematiikka/kaavat.md)
+  - [Fysiikka](MFK%20kaavat/Fysiikka/kaavat.md)
+  - [Kemia](MFK%20kaavat/Kemia/kaavat.md)
+  - [Matematiikka](MFK%20kaavat/Matematiikka/kaavat.md)
 - Python
   - [FastAPI Esimerkkisovellus](Python/frameworks/FastApi/README.md)
   - [basic_routes.py](Python/frameworks/FastApi/basic_routes.py.md)

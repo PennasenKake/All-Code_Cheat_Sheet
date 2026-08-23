@@ -24,6 +24,8 @@
       --border: #27272a;
       --code-bg: #131316;
       --theme-color: var(--accent);
+      --header-h: 60px;
+      --header-bg: rgba(9, 9, 11, 0.72);
     }
 
     @media (prefers-color-scheme: light) {
@@ -36,6 +38,7 @@
         --text-faint: #8a8a93;
         --border: #e4e4e7;
         --code-bg: #f6f6f8;
+        --header-bg: rgba(255, 255, 255, 0.72);
       }
     }
 
@@ -52,10 +55,67 @@
       font-family: 'JetBrains Mono', "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
     }
 
+    /* --- Yläpalkki (kiinteä, kaikilla sivuilla) --- */
+    #site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--header-h);
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      background: var(--header-bg);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    #site-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text);
+      text-decoration: none !important;
+    }
+    #site-header .brand .logo-badge {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    #site-header .links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    #site-header a.ghlink {
+      color: var(--text-soft);
+      font-size: 0.85rem;
+      text-decoration: none !important;
+      transition: color 0.15s ease;
+    }
+    #site-header a.ghlink:hover {
+      color: var(--accent);
+    }
+
     /* --- Sivupalkki --- */
     .sidebar {
       background: var(--bg-soft);
       border-right: 1px solid var(--border);
+      top: var(--header-h) !important;
+      height: calc(100vh - var(--header-h)) !important;
+    }
+    .content {
+      padding-top: var(--header-h);
     }
     .sidebar-nav a {
       color: var(--text-soft);
@@ -175,14 +235,16 @@
         radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.25), transparent 45%),
         radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.2), transparent 45%),
         var(--bg) !important;
+      min-height: calc(100vh - var(--header-h)) !important;
+      padding: 40px 20px !important;
     }
     section.cover .cover-main {
-      max-width: 880px;
+      max-width: 920px;
     }
     .cover-badge {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 8px;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -190,42 +252,58 @@
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       color: #fff;
       font-weight: 700;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       box-shadow: 0 8px 30px rgba(99, 102, 241, 0.35);
     }
-    section.cover h1 {
-      color: var(--text);
+    .cover-hero {
+      font-size: 2.7rem;
+      line-height: 1.18;
       font-weight: 800;
-      background: linear-gradient(90deg, var(--text) 30%, var(--accent) 75%, var(--accent-2) 100%);
+      color: var(--text);
+      margin: 0 0 0.5em;
+      letter-spacing: -0.01em;
+    }
+    .cover-hero .grad-text {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    section.cover h1 small {
-      color: var(--accent);
-      -webkit-text-fill-color: var(--accent);
-    }
     section.cover blockquote {
       color: var(--text-soft);
-      font-size: 1.05rem;
+      font-size: 1.1rem;
+      max-width: 640px;
+      margin: 0 auto 0.6em;
     }
     .cover-meta {
       color: var(--text-faint);
       font-size: 0.85rem;
-      margin-top: -0.5em;
+      margin-top: -0.3em;
     }
-    section.cover .cover-main > p:last-child a {
+    .cover-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 1.6em 0 0;
+    }
+    .cover-buttons a {
+      display: inline-block;
+      padding: 10px 22px;
       border-radius: 10px;
       border: 1.5px solid var(--accent);
       color: var(--text);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none !important;
       transition: transform 0.15s ease, background 0.15s ease;
     }
-    section.cover .cover-main > p:last-child a:first-child {
+    .cover-buttons a:first-child {
       background: linear-gradient(90deg, var(--accent), var(--accent-2));
       border-color: transparent;
       color: #fff;
     }
-    section.cover .cover-main > p:last-child a:hover {
+    .cover-buttons a:hover {
       transform: translateY(-2px);
     }
 
@@ -247,7 +325,7 @@
     }
     .category-card {
       display: block;
-      padding: 16px;
+      padding: 18px;
       border-radius: 14px;
       background: var(--bg-elevated);
       border: 1px solid var(--border);
@@ -255,7 +333,7 @@
       transition: transform 0.15s ease, border-color 0.15s ease;
     }
     .category-card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
       border-color: var(--card-accent, var(--accent));
     }
     .category-card .badge {
@@ -269,6 +347,12 @@
       font-size: 0.8rem;
       margin-bottom: 10px;
     }
+    .category-card .head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+    }
     .category-card .name {
       display: block;
       font-weight: 600;
@@ -278,8 +362,102 @@
     .category-card .count {
       display: block;
       color: var(--text-faint);
-      font-size: 0.78rem;
-      margin-top: 2px;
+      font-size: 0.74rem;
+      white-space: nowrap;
+    }
+    .category-card .preview {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+    .category-card .preview li {
+      color: var(--text-soft);
+      font-size: 0.8rem;
+      line-height: 1.8;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .category-card .preview li::before {
+      content: '›';
+      color: var(--card-accent, var(--accent));
+      margin-right: 6px;
+      font-weight: 700;
+    }
+
+    /* --- Esimerkkiosio (etusivu) --- */
+    .showcase-label {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-faint);
+      max-width: 880px;
+      margin: 2.6em auto 0.8em;
+      text-align: left;
+    }
+    .featured-example {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: left;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--bg-elevated);
+      overflow: hidden;
+    }
+    .featured-example:empty {
+      display: none;
+    }
+    .featured-example .fx-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .featured-example .fx-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .featured-example .fx-lang {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-faint);
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+    .featured-example .fx-copy {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      border: none;
+      border-radius: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .featured-example .fx-copy:hover {
+      background: var(--accent-dark);
+    }
+    .featured-example pre {
+      margin: 0;
+      max-height: 340px;
+      overflow: auto;
+      border: none !important;
+      border-radius: 0 !important;
+      background: var(--code-bg) !important;
+    }
+    .featured-example pre code {
+      background: transparent;
+      padding: 18px !important;
+      display: block;
     }
 
     /* --- Sivutus (pagination) --- */
@@ -298,10 +476,25 @@
       .category-grid {
         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       }
+      .cover-hero {
+        font-size: 2rem;
+      }
+      #site-header .links {
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
+  <header id="site-header">
+    <a class="brand" href="#/">
+      <span class="logo-badge">{ }</span>
+      <span>All-Code Cheat Sheet</span>
+    </a>
+    <div class="links">
+      <a class="ghlink" href="https://github.com/PennasenKake/All-Code_Cheat_Sheet" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
   <div id="app">Ladataan…</div>
   <script>
     window.$docsify = {
@@ -358,19 +551,78 @@
               return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
             }
 
+            function escapeHtml(s) {
+              return String(s).replace(/[&<>]/g, function (c) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c];
+              });
+            }
+
             fetch('categories.json')
               .then(function (r) { return r.json(); })
               .then(function (categories) {
                 grid.innerHTML = categories.map(function (c) {
+                  var preview = (c.preview || []).map(function (t) {
+                    return '<li>' + escapeHtml(t) + '</li>';
+                  }).join('');
                   return '<a class="category-card" href="' + c.href + '" style="--card-accent:' + c.color + '">' +
                     '<span class="badge" style="color:' + c.color + ';background:' + hexToRgba(c.color, 0.16) + '">' + c.badge + '</span>' +
-                    '<span class="name">' + c.display + '</span>' +
-                    '<span class="count">' + c.count + ' tiedostoa</span>' +
+                    '<span class="head"><span class="name">' + c.display + '</span>' +
+                    '<span class="count">' + c.count + ' tiedostoa</span></span>' +
+                    '<ul class="preview">' + preview + '</ul>' +
                     '</a>';
                 }).join('');
               })
               .catch(function () {
                 grid.dataset.loaded = '';
+              });
+          });
+        },
+        function (hook) {
+          // etusivun esimerkkiosio: haetaan oikea koodisivu ja näytetään se
+          // korostettuna paneelina, kopiointinapilla
+          var FEATURED_SRC = 'Python/hello_world.py.md';
+          var FEATURED_LABEL = 'hello_world.py';
+          var FEATURED_LANG = 'python';
+
+          hook.doneEach(function () {
+            var box = document.getElementById('featured-example');
+            if (!box || box.dataset.loaded) return;
+            box.dataset.loaded = '1';
+
+            fetch(FEATURED_SRC)
+              .then(function (r) { return r.text(); })
+              .then(function (text) {
+                var m = text.match(/```+[a-z]*\n([\s\S]*?)\n```+/i);
+                var code = m ? m[1] : text;
+                var codeEl = document.createElement('code');
+                codeEl.className = 'language-' + FEATURED_LANG;
+                codeEl.textContent = code;
+                var pre = document.createElement('pre');
+                pre.appendChild(codeEl);
+
+                box.innerHTML =
+                  '<div class="fx-head">' +
+                    '<span class="fx-title">' + FEATURED_LABEL +
+                      '<span class="fx-lang">' + FEATURED_LANG + '</span>' +
+                    '</span>' +
+                    '<button type="button" class="fx-copy">Kopioi koodi</button>' +
+                  '</div>';
+                box.appendChild(pre);
+
+                if (window.Prism) {
+                  window.Prism.highlightElement(codeEl);
+                }
+
+                var btn = box.querySelector('.fx-copy');
+                btn.addEventListener('click', function () {
+                  navigator.clipboard.writeText(code).then(function () {
+                    btn.textContent = 'Kopioitu!';
+                    setTimeout(function () { btn.textContent = 'Kopioi koodi'; }, 1500);
+                  });
+                });
+              })
+              .catch(function () {
+                box.dataset.loaded = '';
               });
           });
         },

@@ -128,9 +128,9 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 ### MFK kaavat
 
-- [kaavat](MFK%20kaavat/Fysiikka/kaavat.md)
-- [kaavat](MFK%20kaavat/Kemia/kaavat.md)
-- [kaavat](MFK%20kaavat/Matematiikka/kaavat.md)
+- [Fysiikka](MFK%20kaavat/Fysiikka/kaavat.md)
+- [Kemia](MFK%20kaavat/Kemia/kaavat.md)
+- [Matematiikka](MFK%20kaavat/Matematiikka/kaavat.md)
 
 ### Python
 
