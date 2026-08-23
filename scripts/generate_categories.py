@@ -55,6 +55,7 @@ DISPLAY = {
     "MFK kaavat":   ("MFK-kaavat",  "fx", "#38bdf8"),
     "Python":       ("Python",      "Py", "#3b82f6"),
     "SQL":          ("SQL",         "Db", "#a855f7"),
+    "Vinkit":       ("Vinkit",      "Vi", "#ec4899"),
 }
 
 

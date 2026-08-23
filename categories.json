@@ -111,5 +111,19 @@
       "join",
       "komennot"
     ]
+  },
+  {
+    "name": "Vinkit",
+    "display": "Vinkit",
+    "badge": "Vi",
+    "color": "#ec4899",
+    "count": 178,
+    "href": "#/Vinkit/AI-ML/0-ai-arkkitehtuuripino-2026.md",
+    "preview": [
+      "$0 AI Architecture Stack 2026 (versio 2)",
+      "100 Claude Tips",
+      "ERP-järjestelmä rakennettuna Claude-tekoälyllä",
+      "How to Build AI Agents from Scratch (10 vaihetta)"
+    ]
   }
 ]
