@@ -334,7 +334,7 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [list_basics.py](Python/perusteet/list_basics.py.md)
 - [loops_and_conditions.py](Python/perusteet/loops_and_conditions.py.md)
 - [main.py](Python/frameworks/FastApi/main.py.md)
-- [map.py](Python/projects/map.py.md)
+- [mato.py](Python/projects/mato.py.md)
 - [number_examples.py](Python/perusteet/number_examples.py.md)
 - [real_squid_game.py](Python/projects/real_squid_game.py.md)
 - [string_methods.py](Python/perusteet/string_methods.py.md)

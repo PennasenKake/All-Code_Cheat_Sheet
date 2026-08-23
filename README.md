@@ -159,7 +159,7 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [hangman.py](Python/projects/hangman.py.md)
 - [ip_osoitteet.py](Python/projects/ip_osoitteet.py.md)
 - [jatkanshakki.py](Python/projects/jatkanshakki.py.md)
-- [map.py](Python/projects/map.py.md)
+- [mato.py](Python/projects/mato.py.md)
 - [real_squid_game.py](Python/projects/real_squid_game.py.md)
 - [tictac.py](Python/projects/tictac.py.md)
 - [tictac1.py](Python/projects/tictac1.py.md)
@@ -168,6 +168,10 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 - [join](SQL/join.md)
 - [komennot](SQL/komennot.md)
+
+### _to_delete
+
+Ei viela sisaltoa.
 
 <!-- TOC:END -->
 

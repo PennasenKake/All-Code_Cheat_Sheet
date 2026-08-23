@@ -139,7 +139,7 @@
   - [hangman.py](Python/projects/hangman.py.md)
   - [ip_osoitteet.py](Python/projects/ip_osoitteet.py.md)
   - [jatkanshakki.py](Python/projects/jatkanshakki.py.md)
-  - [map.py](Python/projects/map.py.md)
+  - [mato.py](Python/projects/mato.py.md)
   - [real_squid_game.py](Python/projects/real_squid_game.py.md)
   - [tictac.py](Python/projects/tictac.py.md)
   - [tictac1.py](Python/projects/tictac1.py.md)
