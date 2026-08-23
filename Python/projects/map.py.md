@@ -2,7 +2,7 @@
 
 # map.py
 
-[Näytä alkuperäinen tiedosto GitHubissa](https://github.com/PennasenKake/All-Code_Cheat_Sheet/blob/main/Python/projects/map.py)
+[Näytä alkuperäinen tiedosto GitHubissa](Python/projects/map.py)
 
 ```python
 import plotly.express as px
