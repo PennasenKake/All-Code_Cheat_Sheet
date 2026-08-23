@@ -240,6 +240,14 @@
     }
     section.cover .cover-main {
       max-width: 920px;
+      /* .cover-main on flex-item (theme asettaa flex:1), ja ilman tätä sen
+         automaattinen minimileveys määräytyy sisällä olevan CSS Gridin
+         (.category-grid, auto-fit+minmax) sisältöpohjaisesta minimistä, joka
+         yrittää mahduttaa KAIKKI kortit yhdelle riville — tämä työnsi koko
+         heron ja gridin leveämmäksi kuin näyttö kapeilla laitteilla. */
+      min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
     .cover-badge {
       width: 60px;
@@ -313,8 +321,10 @@
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 14px;
       max-width: 880px;
+      width: 100%;
       margin: 2.2em auto;
       text-align: left;
+      box-sizing: border-box;
     }
     .category-grid:empty::before {
       content: attr(data-loading);
@@ -325,6 +335,9 @@
     }
     .category-card {
       display: block;
+      min-width: 0;
+      overflow: hidden;
+      box-sizing: border-box;
       padding: 18px;
       border-radius: 14px;
       background: var(--bg-elevated);
@@ -474,13 +487,40 @@
         padding: 20px 20px 60px;
       }
       .category-grid {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
       }
       .cover-hero {
         font-size: 2rem;
       }
+      section.cover blockquote {
+        font-size: 1rem;
+      }
       #site-header .links {
         gap: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      section.cover {
+        padding: 32px 14px !important;
+      }
+      .cover-hero {
+        font-size: 1.6rem;
+      }
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .category-card {
+        padding: 14px;
+      }
+      .cover-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .cover-buttons a {
+        text-align: center;
       }
     }
   </style>
