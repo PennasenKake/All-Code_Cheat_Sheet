@@ -417,6 +417,92 @@
       font-size: 0.85rem;
       margin-top: -0.3em;
     }
+    /* Etusivun oma hakukenttä - näkyy heti heron alla ilman scrollausta.
+       Docsifyn oma haku (sivupalkissa) on muuten piilossa aloitusnäytöllä,
+       koska coverpage on koko ruudun korkuinen eikä sivupalkki tule
+       "sticky"-tilaan ennen kuin sen on scrollannut ohi (Docsifyn oma
+       ominaisuus). Tämä kenttä käyttää silti AINA samaa oikeaa
+       hakuindeksiä - syöte peilataan sivupalkin kenttään ja tulokset
+       kopioidaan takaisin tähän (ks. plugins-taulukko). */
+    .cover-search-wrap {
+      position: relative;
+      max-width: 480px;
+      width: 100%;
+      margin: 1.4em auto 0;
+    }
+    .cover-search-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: var(--bg-elevated);
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .cover-search-input::placeholder {
+      color: var(--text-faint);
+    }
+    .cover-search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.18);
+    }
+    .cover-search-results {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(100% + 8px);
+      z-index: 30;
+      max-height: 360px;
+      overflow-y: auto;
+      text-align: left;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+      padding: 6px;
+    }
+    .cover-search-results.has-results {
+      display: block;
+    }
+    .cover-search-results .matching-post {
+      border-bottom: 1px solid var(--border);
+    }
+    .cover-search-results .matching-post:last-child {
+      border-bottom: none;
+    }
+    .cover-search-results .matching-post a {
+      display: block;
+      padding: 9px 10px;
+      border-radius: 8px;
+      text-decoration: none !important;
+    }
+    .cover-search-results .matching-post a:hover {
+      background: var(--bg-soft);
+    }
+    .cover-search-results .matching-post h2 {
+      margin: 0 0 2px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .cover-search-results .matching-post p {
+      margin: 0;
+      font-size: 0.78rem;
+      color: var(--text-faint);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .cover-search-results .app-name.hide,
+    .cover-search-results .sidebar-nav.hide {
+      display: none;
+    }
     .cover-buttons {
       display: flex;
       align-items: center;
@@ -467,6 +553,9 @@
        etusivun kortit järjestävä otsikko samassa gridissä. */
     .category-group-heading {
       grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-size: 0.72rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -475,6 +564,14 @@
       margin: 1.4em 0 -0.2em;
       padding-top: 1em;
       border-top: 1px solid var(--border);
+    }
+    .category-group-heading::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--group-accent, var(--accent));
+      flex-shrink: 0;
     }
     .category-group-heading:first-child {
       margin-top: 0;
@@ -865,6 +962,40 @@
       padding: 3px 10px;
     }
 
+    /* --- "Aiheeseen liittyvät" sisältösivun lopussa --- */
+    .related-pages {
+      margin: 2.5em 0 1em;
+      padding-top: 1.4em;
+      border-top: 1px solid var(--border);
+    }
+    .related-pages-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-faint);
+      margin: 0 0 0.7em;
+    }
+    .related-pages-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 6px 16px;
+    }
+    .related-pages-list a {
+      display: block;
+      padding: 6px 0;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-bottom: none !important;
+    }
+    .related-pages-list a:before {
+      content: '→ ';
+      color: var(--accent);
+    }
+
     /* --- Etusivun pikavalinnat --- */
     .quick-actions {
       display: flex;
@@ -928,8 +1059,10 @@
         font-size: 1.6rem;
       }
       .category-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
+        /* Yksi sarake kapeimmilla näytöillä - kaksi saraketta oli liian
+           ahdas (esikatselurivit typistyivät), yksi sarake on selkeämpi. */
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
       .category-card {
         padding: 14px;
@@ -1098,6 +1231,14 @@
               .then(function (r) { return r.json(); })
               .then(function (categories) {
                 var lastGroup = null;
+                // Ryhmätason aksenttiväri (Kielet/Työkalut & kaavat/Muu) -
+                // erottaa ryhmät toisistaan yhdellä silmäyksellä, yksittäisten
+                // kategorioiden omien värien lisäksi.
+                var GROUP_COLOR = {
+                  'Kielet': '#6366f1',
+                  'Työkalut & kaavat': '#22c55e',
+                  'Muu': '#ec4899',
+                };
                 // Arvotaan yksi kategoria kerrallaan sivun latauksesta, jotta
                 // "Esimerkki hakemistosta" -paneeli ei nayta aina samaa
                 // (esim. Bash) sisaltoa, vaan vaihtelee joka lataus kerralla.
@@ -1108,7 +1249,9 @@
                   }).join('');
                   var heading = '';
                   if (c.group && c.group !== lastGroup) {
-                    heading = '<h3 class="category-group-heading">' + escapeHtml(c.group) + '</h3>';
+                    var groupColor = GROUP_COLOR[c.group] || 'var(--accent)';
+                    heading = '<h3 class="category-group-heading" style="--group-accent:' + groupColor + '">' +
+                      escapeHtml(c.group) + '</h3>';
                     lastGroup = c.group;
                   }
                   return heading +
@@ -1359,19 +1502,164 @@
           });
         },
         function (hook) {
-          // Etusivun "Etsi komento" -pikavalinta: fokusoi sivupalkin
-          // hakukentän sen sijaan että veisi erilliselle hakusivulle jota ei ole.
+          // "Aiheeseen liittyvät" -osio sisältösivun loppuun: kerää muut
+          // sivut, joilla on vähintään yksi sama tagi kuin nykyisellä
+          // sivulla (tags.json:in "pages"-kentän avulla, ks.
+          // generate_tags_page.py), järjestää eniten yhteisiä tageja
+          // ensin. Lukee tagit jo renderöidyistä .page-tags-chipeistä
+          // (edellinen hook), joten ei tarvitse jäsentää kommenttia uudelleen.
+          var tagsJsonCache = null;
           hook.doneEach(function () {
-            var link = document.getElementById('quick-search');
-            if (!link || link.dataset.wired) return;
-            link.dataset.wired = '1';
-            link.addEventListener('click', function (e) {
-              e.preventDefault();
-              var input = document.querySelector('.sidebar .search input');
-              if (input) {
-                document.body.classList.remove('close');
-                input.focus();
+            if (/\/tags([?#]|$)/.test(window.location.hash)) return;
+            var section = document.querySelector('.markdown-section');
+            if (!section || section.querySelector('.related-pages')) return;
+            var chips = section.querySelectorAll('.page-tags a.tag-chip');
+            if (!chips.length) return;
+            var myTags = Array.prototype.map.call(chips, function (a) {
+              return a.textContent.trim().toLowerCase();
+            });
+            var myHref = decodeURIComponent(window.location.hash.split('?')[0]);
+
+            var ready = tagsJsonCache
+              ? Promise.resolve(tagsJsonCache)
+              : fetch('tags.json').then(function (r) { return r.json(); }).then(function (d) {
+                  tagsJsonCache = d;
+                  return d;
+                });
+
+            ready.then(function (allTags) {
+              var scoreByHref = {};
+              var titleByHref = {};
+              allTags.forEach(function (entry) {
+                if (myTags.indexOf(entry.tag.toLowerCase()) === -1) return;
+                (entry.pages || []).forEach(function (p) {
+                  var href = decodeURIComponent(p.href);
+                  if (href === myHref) return;
+                  scoreByHref[href] = (scoreByHref[href] || 0) + 1;
+                  titleByHref[href] = p.title;
+                });
+              });
+              var related = Object.keys(scoreByHref).map(function (href) {
+                return { href: href, title: titleByHref[href], score: scoreByHref[href] };
+              });
+              if (!related.length) return;
+              related.sort(function (a, b) {
+                return b.score - a.score || a.title.localeCompare(b.title, 'fi');
+              });
+              related = related.slice(0, 6);
+
+              var box = document.createElement('div');
+              box.className = 'related-pages';
+              box.innerHTML = '<h4 class="related-pages-title">Aiheeseen liittyvät</h4>' +
+                '<ul class="related-pages-list">' +
+                related.map(function (r) {
+                  return '<li><a href="' + r.href + '">' + escapeHtmlLite(r.title) + '</a></li>';
+                }).join('') +
+                '</ul>';
+
+              var footer = section.querySelector('.site-footer');
+              if (footer) {
+                footer.insertAdjacentElement('beforebegin', box);
+              } else {
+                section.appendChild(box);
               }
+            }).catch(function () {});
+
+            function escapeHtmlLite(s) {
+              return String(s).replace(/[&<>]/g, function (c) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c];
+              });
+            }
+          });
+        },
+        function (hook) {
+          // Etusivun oma hakukenttä (#cover-search): näkyy heti heron
+          // alla, mutta ei ole oma erillinen hakumoottori - syöte
+          // peilataan Docsifyn OIKEAAN sivupalkin hakukenttään (sama
+          // valmiiksi indeksoity haku kuin muuallakin sivustolla) ja
+          // tulokset kopioidaan MutationObserverilla takaisin tähän.
+          hook.doneEach(function () {
+            var input = document.getElementById('cover-search');
+            var box = document.getElementById('cover-search-results');
+            if (!input || !box || input.dataset.wired) return;
+            input.dataset.wired = '1';
+
+            function realInput() {
+              return document.querySelector('.sidebar .search input[type="search"]');
+            }
+            function realPanel() {
+              return document.querySelector('.sidebar .search .results-panel');
+            }
+
+            var observer = null;
+            function sync() {
+              var panel = realPanel();
+              var html = panel ? panel.innerHTML : '';
+              box.innerHTML = html;
+              box.classList.toggle('has-results', !!html.trim());
+            }
+            function ensureObserver() {
+              var panel = realPanel();
+              if (!panel || observer) return;
+              observer = new MutationObserver(sync);
+              observer.observe(panel, { childList: true, subtree: true });
+            }
+
+            input.addEventListener('input', function () {
+              var real = realInput();
+              if (!real) return;
+              ensureObserver();
+              real.value = input.value;
+              real.dispatchEvent(new Event('input', { bubbles: true }));
+              // Docsifyn oma haku debounceaa 100ms - synkataan hieman
+              // sen jälkeen varmuuden vuoksi (MutationObserver hoitaa
+              // yleensä jo tämän, mutta tämä on varmistus).
+              setTimeout(sync, 160);
+            });
+
+            box.addEventListener('click', function (e) {
+              if (e.target.closest('a')) {
+                setTimeout(function () {
+                  input.value = '';
+                  box.innerHTML = '';
+                  box.classList.remove('has-results');
+                }, 0);
+              }
+            });
+
+            input.addEventListener('keydown', function (e) {
+              if (e.key === 'Escape') {
+                input.value = '';
+                box.innerHTML = '';
+                box.classList.remove('has-results');
+                input.blur();
+              }
+            });
+          });
+        },
+        function (hook) {
+          // Pikanäppäin "/" fokusoi lähimmän hakukentän (etusivulla oman
+          // hakukentän, muualla sivupalkin haun) mistä tahansa sivulta -
+          // paitsi jos käyttäjä kirjoittaa jo johonkin toiseen kenttään.
+          hook.doneEach(function () {
+            if (document.body.dataset.slashSearchWired) return;
+            document.body.dataset.slashSearchWired = '1';
+            document.addEventListener('keydown', function (e) {
+              if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+              var t = e.target;
+              var typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+              if (typing) return;
+              // #cover-search voi jäädä DOM:iin piilotettuna (Docsifyn
+              // coverpage-elementti ei aina poistu kokonaan reitin
+              // vaihtuessa) - varmistetaan että se on oikeasti näkyvissä,
+              // muuten focus() ei tehoa mihinkään ja fokus jää <body>:hyn.
+              var cs = document.getElementById('cover-search');
+              var target = (cs && cs.offsetParent !== null) ? cs : null;
+              if (!target) target = document.querySelector('.sidebar .search input[type="search"]');
+              if (!target) return;
+              e.preventDefault();
+              document.body.classList.remove('close');
+              target.focus();
             });
           });
         },

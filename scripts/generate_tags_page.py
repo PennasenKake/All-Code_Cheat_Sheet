@@ -91,12 +91,20 @@ def main():
     # tags.json: kevyt data etusivun/tags-sivun JS-tagipilvea varten.
     # "cats" listaa juuritason kategoriat (kielet/Vinkit) joissa tama
     # tagi esiintyy - tags.md:n kategoriasuodatin kayttaa tata.
+    # "pages" listaa jokaisen tagatun sivun otsikon+href:in - sisaltosivun
+    # "Aiheeseen liittyvat" -osio (ks. index.html plugins-taulukko) kayttaa
+    # tata loytaakseen muut samalla tagilla merkityt sivut ilman erillista
+    # hakua/indeksia.
     tag_list = [
         {
             "tag": tag,
             "count": len(by_tag[tag]),
             "anchor": "#/tags?id=" + docsify_slugify(tag),
             "cats": sorted(categories_by_tag[tag]),
+            "pages": [
+                {"title": title, "href": "#/" + quote(rel, safe="/")}
+                for title, rel in sorted(by_tag[tag])
+            ],
         }
         for tag in sorted(by_tag)
     ]

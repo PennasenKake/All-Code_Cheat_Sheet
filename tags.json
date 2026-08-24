@@ -5,6 +5,712 @@
     "anchor": "#/tags?id=vinkit",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "$0 AI Architecture Stack 2026 (versio 2)",
+        "href": "#/Vinkit/AI-ML/0-ai-arkkitehtuuripino-2026.md"
+      },
+      {
+        "title": "100 Claude Tips",
+        "href": "#/Vinkit/AI-ML/100-claude-tips.md"
+      },
+      {
+        "title": "15 CSS-projekti-ideaa",
+        "href": "#/Vinkit/Projekti-ideat/15-css-projekti-ideaa.md"
+      },
+      {
+        "title": "15 verkkotekniikan peruskäsitettä",
+        "href": "#/Vinkit/Tietoturva-Verkot/15-verkkotekniikan-peruskasitetta.md"
+      },
+      {
+        "title": "25 VS Code -laajennusta jokaiselle kehittäjälle",
+        "href": "#/Vinkit/DevOps/25-vs-code-laajennusta-jokaiselle-kehittajalle.md"
+      },
+      {
+        "title": "30 päivän React-projektihaaste",
+        "href": "#/Vinkit/Projekti-ideat/30-paivan-react-projektihaaste.md"
+      },
+      {
+        "title": "7 Git-komentoa -huijauslappu",
+        "href": "#/Vinkit/DevOps/7-git-komentoa-huijauslappu.md"
+      },
+      {
+        "title": "AI-integroidut edistyneet projekti-ideat",
+        "href": "#/Vinkit/Projekti-ideat/ai-integroidut-edistyneet-projekti-ideoita.md"
+      },
+      {
+        "title": "AI-integroidut projekti-ideat (aloittelijataso)",
+        "href": "#/Vinkit/Projekti-ideat/ai-integroidut-projekti-ideoita-aloittelija.md"
+      },
+      {
+        "title": "API-tyyppien vertailu (REST, GraphQL, SOAP, WebSocket ym.)",
+        "href": "#/Vinkit/Backend-API/api-tyyppien-vertailu.md"
+      },
+      {
+        "title": "Aloittelijan koodausprojektilista",
+        "href": "#/Vinkit/Projekti-ideat/aloittelijan-koodausprojektilista.md"
+      },
+      {
+        "title": "Aloittelijaystävälliset API-projektit",
+        "href": "#/Vinkit/Projekti-ideat/aloittelijaystavalliset-api-projektit.md"
+      },
+      {
+        "title": "Anatomy of a Portfolio Homepage – portfolio-etusivun jäsennys",
+        "href": "#/Vinkit/UX-Suunnittelu/portfolio-etusivun-anatomia.md"
+      },
+      {
+        "title": "Axios API-pyyntöihin Reactissa",
+        "href": "#/Vinkit/JavaScript-React/axios-api-pyyntoihin-reactissa.md"
+      },
+      {
+        "title": "Backend-projekti-ideoita",
+        "href": "#/Vinkit/Projekti-ideat/backend-projekti-ideoita.md"
+      },
+      {
+        "title": "Bash-skriptauksen perusteet",
+        "href": "#/Vinkit/DevOps/bash-skriptauksen-perusteet.md"
+      },
+      {
+        "title": "CI/CD ja automaatio -projektilista",
+        "href": "#/Vinkit/DevOps/cicd-ja-automaatio-projektilista.md"
+      },
+      {
+        "title": "CRUD-operaatiot Reactissa (useState-esimerkki)",
+        "href": "#/Vinkit/JavaScript-React/crud-operaatiot-reactissa.md"
+      },
+      {
+        "title": "CSS-huijauslappu 2026",
+        "href": "#/Vinkit/Html-CSS/css-huijauslappu-2026.md"
+      },
+      {
+        "title": "CSV-vienti Reactissa (react-csv)",
+        "href": "#/Vinkit/JavaScript-React/csv-vienti-reactissa.md"
+      },
+      {
+        "title": "Cookies vs JWT -vertailu",
+        "href": "#/Vinkit/Backend-API/cookies-vs-jwt-vertailu.md"
+      },
+      {
+        "title": "Cookies vs JWT -vertailu (toinen versio)",
+        "href": "#/Vinkit/Backend-API/cookies-vs-jwt-vertailu-toinen-versio.md"
+      },
+      {
+        "title": "Cookies vs LocalStorage vs SessionStorage",
+        "href": "#/Vinkit/Backend-API/cookies-vs-localstorage-vs-sessionstorage.md"
+      },
+      {
+        "title": "Data Viz -huijauslappu (Matplotlib/Seaborn)",
+        "href": "#/Vinkit/Python/dataviz-huijauslappu-matplotlib-seaborn.md"
+      },
+      {
+        "title": "Data science -projekti-ideoita",
+        "href": "#/Vinkit/Projekti-ideat/data-science-projekti-ideoita.md"
+      },
+      {
+        "title": "Data scientist -projekteja: agenttinen AI",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-agenttinen-ai.md"
+      },
+      {
+        "title": "Data scientist -projekteja: deep learning",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-deep-learning.md"
+      },
+      {
+        "title": "Data scientist -projekteja: generatiivinen AI",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-generatiivinen-ai.md"
+      },
+      {
+        "title": "Data scientist -projekteja: tilastollinen mallinnus",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-tilastollinen-mallinnus.md"
+      },
+      {
+        "title": "Data scientist -projekti-ideoita: koneoppiminen",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-koneoppiminen.md"
+      },
+      {
+        "title": "Debounced-haku Reactissa (lodash.debounce)",
+        "href": "#/Vinkit/JavaScript-React/debounced-haku-reactissa.md"
+      },
+      {
+        "title": "Deep learning -projekti-ideoita (keskitaso)",
+        "href": "#/Vinkit/Projekti-ideat/deep-learning-projekti-ideoita.md"
+      },
+      {
+        "title": "DevSecOps ja tietoturva-automaatio -projektilista",
+        "href": "#/Vinkit/DevOps/devsecops-ja-tietoturva-automaatio-projektilista.md"
+      },
+      {
+        "title": "Dokumenttien skannausjärjestelmän arkkitehtuuri ja tietokantasuunnittelu",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/dokumenttien-skannausjarjestelman-arkkitehtuuri.md"
+      },
+      {
+        "title": "Drag & Drop -tiedostonlataus Reactissa (react-dropzone)",
+        "href": "#/Vinkit/JavaScript-React/drag-drop-tiedostonlataus-reactissa.md"
+      },
+      {
+        "title": "ERP-järjestelmä rakennettuna Claude-tekoälyllä",
+        "href": "#/Vinkit/AI-ML/erp-jarjestelma-claude-tekoalylla.md"
+      },
+      {
+        "title": "Edistyneet API-projektit (JWT, tiedostolataus, chat, maksu)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-api-projektit-jwt-tiedostolataus-chat-maksu.md"
+      },
+      {
+        "title": "Edistyneet API-projektit (ilmoitukset, rate limiting, haku, lokitus)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-api-projektit-ilmoitukset-rate-limiting-haku-lokitus.md"
+      },
+      {
+        "title": "Edistyneet API-projektit (reaaliaikainen yhteistyö, mikropalvelut)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-api-projektit-reaaliaikainen-yhteistyo-mikropalvelut.md"
+      },
+      {
+        "title": "Edistyneiden koodausprojektien lista",
+        "href": "#/Vinkit/Projekti-ideat/edistyneiden-koodausprojektien-lista.md"
+      },
+      {
+        "title": "Edistyneitä SaaS/AI-projekti-ideoita (FullStack)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-saas-ai-projekti-ideoita.md"
+      },
+      {
+        "title": "Excel-tiedoston lukeminen Reactissa (xlsx)",
+        "href": "#/Vinkit/JavaScript-React/excel-tiedoston-lukeminen-reactissa.md"
+      },
+      {
+        "title": "Express.js-huijauslappu",
+        "href": "#/Vinkit/Backend-API/expressjs-huijauslappu.md"
+      },
+      {
+        "title": "Fetch API:n perusteet (JS-sarja, päivä 29)",
+        "href": "#/Vinkit/JavaScript-React/fetch-api-perusteet.md"
+      },
+      {
+        "title": "Firebase-autentikointi Reactissa",
+        "href": "#/Vinkit/JavaScript-React/firebase-autentikointi-reactissa.md"
+      },
+      {
+        "title": "Frontend- ja Backend-kehittäjän kansiorakenne",
+        "href": "#/Vinkit/Projekti-ideat/frontend-ja-backend-kansiorakenne.md"
+      },
+      {
+        "title": "Frontend-kehittäjän roadmap 2026",
+        "href": "#/Vinkit/DevOps/frontend-kehittajan-roadmap-2026.md"
+      },
+      {
+        "title": "HTML/CSS/JS-aloittelijaprojektit",
+        "href": "#/Vinkit/Projekti-ideat/html-css-js-aloittelijaprojektit.md"
+      },
+      {
+        "title": "HTML5:n img-elementti (40 päivän HTML-sarja, päivä 9)",
+        "href": "#/Vinkit/Html-CSS/html5-img-elementti.md"
+      },
+      {
+        "title": "HTML5:n semanttinen rakenne",
+        "href": "#/Vinkit/Html-CSS/html5-semanttinen-rakenne.md"
+      },
+      {
+        "title": "Home Page vs Landing Page -vertailu",
+        "href": "#/Vinkit/UX-Suunnittelu/home-page-vs-landing-page.md"
+      },
+      {
+        "title": "How to Build AI Agents from Scratch (10 vaihetta)",
+        "href": "#/Vinkit/AI-ML/how-to-build-ai-agents-from-scratch.md"
+      },
+      {
+        "title": "How to Build Claude Skills That Really Work",
+        "href": "#/Vinkit/AI-ML/how-to-build-claude-skills-that-really-work.md"
+      },
+      {
+        "title": "Ilmaiset full-stack hosting-alustat",
+        "href": "#/Vinkit/DevOps/ilmaiset-full-stack-hosting-alustat.md"
+      },
+      {
+        "title": "Ilmaiset hosting-alustat frontendille",
+        "href": "#/Vinkit/DevOps/ilmaiset-hosting-alustat-frontendille.md"
+      },
+      {
+        "title": "Ilmaiset hosting-alustat moderneja sovelluksia varten",
+        "href": "#/Vinkit/DevOps/ilmaiset-moderneja-sovelluksia-varten.md"
+      },
+      {
+        "title": "Ilmaiset staattisten sivustojen hosting-alustat",
+        "href": "#/Vinkit/DevOps/ilmaiset-staattisten-sivustojen-hosting-alustat.md"
+      },
+      {
+        "title": "Ilmaisia API:ja projekteihin",
+        "href": "#/Vinkit/Projekti-ideat/ilmaisia-apeja-projekteihin.md"
+      },
+      {
+        "title": "JWT vs OAuth 2.0 -autentikaatio",
+        "href": "#/Vinkit/Backend-API/jwt-vs-oauth-autentikaatio.md"
+      },
+      {
+        "title": "JWT-autentikaation vuokaavio",
+        "href": "#/Vinkit/Backend-API/jwt-autentikaation-vuokaavio.md"
+      },
+      {
+        "title": "JWT-tokenien refresh-rotaatio",
+        "href": "#/Vinkit/Backend-API/jwt-tokenien-refresh-rotaatio.md"
+      },
+      {
+        "title": "JavaScript switch-lause",
+        "href": "#/Vinkit/JavaScript-React/javascript-switch-lause.md"
+      },
+      {
+        "title": "JavaScript-minisovellusprojektit (To-Do, laskuri, lainausgeneraattori)",
+        "href": "#/Vinkit/Projekti-ideat/javascript-minisovellusprojektit.md"
+      },
+      {
+        "title": "JavaScript-operaattorit",
+        "href": "#/Vinkit/JavaScript-React/javascript-operaattorit.md"
+      },
+      {
+        "title": "JavaScriptin hiiritapahtumat (click, hover, drag)",
+        "href": "#/Vinkit/JavaScript-React/javascriptin-hiiritapahtumat.md"
+      },
+      {
+        "title": "Järjestelmäsuunnittelu: miten WhatsApp toimii",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/jarjestelmasuunnittelu-whatsapp.md"
+      },
+      {
+        "title": "Kaksivaiheisen tunnistautumisen (2FA) vuokaavio",
+        "href": "#/Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.md"
+      },
+      {
+        "title": "Kalenterin UI-toteutus HTML/CSS/JS:llä",
+        "href": "#/Vinkit/Html-CSS/kalenterin-ui-toteutus.md"
+      },
+      {
+        "title": "Karttojen toteutus Reactissa (react-leaflet)",
+        "href": "#/Vinkit/JavaScript-React/karttojen-toteutus-react-leaflet.md"
+      },
+      {
+        "title": "Kasvontunnistus-AI Python-koodilla (OpenCV/Haar Cascade)",
+        "href": "#/Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.md"
+      },
+      {
+        "title": "Keskitason koodausprojektilista",
+        "href": "#/Vinkit/Projekti-ideat/keskitason-koodausprojektilista.md"
+      },
+      {
+        "title": "Koneoppimis- ja tekoälyprojektien ideoita",
+        "href": "#/Vinkit/Projekti-ideat/koneoppimis-ai-projektien-listaus.md"
+      },
+      {
+        "title": "Koneoppimisen features ja labels -peruskäsitteet",
+        "href": "#/Vinkit/AI-ML/koneoppimisen-features-ja-labels.md"
+      },
+      {
+        "title": "Koneoppimisen kaavat",
+        "href": "#/Vinkit/AI-ML/koneoppimisen-kaavat.md"
+      },
+      {
+        "title": "Koneoppimisprojekti-ideoita (aloittelijataso)",
+        "href": "#/Vinkit/Projekti-ideat/koneoppimisprojekti-ideoita-spam-luokittelu.md"
+      },
+      {
+        "title": "Koodaus-, esikatselu- ja julkaisualustat",
+        "href": "#/Vinkit/DevOps/koodaus-esikatselu-julkaisualustat.md"
+      },
+      {
+        "title": "Kuinka selain renderoi sivun (DNS:stä pikseleihin)",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/miten-selain-renderoi-sivun.md"
+      },
+      {
+        "title": "Kulunseurantasovelluksen arkkitehtuuri ja tietokantasuunnittelu",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/kulunseurantasovelluksen-arkkitehtuuri.md"
+      },
+      {
+        "title": "Kuvien optimointi verkkosivuille",
+        "href": "#/Vinkit/Html-CSS/kuvien-optimointi-verkkosivuille.md"
+      },
+      {
+        "title": "Kyberturvallisuusprojektien listaus",
+        "href": "#/Vinkit/Projekti-ideat/kyberturvallisuusprojektien-listaus.md"
+      },
+      {
+        "title": "Käyttäjän kirjautumisen vuokaavio (bcrypt, JWT)",
+        "href": "#/Vinkit/Backend-API/kayttajan-kirjautumisen-vuokaavio.md"
+      },
+      {
+        "title": "LLM vs RAG vs AI Agent vs Agentic AI -vertailu",
+        "href": "#/Vinkit/AI-ML/llm-vs-rag-vs-ai-agent-vs-agentic-ai.md"
+      },
+      {
+        "title": "Lista 60 Python-projekti-ideasta",
+        "href": "#/Vinkit/Projekti-ideat/60-python-projekti-ideaa.md"
+      },
+      {
+        "title": "Lisää MERN-projekti-ideoita",
+        "href": "#/Vinkit/Projekti-ideat/lisaa-mern-projekti-ideoita.md"
+      },
+      {
+        "title": "Lisää deep learning -projekteja",
+        "href": "#/Vinkit/Projekti-ideat/lisaa-dl-projekteja.md"
+      },
+      {
+        "title": "Lisää koneoppimisprojekteja (ennustemallit, sentimenttianalyysi)",
+        "href": "#/Vinkit/Projekti-ideat/lisaa-ml-projekteja-ennustemallit-sentimenttianalyysi.md"
+      },
+      {
+        "title": "MERN-pino -projekti-ideoita (advanced)",
+        "href": "#/Vinkit/Projekti-ideat/mern-pino-projekti-ideoita-advanced.md"
+      },
+      {
+        "title": "ML-projektin kansiorakennekaavio",
+        "href": "#/Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.md"
+      },
+      {
+        "title": "Margin vs padding CSS-box-mallissa",
+        "href": "#/Vinkit/Html-CSS/margin-vs-padding-css-box-malli.md"
+      },
+      {
+        "title": "Micro Frontend -arkkitehtuuri",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/micro-frontend-arkkitehtuuri.md"
+      },
+      {
+        "title": "Miksi tietokantakyselyt hidastuvat",
+        "href": "#/Vinkit/Backend-API/miksi-tietokantakyselyt-hidastuvat.md"
+      },
+      {
+        "title": "Miksi useimmat kehittäjät eivät koskaan tule työmarkkinakelpoisiksi",
+        "href": "#/Vinkit/Projekti-ideat/mainos-100-ohjelmointiprojektille.md"
+      },
+      {
+        "title": "Mikä tekee dashboardista hyvän?",
+        "href": "#/Vinkit/UX-Suunnittelu/mika-tekee-dashboardista-hyvan.md"
+      },
+      {
+        "title": "Miten WebSocket toimii",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/miten-websocket-toimii.md"
+      },
+      {
+        "title": "Miten rakennat AI-agentin",
+        "href": "#/Vinkit/AI-ML/how-to-build-an-ai-agent.md"
+      },
+      {
+        "title": "Mitä JSON on (Python-esimerkki)",
+        "href": "#/Vinkit/Python/mita-json-on-python-esimerkki.md"
+      },
+      {
+        "title": "Mobile first vs desktop first -suunnittelu",
+        "href": "#/Vinkit/UX-Suunnittelu/mobile-first-vs-desktop-first.md"
+      },
+      {
+        "title": "Multi-agentti-AI-järjestelmän arkkitehtuurikaavio",
+        "href": "#/Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.md"
+      },
+      {
+        "title": "Navigointi Link-komponentilla (React Router)",
+        "href": "#/Vinkit/JavaScript-React/navigointi-link-komponentilla.md"
+      },
+      {
+        "title": "Next.js + backend -aloittelijaprojektit",
+        "href": "#/Vinkit/Backend-API/nextjs-backend-aloittelijaprojektit.md"
+      },
+      {
+        "title": "Next.js Middleware -opas",
+        "href": "#/Vinkit/JavaScript-React/nextjs-middleware-opas.md"
+      },
+      {
+        "title": "Next.js Middleware -opas (toinen versio)",
+        "href": "#/Vinkit/JavaScript-React/nextjs-middleware-opas-versio-2.md"
+      },
+      {
+        "title": "No-code vs. vibe coding -vertailutaulukko",
+        "href": "#/Vinkit/AI-ML/no-code-vs-vibe-coding-vertailutaulukko.md"
+      },
+      {
+        "title": "Node.js CRUD-operaatiot Expressilla",
+        "href": "#/Vinkit/Backend-API/nodejs-crud-operaatiot-expressilla.md"
+      },
+      {
+        "title": "Node.js-projektin kansiorakenne (frontend/backend-jako)",
+        "href": "#/Vinkit/Projekti-ideat/nodejs-projektin-kansiorakenne.md"
+      },
+      {
+        "title": "Node.js/backend-edistyneet projektit",
+        "href": "#/Vinkit/Backend-API/nodejs-backend-edistyneet-projektit.md"
+      },
+      {
+        "title": "NumPy-huijauslappu (taulukot, matematiikka, muokkaus)",
+        "href": "#/Vinkit/Python/numpy-huijauslappu.md"
+      },
+      {
+        "title": "OAuth-kirjautumisen vuokaavio",
+        "href": "#/Vinkit/Backend-API/oauth-kirjautumisen-vuokaavio.md"
+      },
+      {
+        "title": "Ohjelmistokehitysprojekti-ideoita (web, mobiili, backend)",
+        "href": "#/Vinkit/Projekti-ideat/ohjelmistokehitysprojekti-ideoita.md"
+      },
+      {
+        "title": "OpenWeather API -esittely",
+        "href": "#/Vinkit/Backend-API/openweather-api-esittely.md"
+      },
+      {
+        "title": "Osakekurssiennustus- ja tunnistusprojekteja",
+        "href": "#/Vinkit/Projekti-ideat/osakekurssiennustus-ja-tunnistusprojekteja.md"
+      },
+      {
+        "title": "Pandas-huijauslappu (rivien/sarakkeiden valinta, data wrangling)",
+        "href": "#/Vinkit/Python/pandas-huijauslappu-valinta-ja-wrangling.md"
+      },
+      {
+        "title": "Pandas-huijauslappu osa 2 (aggregointi, visualisointi, CSV-vienti)",
+        "href": "#/Vinkit/Python/pandas-huijauslappu-osa-2-aggregointi-visualisointi.md"
+      },
+      {
+        "title": "Power BI pähkinänkuoressa",
+        "href": "#/Vinkit/AI-ML/power-bi-yhteenveto.md"
+      },
+      {
+        "title": "Progress bar -tyyppien vertailu",
+        "href": "#/Vinkit/UX-Suunnittelu/progress-bar-tyyppien-vertailu.md"
+      },
+      {
+        "title": "Progressive Web Apps (service worker, manifest)",
+        "href": "#/Vinkit/JavaScript-React/progressive-web-apps.md"
+      },
+      {
+        "title": "Python JSON: dictin muunto JSON-merkkijonoksi ja takaisin",
+        "href": "#/Vinkit/Python/json-dict-muunto-merkkijonoksi.md"
+      },
+      {
+        "title": "Python JSON: pretty print ja listan tallennus",
+        "href": "#/Vinkit/Python/json-pretty-print-ja-listan-tallennus.md"
+      },
+      {
+        "title": "Python JSON: tallennus ja luku tiedostosta",
+        "href": "#/Vinkit/Python/json-tallennus-ja-luku-tiedostosta.md"
+      },
+      {
+        "title": "Python JSON: tietyn arvon haku ja avainten lajittelu",
+        "href": "#/Vinkit/Python/json-arvon-haku-ja-avainten-lajittelu.md"
+      },
+      {
+        "title": "Python tkinter: mini-chatbotin GUI",
+        "href": "#/Vinkit/Python/tkinter-mini-chatbot-gui.md"
+      },
+      {
+        "title": "Python-huijauslappusarja: keskeiset data- ja automaatiokirjastot",
+        "href": "#/Vinkit/Python/python-huijauslappu-kirjastot-yleiskatsaus.md"
+      },
+      {
+        "title": "Python-kirjastojen käyttötarkoitukset",
+        "href": "#/Vinkit/Python/python-kirjaston-yhdistelmataulukko.md"
+      },
+      {
+        "title": "Python-projekti-ideoita eri tasoille",
+        "href": "#/Vinkit/Projekti-ideat/python-projekti-ideoita-eri-tasoille.md"
+      },
+      {
+        "title": "Python: PDF-todistuksen generointi (fpdf)",
+        "href": "#/Vinkit/Python/pdf-todistuksen-generointi-fpdf.md"
+      },
+      {
+        "title": "Python: PDF-vesileiman lisääminen (fpdf)",
+        "href": "#/Vinkit/Python/pdf-vesileima-fpdf.md"
+      },
+      {
+        "title": "QR-koodien generointi Reactissa (qrcode.react)",
+        "href": "#/Vinkit/JavaScript-React/qr-koodien-generointi-reactissa.md"
+      },
+      {
+        "title": "QR-koodin generointi Pythonilla",
+        "href": "#/Vinkit/Python/qr-koodin-generointi-pythonilla.md"
+      },
+      {
+        "title": "REST API -arkkitehtuuri",
+        "href": "#/Vinkit/Backend-API/rest-api-arkkitehtuuri.md"
+      },
+      {
+        "title": "REST API -perusteiden huijauslappu",
+        "href": "#/Vinkit/Backend-API/rest-api-perusteiden-huijauslappu.md"
+      },
+      {
+        "title": "REST API -pikaopas",
+        "href": "#/Vinkit/Backend-API/rest-api-pikaopas.md"
+      },
+      {
+        "title": "REST API:n CRUD-operaatiot pyyntö/vastaus-esimerkein",
+        "href": "#/Vinkit/Backend-API/rest-apin-crud-operaatiot.md"
+      },
+      {
+        "title": "REST API:n täydellinen opas aloittelijoille",
+        "href": "#/Vinkit/Backend-API/rest-apin-taydellinen-opas-aloittelijoille.md"
+      },
+      {
+        "title": "Ravintolan hallintajärjestelmän projekti-idea",
+        "href": "#/Vinkit/Projekti-ideat/ravintolan-hallintajarjestelman-projekti-idea.md"
+      },
+      {
+        "title": "React Context API -perusteet",
+        "href": "#/Vinkit/JavaScript-React/react-context-api-perusteet.md"
+      },
+      {
+        "title": "React Contextin datanjako -kaavio",
+        "href": "#/Vinkit/JavaScript-React/react-context-datanjako-kaavio.md"
+      },
+      {
+        "title": "React Hooks -cheat sheet",
+        "href": "#/Vinkit/JavaScript-React/react-hooks-cheat-sheet.md"
+      },
+      {
+        "title": "React JS -komentolista",
+        "href": "#/Vinkit/JavaScript-React/react-js-komentolista.md"
+      },
+      {
+        "title": "React Router -perusteet",
+        "href": "#/Vinkit/JavaScript-React/react-router-perusteet.md"
+      },
+      {
+        "title": "React Routerin arkkitehtuuri",
+        "href": "#/Vinkit/JavaScript-React/react-routerin-arkkitehtuuri.md"
+      },
+      {
+        "title": "React-edistyneet projektit",
+        "href": "#/Vinkit/JavaScript-React/react-edistyneet-projektit.md"
+      },
+      {
+        "title": "React-kansiorakenne",
+        "href": "#/Vinkit/JavaScript-React/react-kansiorakenne.md"
+      },
+      {
+        "title": "React-kansiorakenne (30 Days -sarja, päivä 25)",
+        "href": "#/Vinkit/JavaScript-React/react-kansiorakenne-30-days-paiva-25.md"
+      },
+      {
+        "title": "React-portfolioprojektit: SaaS dashboard ja verkkokauppa",
+        "href": "#/Vinkit/JavaScript-React/react-portfolioprojektit-saas-dashboard-ja-verkkokauppa.md"
+      },
+      {
+        "title": "React-projekti-ideoita aloittelijoille",
+        "href": "#/Vinkit/Projekti-ideat/react-projekti-ideoita-aloittelijoille.md"
+      },
+      {
+        "title": "React-projektin kansiorakenne: \"Good\" vs \"Best\"",
+        "href": "#/Vinkit/Projekti-ideat/react-kansiorakenne-good-vs-best.md"
+      },
+      {
+        "title": "React/Tailwind/TypeScript-projektit (aloittelijataso)",
+        "href": "#/Vinkit/JavaScript-React/react-tailwind-typescript-projektit.md"
+      },
+      {
+        "title": "Reactin oleelliset kirjastot (Router, Axios, Zustand ym.)",
+        "href": "#/Vinkit/JavaScript-React/reactin-oleelliset-kirjastot.md"
+      },
+      {
+        "title": "Responsiivisen suunnittelun cheat sheet",
+        "href": "#/Vinkit/Html-CSS/responsiivisen-suunnittelun-cheat-sheet.md"
+      },
+      {
+        "title": "Responsiivisen suunnittelun pikaopas",
+        "href": "#/Vinkit/Html-CSS/responsiivisen-suunnittelun-pikaopas.md"
+      },
+      {
+        "title": "Role-Based Access Control (RBAC) -vuokaavio",
+        "href": "#/Vinkit/Backend-API/role-based-access-control-rbac-vuokaavio.md"
+      },
+      {
+        "title": "SaaS-tilaussovelluksen arkkitehtuuri ja tietokantasuunnittelu",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/saas-tilaussovelluksen-arkkitehtuuri.md"
+      },
+      {
+        "title": "Scikit-Learn-huijauslappu (esikäsittely, koulutus/testijako)",
+        "href": "#/Vinkit/Python/scikit-learn-huijauslappu-esikasittely-koulutus-testijako.md"
+      },
+      {
+        "title": "Scikit-learn-huijauslappu: mallin luonti, arviointi, viritys",
+        "href": "#/Vinkit/Python/scikit-learn-huijauslappu-malli-arviointi-viritys.md"
+      },
+      {
+        "title": "Selenium ja Scrapy -huijauslappu",
+        "href": "#/Vinkit/Python/selenium-ja-scrapy-huijauslappu.md"
+      },
+      {
+        "title": "Server-side vs client-side renderointi",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/server-side-vs-client-side-renderointi.md"
+      },
+      {
+        "title": "Skaalautuva frontend-arkkitehtuuri",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/skaalautuva-frontend-arkkitehtuuri.md"
+      },
+      {
+        "title": "Spring Boot -sovelluksen rakennekaavio",
+        "href": "#/Vinkit/Backend-API/spring-boot-sovelluksen-rakenne.md"
+      },
+      {
+        "title": "Subnet mask -selitys (CCNA-muistiinpanot)",
+        "href": "#/Vinkit/Tietoturva-Verkot/subnet-mask-selitys.md"
+      },
+      {
+        "title": "Suojatut reitit (Protected Routes) Reactissa",
+        "href": "#/Vinkit/JavaScript-React/suojatut-reitit-reactissa.md"
+      },
+      {
+        "title": "Supabase-tietokantaclientin yhdistäminen Next.js-sovellukseen",
+        "href": "#/Vinkit/Backend-API/supabase-tietokantaclientin-yhdistaminen-nextjs-sovellukseen.md"
+      },
+      {
+        "title": "Tietokantaintegraatio Next.js:ssä (Prisma, PostgreSQL)",
+        "href": "#/Vinkit/Backend-API/tietokantaintegraatio-nextjs-prisma-postgresql.md"
+      },
+      {
+        "title": "Tietorakenne- ja algoritmi (DSA) -projektilista",
+        "href": "#/Vinkit/Projekti-ideat/tietorakenne-algoritmi-dsa-projektilista.md"
+      },
+      {
+        "title": "Tilastotieteen kaavat",
+        "href": "#/Vinkit/AI-ML/tilastotieteen-kaavat.md"
+      },
+      {
+        "title": "Top 10 avoimen lähdekoodin kirjastoa LLM-mallien hienosäätöön paikallisesti",
+        "href": "#/Vinkit/AI-ML/top-10-avoimen-lahdekoodin-kirjastoa-llm-hienosaatoon.md"
+      },
+      {
+        "title": "Tulevaisuuden tech-urat",
+        "href": "#/Vinkit/DevOps/tulevaisuuden-tech-urat.md"
+      },
+      {
+        "title": "UX-suunnittelun do's ja don'ts",
+        "href": "#/Vinkit/UX-Suunnittelu/ux-suunnittelun-dot-ja-dont.md"
+      },
+      {
+        "title": "VS Code -laajennukset kehittäjille",
+        "href": "#/Vinkit/DevOps/vs-code-laajennukset-kehittajille.md"
+      },
+      {
+        "title": "Valuuttamuunnin HTML/CSS/JS-projektina",
+        "href": "#/Vinkit/JavaScript-React/valuuttamuunnin-html-css-js.md"
+      },
+      {
+        "title": "Varastonhallinnan dashboard -esimerkki (dev-projektin UI)",
+        "href": "#/Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.md"
+      },
+      {
+        "title": "Viivakoodin generointi Reactissa (react-barcode)",
+        "href": "#/Vinkit/JavaScript-React/viivakoodin-generointi-react-barcode.md"
+      },
+      {
+        "title": "Web scraping -huijauslappu (HTML, BeautifulSoup, XPath)",
+        "href": "#/Vinkit/Python/web-scraping-huijauslappu-html-beautifulsoup-xpath.md"
+      },
+      {
+        "title": "Web-suorituskyvyn optimointi (Core Web Vitals)",
+        "href": "#/Vinkit/Html-CSS/web-suorituskyvyn-optimointi.md"
+      },
+      {
+        "title": "Yleisimmät verkkosivujen layout-rakenteet",
+        "href": "#/Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.md"
+      },
+      {
+        "title": "cat ja nano — Linux-komentojen cheat sheet",
+        "href": "#/Vinkit/DevOps/cat-ja-nano-linux-komentojen-cheat-sheet.md"
+      },
+      {
+        "title": "useMemo vs useCallback -vertailu",
+        "href": "#/Vinkit/JavaScript-React/usememo-vs-usecallback.md"
+      }
     ]
   },
   {
@@ -14,6 +720,208 @@
     "cats": [
       "Html",
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "App.js",
+        "href": "#/JavaScript/Socket/App.js.md"
+      },
+      {
+        "title": "App.js",
+        "href": "#/JavaScript/framework/React/App.js.md"
+      },
+      {
+        "title": "CallbackEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CallbackEsimerkki.js.md"
+      },
+      {
+        "title": "ChatNamespace.js",
+        "href": "#/JavaScript/Socket/ChatNamespace.js.md"
+      },
+      {
+        "title": "ChatRoom.js",
+        "href": "#/JavaScript/Socket/ChatRoom.js.md"
+      },
+      {
+        "title": "ContextEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ContextEsimerkki.js.md"
+      },
+      {
+        "title": "CountEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CountEsimerkki.js.md"
+      },
+      {
+        "title": "CssReactEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CssReactEsimerkki.js.md"
+      },
+      {
+        "title": "EffectEsimerkki.js",
+        "href": "#/JavaScript/framework/React/EffectEsimerkki.js.md"
+      },
+      {
+        "title": "FragmentEsimerkki.js",
+        "href": "#/JavaScript/framework/React/FragmentEsimerkki.js.md"
+      },
+      {
+        "title": "KirjautumisEsimerkki.js",
+        "href": "#/JavaScript/framework/React/KirjautumisEsimerkki.js.md"
+      },
+      {
+        "title": "ListanRenderointiEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ListanRenderointiEsimerkki.js.md"
+      },
+      {
+        "title": "LomakeEsimerkki.js",
+        "href": "#/JavaScript/framework/React/LomakeEsimerkki.js.md"
+      },
+      {
+        "title": "MapElementsEsimerkki.js",
+        "href": "#/JavaScript/framework/React/MapElementsEsimerkki.js.md"
+      },
+      {
+        "title": "MemoEsimerkki.js",
+        "href": "#/JavaScript/framework/React/MemoEsimerkki.js.md"
+      },
+      {
+        "title": "MyComponent.js",
+        "href": "#/JavaScript/framework/React/MyComponent.js.md"
+      },
+      {
+        "title": "README",
+        "href": "#/JavaScript/perusteet/README.md"
+      },
+      {
+        "title": "ReducerEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ReducerEsimerkki.js.md"
+      },
+      {
+        "title": "RefEsimerkki.js",
+        "href": "#/JavaScript/framework/React/RefEsimerkki.js.md"
+      },
+      {
+        "title": "ShortCircuitEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ShortCircuitEsimerkki.js.md"
+      },
+      {
+        "title": "Socket.IO Chat -esimerkki",
+        "href": "#/JavaScript/Socket/notes.md"
+      },
+      {
+        "title": "TapahtumaJaTilaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TapahtumaJaTilaEsimerkki.js.md"
+      },
+      {
+        "title": "TapahtumankuuntelijaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TapahtumankuuntelijaEsimerkki.js.md"
+      },
+      {
+        "title": "TilaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TilaEsimerkki.js.md"
+      },
+      {
+        "title": "array_basics.js",
+        "href": "#/JavaScript/perusteet/array_basics.js.md"
+      },
+      {
+        "title": "async_await.js",
+        "href": "#/JavaScript/perusteet/async_await.js.md"
+      },
+      {
+        "title": "axios",
+        "href": "#/JavaScript/Axios/axios.md"
+      },
+      {
+        "title": "callbacks.js",
+        "href": "#/JavaScript/perusteet/callbacks.js.md"
+      },
+      {
+        "title": "chat-server.js",
+        "href": "#/JavaScript/Socket/chat-server.js.md"
+      },
+      {
+        "title": "classes_and_objects.js",
+        "href": "#/JavaScript/perusteet/classes_and_objects.js.md"
+      },
+      {
+        "title": "dom_manipulation.js",
+        "href": "#/JavaScript/perusteet/dom_manipulation.js.md"
+      },
+      {
+        "title": "error_handling.js",
+        "href": "#/JavaScript/perusteet/error_handling.js.md"
+      },
+      {
+        "title": "events.js",
+        "href": "#/JavaScript/perusteet/events.js.md"
+      },
+      {
+        "title": "functions.js",
+        "href": "#/JavaScript/perusteet/functions.js.md"
+      },
+      {
+        "title": "helloWorld.js",
+        "href": "#/JavaScript/perusteet/helloWorld.js.md"
+      },
+      {
+        "title": "hello_world.js",
+        "href": "#/JavaScript/perusteet/hello_world.js.md"
+      },
+      {
+        "title": "json_examples.js",
+        "href": "#/JavaScript/perusteet/json_examples.js.md"
+      },
+      {
+        "title": "loops_and_conditions.js",
+        "href": "#/JavaScript/perusteet/loops_and_conditions.js.md"
+      },
+      {
+        "title": "main.js",
+        "href": "#/Html/projektit/Ajastin/main.js.md"
+      },
+      {
+        "title": "modules.js",
+        "href": "#/JavaScript/perusteet/modules.js.md"
+      },
+      {
+        "title": "namespace-server.js",
+        "href": "#/JavaScript/Socket/namespace-server.js.md"
+      },
+      {
+        "title": "number_examples.js",
+        "href": "#/JavaScript/perusteet/number_examples.js.md"
+      },
+      {
+        "title": "object_basics.js",
+        "href": "#/JavaScript/perusteet/object_basics.js.md"
+      },
+      {
+        "title": "password.js",
+        "href": "#/JavaScript/valmiit/password.js.md"
+      },
+      {
+        "title": "scope_examples.js",
+        "href": "#/JavaScript/perusteet/scope_examples.js.md"
+      },
+      {
+        "title": "socket_io",
+        "href": "#/JavaScript/Socket/socket_io.md"
+      },
+      {
+        "title": "string_methods.js",
+        "href": "#/JavaScript/perusteet/string_methods.js.md"
+      },
+      {
+        "title": "template_literals.js",
+        "href": "#/JavaScript/perusteet/template_literals.js.md"
+      },
+      {
+        "title": "uploanFunc.js",
+        "href": "#/JavaScript/valmiit/uploanFunc.js.md"
+      },
+      {
+        "title": "variables_and_types.js",
+        "href": "#/JavaScript/perusteet/variables_and_types.js.md"
+      }
     ]
   },
   {
@@ -23,6 +931,204 @@
     "cats": [
       "Python",
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "Data Viz -huijauslappu (Matplotlib/Seaborn)",
+        "href": "#/Vinkit/Python/dataviz-huijauslappu-matplotlib-seaborn.md"
+      },
+      {
+        "title": "FastAPI Esimerkkisovellus",
+        "href": "#/Python/frameworks/FastApi/README.md"
+      },
+      {
+        "title": "Kasvontunnistus-AI Python-koodilla (OpenCV/Haar Cascade)",
+        "href": "#/Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.md"
+      },
+      {
+        "title": "Mitä JSON on (Python-esimerkki)",
+        "href": "#/Vinkit/Python/mita-json-on-python-esimerkki.md"
+      },
+      {
+        "title": "NumPy-huijauslappu (taulukot, matematiikka, muokkaus)",
+        "href": "#/Vinkit/Python/numpy-huijauslappu.md"
+      },
+      {
+        "title": "Pandas-huijauslappu (rivien/sarakkeiden valinta, data wrangling)",
+        "href": "#/Vinkit/Python/pandas-huijauslappu-valinta-ja-wrangling.md"
+      },
+      {
+        "title": "Pandas-huijauslappu osa 2 (aggregointi, visualisointi, CSV-vienti)",
+        "href": "#/Vinkit/Python/pandas-huijauslappu-osa-2-aggregointi-visualisointi.md"
+      },
+      {
+        "title": "Python JSON: dictin muunto JSON-merkkijonoksi ja takaisin",
+        "href": "#/Vinkit/Python/json-dict-muunto-merkkijonoksi.md"
+      },
+      {
+        "title": "Python JSON: pretty print ja listan tallennus",
+        "href": "#/Vinkit/Python/json-pretty-print-ja-listan-tallennus.md"
+      },
+      {
+        "title": "Python JSON: tallennus ja luku tiedostosta",
+        "href": "#/Vinkit/Python/json-tallennus-ja-luku-tiedostosta.md"
+      },
+      {
+        "title": "Python JSON: tietyn arvon haku ja avainten lajittelu",
+        "href": "#/Vinkit/Python/json-arvon-haku-ja-avainten-lajittelu.md"
+      },
+      {
+        "title": "Python tkinter: mini-chatbotin GUI",
+        "href": "#/Vinkit/Python/tkinter-mini-chatbot-gui.md"
+      },
+      {
+        "title": "Python-huijauslappusarja: keskeiset data- ja automaatiokirjastot",
+        "href": "#/Vinkit/Python/python-huijauslappu-kirjastot-yleiskatsaus.md"
+      },
+      {
+        "title": "Python-kirjastojen käyttötarkoitukset",
+        "href": "#/Vinkit/Python/python-kirjaston-yhdistelmataulukko.md"
+      },
+      {
+        "title": "Python: PDF-todistuksen generointi (fpdf)",
+        "href": "#/Vinkit/Python/pdf-todistuksen-generointi-fpdf.md"
+      },
+      {
+        "title": "Python: PDF-vesileiman lisääminen (fpdf)",
+        "href": "#/Vinkit/Python/pdf-vesileima-fpdf.md"
+      },
+      {
+        "title": "QR-koodin generointi Pythonilla",
+        "href": "#/Vinkit/Python/qr-koodin-generointi-pythonilla.md"
+      },
+      {
+        "title": "Scikit-Learn-huijauslappu (esikäsittely, koulutus/testijako)",
+        "href": "#/Vinkit/Python/scikit-learn-huijauslappu-esikasittely-koulutus-testijako.md"
+      },
+      {
+        "title": "Scikit-learn-huijauslappu: mallin luonti, arviointi, viritys",
+        "href": "#/Vinkit/Python/scikit-learn-huijauslappu-malli-arviointi-viritys.md"
+      },
+      {
+        "title": "Selenium ja Scrapy -huijauslappu",
+        "href": "#/Vinkit/Python/selenium-ja-scrapy-huijauslappu.md"
+      },
+      {
+        "title": "Web scraping -huijauslappu (HTML, BeautifulSoup, XPath)",
+        "href": "#/Vinkit/Python/web-scraping-huijauslappu-html-beautifulsoup-xpath.md"
+      },
+      {
+        "title": "async_await.py",
+        "href": "#/Python/perusteet/async_await.py.md"
+      },
+      {
+        "title": "barcode.py",
+        "href": "#/Python/projects/barcode.py.md"
+      },
+      {
+        "title": "basic_routes.py",
+        "href": "#/Python/frameworks/FastApi/basic_routes.py.md"
+      },
+      {
+        "title": "dict_basics.py",
+        "href": "#/Python/perusteet/dict_basics.py.md"
+      },
+      {
+        "title": "error_handling.py",
+        "href": "#/Python/perusteet/error_handling.py.md"
+      },
+      {
+        "title": "fastapi",
+        "href": "#/Python/frameworks/FastApi/fastapi.md"
+      },
+      {
+        "title": "fastapi_esimerkit",
+        "href": "#/Python/frameworks/FastApi/fastapi_esimerkit.md"
+      },
+      {
+        "title": "file_handling.py",
+        "href": "#/Python/perusteet/file_handling.py.md"
+      },
+      {
+        "title": "functions.py",
+        "href": "#/Python/perusteet/functions.py.md"
+      },
+      {
+        "title": "hangman.py",
+        "href": "#/Python/projects/hangman.py.md"
+      },
+      {
+        "title": "hello_world.py",
+        "href": "#/Python/hello_world.py.md"
+      },
+      {
+        "title": "hello_world.py",
+        "href": "#/Python/perusteet/hello_world.py.md"
+      },
+      {
+        "title": "ip_osoitteet.py",
+        "href": "#/Python/projects/ip_osoitteet.py.md"
+      },
+      {
+        "title": "item.py",
+        "href": "#/Python/frameworks/FastApi/item.py.md"
+      },
+      {
+        "title": "item_routes.py",
+        "href": "#/Python/frameworks/FastApi/item_routes.py.md"
+      },
+      {
+        "title": "jatkanshakki.py",
+        "href": "#/Python/projects/jatkanshakki.py.md"
+      },
+      {
+        "title": "list_basics.py",
+        "href": "#/Python/perusteet/list_basics.py.md"
+      },
+      {
+        "title": "loops_and_conditions.py",
+        "href": "#/Python/perusteet/loops_and_conditions.py.md"
+      },
+      {
+        "title": "main.py",
+        "href": "#/Python/frameworks/FastApi/main.py.md"
+      },
+      {
+        "title": "mato.py",
+        "href": "#/Python/projects/mato.py.md"
+      },
+      {
+        "title": "number_examples.py",
+        "href": "#/Python/perusteet/number_examples.py.md"
+      },
+      {
+        "title": "real_squid_game.py",
+        "href": "#/Python/projects/real_squid_game.py.md"
+      },
+      {
+        "title": "string_methods.py",
+        "href": "#/Python/perusteet/string_methods.py.md"
+      },
+      {
+        "title": "test_main.py",
+        "href": "#/Python/frameworks/FastApi/test_main.py.md"
+      },
+      {
+        "title": "tictac.py",
+        "href": "#/Python/projects/tictac.py.md"
+      },
+      {
+        "title": "tictac1.py",
+        "href": "#/Python/projects/tictac1.py.md"
+      },
+      {
+        "title": "user.py",
+        "href": "#/Python/frameworks/FastApi/user.py.md"
+      },
+      {
+        "title": "user_input.py",
+        "href": "#/Python/perusteet/user_input.py.md"
+      }
     ]
   },
   {
@@ -31,6 +1137,196 @@
     "anchor": "#/tags?id=html",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "HTML-multimediatagit",
+        "href": "#/Html/Esimerkit/multimedia.md"
+      },
+      {
+        "title": "Tagit.html",
+        "href": "#/Html/Esimerkit/Tagit.html.md"
+      },
+      {
+        "title": "animations.css",
+        "href": "#/Html/CSS/animations.css.md"
+      },
+      {
+        "title": "appointment-form.html",
+        "href": "#/Html/Esimerkit/formsit/appointment-form.html.md"
+      },
+      {
+        "title": "asettelut.css",
+        "href": "#/Html/CSS/asettelut.css.md"
+      },
+      {
+        "title": "backround.css",
+        "href": "#/Html/CSS/backround.css.md"
+      },
+      {
+        "title": "basic.html",
+        "href": "#/Html/Esimerkit/basic.html.md"
+      },
+      {
+        "title": "border.css",
+        "href": "#/Html/CSS/border.css.md"
+      },
+      {
+        "title": "code-style.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md"
+      },
+      {
+        "title": "feedback-form.html",
+        "href": "#/Html/Esimerkit/formsit/feedback-form.html.md"
+      },
+      {
+        "title": "file-upload-form.html",
+        "href": "#/Html/Esimerkit/formsit/file-upload-form.html.md"
+      },
+      {
+        "title": "flexmenu.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md"
+      },
+      {
+        "title": "fontit.css",
+        "href": "#/Html/CSS/fontit.css.md"
+      },
+      {
+        "title": "forms.html",
+        "href": "#/Html/Esimerkit/formsit/forms.html.md"
+      },
+      {
+        "title": "forms1.html",
+        "href": "#/Html/Esimerkit/formsit/forms1.html.md"
+      },
+      {
+        "title": "forms2.html",
+        "href": "#/Html/Esimerkit/formsit/forms2.html.md"
+      },
+      {
+        "title": "grid.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md"
+      },
+      {
+        "title": "highlight-heading.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md"
+      },
+      {
+        "title": "hyphenation.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md"
+      },
+      {
+        "title": "image.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md"
+      },
+      {
+        "title": "index-flexmenu.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-flexmenu.html.md"
+      },
+      {
+        "title": "index-grid.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md"
+      },
+      {
+        "title": "index-image.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md"
+      },
+      {
+        "title": "index.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/index.html.md"
+      },
+      {
+        "title": "index.html",
+        "href": "#/Html/Esimerkit/formsit/index.html.md"
+      },
+      {
+        "title": "index.html",
+        "href": "#/Html/projektit/Ajastin/index.html.md"
+      },
+      {
+        "title": "kuva.jpg",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md"
+      },
+      {
+        "title": "kuva.jpg",
+        "href": "#/Html/Esimerkit/kuva.jpg.md"
+      },
+      {
+        "title": "layouts",
+        "href": "#/Html/Layoutit/layouts.md"
+      },
+      {
+        "title": "loginForm.html",
+        "href": "#/Html/projektit/loginform/loginForm.html.md"
+      },
+      {
+        "title": "main.js",
+        "href": "#/Html/projektit/Ajastin/main.js.md"
+      },
+      {
+        "title": "multimedia.html",
+        "href": "#/Html/Esimerkit/multimedia.html.md"
+      },
+      {
+        "title": "rps.html",
+        "href": "#/Html/projektit/rps.html.md"
+      },
+      {
+        "title": "rtl-text.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/rtl-text.css.md"
+      },
+      {
+        "title": "salasanageneraattori.html",
+        "href": "#/Html/projektit/salasanageneraattori.html.md"
+      },
+      {
+        "title": "sarakkeet.css",
+        "href": "#/Html/CSS/sarakkeet.css.md"
+      },
+      {
+        "title": "style.css",
+        "href": "#/Html/projektit/Ajastin/style.css.md"
+      },
+      {
+        "title": "styles.css",
+        "href": "#/Html/CSS/styles.css.md"
+      },
+      {
+        "title": "styles.css",
+        "href": "#/Html/projektit/loginform/styles.css.md"
+      },
+      {
+        "title": "table.html",
+        "href": "#/Html/Layoutit/table/table.html.md"
+      },
+      {
+        "title": "tables.html",
+        "href": "#/Html/Esimerkit/tables.html.md"
+      },
+      {
+        "title": "teksti.css",
+        "href": "#/Html/CSS/teksti.css.md"
+      },
+      {
+        "title": "text-align-last.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md"
+      },
+      {
+        "title": "text-emphasis.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md"
+      },
+      {
+        "title": "text-style.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md"
+      },
+      {
+        "title": "to-do.html",
+        "href": "#/Html/Esimerkit/to-do.html.md"
+      },
+      {
+        "title": "website1.html",
+        "href": "#/Html/projektit/website1.html.md"
+      }
     ]
   },
   {
@@ -39,6 +1335,180 @@
     "anchor": "#/tags?id=projekti-ideat",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "15 CSS-projekti-ideaa",
+        "href": "#/Vinkit/Projekti-ideat/15-css-projekti-ideaa.md"
+      },
+      {
+        "title": "30 päivän React-projektihaaste",
+        "href": "#/Vinkit/Projekti-ideat/30-paivan-react-projektihaaste.md"
+      },
+      {
+        "title": "AI-integroidut edistyneet projekti-ideat",
+        "href": "#/Vinkit/Projekti-ideat/ai-integroidut-edistyneet-projekti-ideoita.md"
+      },
+      {
+        "title": "AI-integroidut projekti-ideat (aloittelijataso)",
+        "href": "#/Vinkit/Projekti-ideat/ai-integroidut-projekti-ideoita-aloittelija.md"
+      },
+      {
+        "title": "Aloittelijan koodausprojektilista",
+        "href": "#/Vinkit/Projekti-ideat/aloittelijan-koodausprojektilista.md"
+      },
+      {
+        "title": "Aloittelijaystävälliset API-projektit",
+        "href": "#/Vinkit/Projekti-ideat/aloittelijaystavalliset-api-projektit.md"
+      },
+      {
+        "title": "Backend-projekti-ideoita",
+        "href": "#/Vinkit/Projekti-ideat/backend-projekti-ideoita.md"
+      },
+      {
+        "title": "Data science -projekti-ideoita",
+        "href": "#/Vinkit/Projekti-ideat/data-science-projekti-ideoita.md"
+      },
+      {
+        "title": "Data scientist -projekteja: agenttinen AI",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-agenttinen-ai.md"
+      },
+      {
+        "title": "Data scientist -projekteja: deep learning",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-deep-learning.md"
+      },
+      {
+        "title": "Data scientist -projekteja: generatiivinen AI",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-generatiivinen-ai.md"
+      },
+      {
+        "title": "Data scientist -projekteja: tilastollinen mallinnus",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-tilastollinen-mallinnus.md"
+      },
+      {
+        "title": "Data scientist -projekti-ideoita: koneoppiminen",
+        "href": "#/Vinkit/Projekti-ideat/data-scientist-projektit-koneoppiminen.md"
+      },
+      {
+        "title": "Deep learning -projekti-ideoita (keskitaso)",
+        "href": "#/Vinkit/Projekti-ideat/deep-learning-projekti-ideoita.md"
+      },
+      {
+        "title": "Edistyneet API-projektit (JWT, tiedostolataus, chat, maksu)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-api-projektit-jwt-tiedostolataus-chat-maksu.md"
+      },
+      {
+        "title": "Edistyneet API-projektit (ilmoitukset, rate limiting, haku, lokitus)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-api-projektit-ilmoitukset-rate-limiting-haku-lokitus.md"
+      },
+      {
+        "title": "Edistyneet API-projektit (reaaliaikainen yhteistyö, mikropalvelut)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-api-projektit-reaaliaikainen-yhteistyo-mikropalvelut.md"
+      },
+      {
+        "title": "Edistyneiden koodausprojektien lista",
+        "href": "#/Vinkit/Projekti-ideat/edistyneiden-koodausprojektien-lista.md"
+      },
+      {
+        "title": "Edistyneitä SaaS/AI-projekti-ideoita (FullStack)",
+        "href": "#/Vinkit/Projekti-ideat/edistyneet-saas-ai-projekti-ideoita.md"
+      },
+      {
+        "title": "Frontend- ja Backend-kehittäjän kansiorakenne",
+        "href": "#/Vinkit/Projekti-ideat/frontend-ja-backend-kansiorakenne.md"
+      },
+      {
+        "title": "HTML/CSS/JS-aloittelijaprojektit",
+        "href": "#/Vinkit/Projekti-ideat/html-css-js-aloittelijaprojektit.md"
+      },
+      {
+        "title": "Ilmaisia API:ja projekteihin",
+        "href": "#/Vinkit/Projekti-ideat/ilmaisia-apeja-projekteihin.md"
+      },
+      {
+        "title": "JavaScript-minisovellusprojektit (To-Do, laskuri, lainausgeneraattori)",
+        "href": "#/Vinkit/Projekti-ideat/javascript-minisovellusprojektit.md"
+      },
+      {
+        "title": "Keskitason koodausprojektilista",
+        "href": "#/Vinkit/Projekti-ideat/keskitason-koodausprojektilista.md"
+      },
+      {
+        "title": "Koneoppimis- ja tekoälyprojektien ideoita",
+        "href": "#/Vinkit/Projekti-ideat/koneoppimis-ai-projektien-listaus.md"
+      },
+      {
+        "title": "Koneoppimisprojekti-ideoita (aloittelijataso)",
+        "href": "#/Vinkit/Projekti-ideat/koneoppimisprojekti-ideoita-spam-luokittelu.md"
+      },
+      {
+        "title": "Kyberturvallisuusprojektien listaus",
+        "href": "#/Vinkit/Projekti-ideat/kyberturvallisuusprojektien-listaus.md"
+      },
+      {
+        "title": "Lista 60 Python-projekti-ideasta",
+        "href": "#/Vinkit/Projekti-ideat/60-python-projekti-ideaa.md"
+      },
+      {
+        "title": "Lisää MERN-projekti-ideoita",
+        "href": "#/Vinkit/Projekti-ideat/lisaa-mern-projekti-ideoita.md"
+      },
+      {
+        "title": "Lisää deep learning -projekteja",
+        "href": "#/Vinkit/Projekti-ideat/lisaa-dl-projekteja.md"
+      },
+      {
+        "title": "Lisää koneoppimisprojekteja (ennustemallit, sentimenttianalyysi)",
+        "href": "#/Vinkit/Projekti-ideat/lisaa-ml-projekteja-ennustemallit-sentimenttianalyysi.md"
+      },
+      {
+        "title": "MERN-pino -projekti-ideoita (advanced)",
+        "href": "#/Vinkit/Projekti-ideat/mern-pino-projekti-ideoita-advanced.md"
+      },
+      {
+        "title": "ML-projektin kansiorakennekaavio",
+        "href": "#/Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.md"
+      },
+      {
+        "title": "Miksi useimmat kehittäjät eivät koskaan tule työmarkkinakelpoisiksi",
+        "href": "#/Vinkit/Projekti-ideat/mainos-100-ohjelmointiprojektille.md"
+      },
+      {
+        "title": "Node.js-projektin kansiorakenne (frontend/backend-jako)",
+        "href": "#/Vinkit/Projekti-ideat/nodejs-projektin-kansiorakenne.md"
+      },
+      {
+        "title": "Ohjelmistokehitysprojekti-ideoita (web, mobiili, backend)",
+        "href": "#/Vinkit/Projekti-ideat/ohjelmistokehitysprojekti-ideoita.md"
+      },
+      {
+        "title": "Osakekurssiennustus- ja tunnistusprojekteja",
+        "href": "#/Vinkit/Projekti-ideat/osakekurssiennustus-ja-tunnistusprojekteja.md"
+      },
+      {
+        "title": "Python-projekti-ideoita eri tasoille",
+        "href": "#/Vinkit/Projekti-ideat/python-projekti-ideoita-eri-tasoille.md"
+      },
+      {
+        "title": "Ravintolan hallintajärjestelmän projekti-idea",
+        "href": "#/Vinkit/Projekti-ideat/ravintolan-hallintajarjestelman-projekti-idea.md"
+      },
+      {
+        "title": "React-projekti-ideoita aloittelijoille",
+        "href": "#/Vinkit/Projekti-ideat/react-projekti-ideoita-aloittelijoille.md"
+      },
+      {
+        "title": "React-projektin kansiorakenne: \"Good\" vs \"Best\"",
+        "href": "#/Vinkit/Projekti-ideat/react-kansiorakenne-good-vs-best.md"
+      },
+      {
+        "title": "Tietorakenne- ja algoritmi (DSA) -projektilista",
+        "href": "#/Vinkit/Projekti-ideat/tietorakenne-algoritmi-dsa-projektilista.md"
+      },
+      {
+        "title": "Varastonhallinnan dashboard -esimerkki (dev-projektin UI)",
+        "href": "#/Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.md"
+      }
     ]
   },
   {
@@ -47,6 +1517,140 @@
     "anchor": "#/tags?id=javascript-react",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "Axios API-pyyntöihin Reactissa",
+        "href": "#/Vinkit/JavaScript-React/axios-api-pyyntoihin-reactissa.md"
+      },
+      {
+        "title": "CRUD-operaatiot Reactissa (useState-esimerkki)",
+        "href": "#/Vinkit/JavaScript-React/crud-operaatiot-reactissa.md"
+      },
+      {
+        "title": "CSV-vienti Reactissa (react-csv)",
+        "href": "#/Vinkit/JavaScript-React/csv-vienti-reactissa.md"
+      },
+      {
+        "title": "Debounced-haku Reactissa (lodash.debounce)",
+        "href": "#/Vinkit/JavaScript-React/debounced-haku-reactissa.md"
+      },
+      {
+        "title": "Drag & Drop -tiedostonlataus Reactissa (react-dropzone)",
+        "href": "#/Vinkit/JavaScript-React/drag-drop-tiedostonlataus-reactissa.md"
+      },
+      {
+        "title": "Excel-tiedoston lukeminen Reactissa (xlsx)",
+        "href": "#/Vinkit/JavaScript-React/excel-tiedoston-lukeminen-reactissa.md"
+      },
+      {
+        "title": "Fetch API:n perusteet (JS-sarja, päivä 29)",
+        "href": "#/Vinkit/JavaScript-React/fetch-api-perusteet.md"
+      },
+      {
+        "title": "Firebase-autentikointi Reactissa",
+        "href": "#/Vinkit/JavaScript-React/firebase-autentikointi-reactissa.md"
+      },
+      {
+        "title": "JavaScript switch-lause",
+        "href": "#/Vinkit/JavaScript-React/javascript-switch-lause.md"
+      },
+      {
+        "title": "JavaScript-operaattorit",
+        "href": "#/Vinkit/JavaScript-React/javascript-operaattorit.md"
+      },
+      {
+        "title": "JavaScriptin hiiritapahtumat (click, hover, drag)",
+        "href": "#/Vinkit/JavaScript-React/javascriptin-hiiritapahtumat.md"
+      },
+      {
+        "title": "Karttojen toteutus Reactissa (react-leaflet)",
+        "href": "#/Vinkit/JavaScript-React/karttojen-toteutus-react-leaflet.md"
+      },
+      {
+        "title": "Navigointi Link-komponentilla (React Router)",
+        "href": "#/Vinkit/JavaScript-React/navigointi-link-komponentilla.md"
+      },
+      {
+        "title": "Next.js Middleware -opas",
+        "href": "#/Vinkit/JavaScript-React/nextjs-middleware-opas.md"
+      },
+      {
+        "title": "Next.js Middleware -opas (toinen versio)",
+        "href": "#/Vinkit/JavaScript-React/nextjs-middleware-opas-versio-2.md"
+      },
+      {
+        "title": "Progressive Web Apps (service worker, manifest)",
+        "href": "#/Vinkit/JavaScript-React/progressive-web-apps.md"
+      },
+      {
+        "title": "QR-koodien generointi Reactissa (qrcode.react)",
+        "href": "#/Vinkit/JavaScript-React/qr-koodien-generointi-reactissa.md"
+      },
+      {
+        "title": "React Context API -perusteet",
+        "href": "#/Vinkit/JavaScript-React/react-context-api-perusteet.md"
+      },
+      {
+        "title": "React Contextin datanjako -kaavio",
+        "href": "#/Vinkit/JavaScript-React/react-context-datanjako-kaavio.md"
+      },
+      {
+        "title": "React Hooks -cheat sheet",
+        "href": "#/Vinkit/JavaScript-React/react-hooks-cheat-sheet.md"
+      },
+      {
+        "title": "React JS -komentolista",
+        "href": "#/Vinkit/JavaScript-React/react-js-komentolista.md"
+      },
+      {
+        "title": "React Router -perusteet",
+        "href": "#/Vinkit/JavaScript-React/react-router-perusteet.md"
+      },
+      {
+        "title": "React Routerin arkkitehtuuri",
+        "href": "#/Vinkit/JavaScript-React/react-routerin-arkkitehtuuri.md"
+      },
+      {
+        "title": "React-edistyneet projektit",
+        "href": "#/Vinkit/JavaScript-React/react-edistyneet-projektit.md"
+      },
+      {
+        "title": "React-kansiorakenne",
+        "href": "#/Vinkit/JavaScript-React/react-kansiorakenne.md"
+      },
+      {
+        "title": "React-kansiorakenne (30 Days -sarja, päivä 25)",
+        "href": "#/Vinkit/JavaScript-React/react-kansiorakenne-30-days-paiva-25.md"
+      },
+      {
+        "title": "React-portfolioprojektit: SaaS dashboard ja verkkokauppa",
+        "href": "#/Vinkit/JavaScript-React/react-portfolioprojektit-saas-dashboard-ja-verkkokauppa.md"
+      },
+      {
+        "title": "React/Tailwind/TypeScript-projektit (aloittelijataso)",
+        "href": "#/Vinkit/JavaScript-React/react-tailwind-typescript-projektit.md"
+      },
+      {
+        "title": "Reactin oleelliset kirjastot (Router, Axios, Zustand ym.)",
+        "href": "#/Vinkit/JavaScript-React/reactin-oleelliset-kirjastot.md"
+      },
+      {
+        "title": "Suojatut reitit (Protected Routes) Reactissa",
+        "href": "#/Vinkit/JavaScript-React/suojatut-reitit-reactissa.md"
+      },
+      {
+        "title": "Valuuttamuunnin HTML/CSS/JS-projektina",
+        "href": "#/Vinkit/JavaScript-React/valuuttamuunnin-html-css-js.md"
+      },
+      {
+        "title": "Viivakoodin generointi Reactissa (react-barcode)",
+        "href": "#/Vinkit/JavaScript-React/viivakoodin-generointi-react-barcode.md"
+      },
+      {
+        "title": "useMemo vs useCallback -vertailu",
+        "href": "#/Vinkit/JavaScript-React/usememo-vs-usecallback.md"
+      }
     ]
   },
   {
@@ -55,6 +1659,108 @@
     "anchor": "#/tags?id=backend-api",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "API-tyyppien vertailu (REST, GraphQL, SOAP, WebSocket ym.)",
+        "href": "#/Vinkit/Backend-API/api-tyyppien-vertailu.md"
+      },
+      {
+        "title": "Cookies vs JWT -vertailu",
+        "href": "#/Vinkit/Backend-API/cookies-vs-jwt-vertailu.md"
+      },
+      {
+        "title": "Cookies vs JWT -vertailu (toinen versio)",
+        "href": "#/Vinkit/Backend-API/cookies-vs-jwt-vertailu-toinen-versio.md"
+      },
+      {
+        "title": "Cookies vs LocalStorage vs SessionStorage",
+        "href": "#/Vinkit/Backend-API/cookies-vs-localstorage-vs-sessionstorage.md"
+      },
+      {
+        "title": "Express.js-huijauslappu",
+        "href": "#/Vinkit/Backend-API/expressjs-huijauslappu.md"
+      },
+      {
+        "title": "JWT vs OAuth 2.0 -autentikaatio",
+        "href": "#/Vinkit/Backend-API/jwt-vs-oauth-autentikaatio.md"
+      },
+      {
+        "title": "JWT-autentikaation vuokaavio",
+        "href": "#/Vinkit/Backend-API/jwt-autentikaation-vuokaavio.md"
+      },
+      {
+        "title": "JWT-tokenien refresh-rotaatio",
+        "href": "#/Vinkit/Backend-API/jwt-tokenien-refresh-rotaatio.md"
+      },
+      {
+        "title": "Kaksivaiheisen tunnistautumisen (2FA) vuokaavio",
+        "href": "#/Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.md"
+      },
+      {
+        "title": "Käyttäjän kirjautumisen vuokaavio (bcrypt, JWT)",
+        "href": "#/Vinkit/Backend-API/kayttajan-kirjautumisen-vuokaavio.md"
+      },
+      {
+        "title": "Miksi tietokantakyselyt hidastuvat",
+        "href": "#/Vinkit/Backend-API/miksi-tietokantakyselyt-hidastuvat.md"
+      },
+      {
+        "title": "Next.js + backend -aloittelijaprojektit",
+        "href": "#/Vinkit/Backend-API/nextjs-backend-aloittelijaprojektit.md"
+      },
+      {
+        "title": "Node.js CRUD-operaatiot Expressilla",
+        "href": "#/Vinkit/Backend-API/nodejs-crud-operaatiot-expressilla.md"
+      },
+      {
+        "title": "Node.js/backend-edistyneet projektit",
+        "href": "#/Vinkit/Backend-API/nodejs-backend-edistyneet-projektit.md"
+      },
+      {
+        "title": "OAuth-kirjautumisen vuokaavio",
+        "href": "#/Vinkit/Backend-API/oauth-kirjautumisen-vuokaavio.md"
+      },
+      {
+        "title": "OpenWeather API -esittely",
+        "href": "#/Vinkit/Backend-API/openweather-api-esittely.md"
+      },
+      {
+        "title": "REST API -arkkitehtuuri",
+        "href": "#/Vinkit/Backend-API/rest-api-arkkitehtuuri.md"
+      },
+      {
+        "title": "REST API -perusteiden huijauslappu",
+        "href": "#/Vinkit/Backend-API/rest-api-perusteiden-huijauslappu.md"
+      },
+      {
+        "title": "REST API -pikaopas",
+        "href": "#/Vinkit/Backend-API/rest-api-pikaopas.md"
+      },
+      {
+        "title": "REST API:n CRUD-operaatiot pyyntö/vastaus-esimerkein",
+        "href": "#/Vinkit/Backend-API/rest-apin-crud-operaatiot.md"
+      },
+      {
+        "title": "REST API:n täydellinen opas aloittelijoille",
+        "href": "#/Vinkit/Backend-API/rest-apin-taydellinen-opas-aloittelijoille.md"
+      },
+      {
+        "title": "Role-Based Access Control (RBAC) -vuokaavio",
+        "href": "#/Vinkit/Backend-API/role-based-access-control-rbac-vuokaavio.md"
+      },
+      {
+        "title": "Spring Boot -sovelluksen rakennekaavio",
+        "href": "#/Vinkit/Backend-API/spring-boot-sovelluksen-rakenne.md"
+      },
+      {
+        "title": "Supabase-tietokantaclientin yhdistäminen Next.js-sovellukseen",
+        "href": "#/Vinkit/Backend-API/supabase-tietokantaclientin-yhdistaminen-nextjs-sovellukseen.md"
+      },
+      {
+        "title": "Tietokantaintegraatio Next.js:ssä (Prisma, PostgreSQL)",
+        "href": "#/Vinkit/Backend-API/tietokantaintegraatio-nextjs-prisma-postgresql.md"
+      }
     ]
   },
   {
@@ -63,6 +1769,108 @@
     "anchor": "#/tags?id=css",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "animations.css",
+        "href": "#/Html/CSS/animations.css.md"
+      },
+      {
+        "title": "asettelut.css",
+        "href": "#/Html/CSS/asettelut.css.md"
+      },
+      {
+        "title": "backround.css",
+        "href": "#/Html/CSS/backround.css.md"
+      },
+      {
+        "title": "border.css",
+        "href": "#/Html/CSS/border.css.md"
+      },
+      {
+        "title": "code-style.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md"
+      },
+      {
+        "title": "flexmenu.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md"
+      },
+      {
+        "title": "fontit.css",
+        "href": "#/Html/CSS/fontit.css.md"
+      },
+      {
+        "title": "grid.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md"
+      },
+      {
+        "title": "highlight-heading.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md"
+      },
+      {
+        "title": "hyphenation.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md"
+      },
+      {
+        "title": "image.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md"
+      },
+      {
+        "title": "index-flexmenu.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-flexmenu.html.md"
+      },
+      {
+        "title": "index-grid.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md"
+      },
+      {
+        "title": "index-image.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md"
+      },
+      {
+        "title": "index.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/index.html.md"
+      },
+      {
+        "title": "kuva.jpg",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md"
+      },
+      {
+        "title": "rtl-text.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/rtl-text.css.md"
+      },
+      {
+        "title": "sarakkeet.css",
+        "href": "#/Html/CSS/sarakkeet.css.md"
+      },
+      {
+        "title": "style.css",
+        "href": "#/Html/projektit/Ajastin/style.css.md"
+      },
+      {
+        "title": "styles.css",
+        "href": "#/Html/CSS/styles.css.md"
+      },
+      {
+        "title": "styles.css",
+        "href": "#/Html/projektit/loginform/styles.css.md"
+      },
+      {
+        "title": "teksti.css",
+        "href": "#/Html/CSS/teksti.css.md"
+      },
+      {
+        "title": "text-align-last.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md"
+      },
+      {
+        "title": "text-emphasis.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md"
+      },
+      {
+        "title": "text-style.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md"
+      }
     ]
   },
   {
@@ -71,6 +1879,84 @@
     "anchor": "#/tags?id=framework",
     "cats": [
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "App.js",
+        "href": "#/JavaScript/framework/React/App.js.md"
+      },
+      {
+        "title": "CallbackEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CallbackEsimerkki.js.md"
+      },
+      {
+        "title": "ContextEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ContextEsimerkki.js.md"
+      },
+      {
+        "title": "CountEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CountEsimerkki.js.md"
+      },
+      {
+        "title": "CssReactEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CssReactEsimerkki.js.md"
+      },
+      {
+        "title": "EffectEsimerkki.js",
+        "href": "#/JavaScript/framework/React/EffectEsimerkki.js.md"
+      },
+      {
+        "title": "FragmentEsimerkki.js",
+        "href": "#/JavaScript/framework/React/FragmentEsimerkki.js.md"
+      },
+      {
+        "title": "KirjautumisEsimerkki.js",
+        "href": "#/JavaScript/framework/React/KirjautumisEsimerkki.js.md"
+      },
+      {
+        "title": "ListanRenderointiEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ListanRenderointiEsimerkki.js.md"
+      },
+      {
+        "title": "LomakeEsimerkki.js",
+        "href": "#/JavaScript/framework/React/LomakeEsimerkki.js.md"
+      },
+      {
+        "title": "MapElementsEsimerkki.js",
+        "href": "#/JavaScript/framework/React/MapElementsEsimerkki.js.md"
+      },
+      {
+        "title": "MemoEsimerkki.js",
+        "href": "#/JavaScript/framework/React/MemoEsimerkki.js.md"
+      },
+      {
+        "title": "MyComponent.js",
+        "href": "#/JavaScript/framework/React/MyComponent.js.md"
+      },
+      {
+        "title": "ReducerEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ReducerEsimerkki.js.md"
+      },
+      {
+        "title": "RefEsimerkki.js",
+        "href": "#/JavaScript/framework/React/RefEsimerkki.js.md"
+      },
+      {
+        "title": "ShortCircuitEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ShortCircuitEsimerkki.js.md"
+      },
+      {
+        "title": "TapahtumaJaTilaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TapahtumaJaTilaEsimerkki.js.md"
+      },
+      {
+        "title": "TapahtumankuuntelijaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TapahtumankuuntelijaEsimerkki.js.md"
+      },
+      {
+        "title": "TilaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TilaEsimerkki.js.md"
+      }
     ]
   },
   {
@@ -79,6 +1965,84 @@
     "anchor": "#/tags?id=react",
     "cats": [
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "App.js",
+        "href": "#/JavaScript/framework/React/App.js.md"
+      },
+      {
+        "title": "CallbackEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CallbackEsimerkki.js.md"
+      },
+      {
+        "title": "ContextEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ContextEsimerkki.js.md"
+      },
+      {
+        "title": "CountEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CountEsimerkki.js.md"
+      },
+      {
+        "title": "CssReactEsimerkki.js",
+        "href": "#/JavaScript/framework/React/CssReactEsimerkki.js.md"
+      },
+      {
+        "title": "EffectEsimerkki.js",
+        "href": "#/JavaScript/framework/React/EffectEsimerkki.js.md"
+      },
+      {
+        "title": "FragmentEsimerkki.js",
+        "href": "#/JavaScript/framework/React/FragmentEsimerkki.js.md"
+      },
+      {
+        "title": "KirjautumisEsimerkki.js",
+        "href": "#/JavaScript/framework/React/KirjautumisEsimerkki.js.md"
+      },
+      {
+        "title": "ListanRenderointiEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ListanRenderointiEsimerkki.js.md"
+      },
+      {
+        "title": "LomakeEsimerkki.js",
+        "href": "#/JavaScript/framework/React/LomakeEsimerkki.js.md"
+      },
+      {
+        "title": "MapElementsEsimerkki.js",
+        "href": "#/JavaScript/framework/React/MapElementsEsimerkki.js.md"
+      },
+      {
+        "title": "MemoEsimerkki.js",
+        "href": "#/JavaScript/framework/React/MemoEsimerkki.js.md"
+      },
+      {
+        "title": "MyComponent.js",
+        "href": "#/JavaScript/framework/React/MyComponent.js.md"
+      },
+      {
+        "title": "ReducerEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ReducerEsimerkki.js.md"
+      },
+      {
+        "title": "RefEsimerkki.js",
+        "href": "#/JavaScript/framework/React/RefEsimerkki.js.md"
+      },
+      {
+        "title": "ShortCircuitEsimerkki.js",
+        "href": "#/JavaScript/framework/React/ShortCircuitEsimerkki.js.md"
+      },
+      {
+        "title": "TapahtumaJaTilaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TapahtumaJaTilaEsimerkki.js.md"
+      },
+      {
+        "title": "TapahtumankuuntelijaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TapahtumankuuntelijaEsimerkki.js.md"
+      },
+      {
+        "title": "TilaEsimerkki.js",
+        "href": "#/JavaScript/framework/React/TilaEsimerkki.js.md"
+      }
     ]
   },
   {
@@ -87,6 +2051,64 @@
     "anchor": "#/tags?id=ai-ml",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "$0 AI Architecture Stack 2026 (versio 2)",
+        "href": "#/Vinkit/AI-ML/0-ai-arkkitehtuuripino-2026.md"
+      },
+      {
+        "title": "100 Claude Tips",
+        "href": "#/Vinkit/AI-ML/100-claude-tips.md"
+      },
+      {
+        "title": "ERP-järjestelmä rakennettuna Claude-tekoälyllä",
+        "href": "#/Vinkit/AI-ML/erp-jarjestelma-claude-tekoalylla.md"
+      },
+      {
+        "title": "How to Build AI Agents from Scratch (10 vaihetta)",
+        "href": "#/Vinkit/AI-ML/how-to-build-ai-agents-from-scratch.md"
+      },
+      {
+        "title": "How to Build Claude Skills That Really Work",
+        "href": "#/Vinkit/AI-ML/how-to-build-claude-skills-that-really-work.md"
+      },
+      {
+        "title": "Koneoppimisen features ja labels -peruskäsitteet",
+        "href": "#/Vinkit/AI-ML/koneoppimisen-features-ja-labels.md"
+      },
+      {
+        "title": "Koneoppimisen kaavat",
+        "href": "#/Vinkit/AI-ML/koneoppimisen-kaavat.md"
+      },
+      {
+        "title": "LLM vs RAG vs AI Agent vs Agentic AI -vertailu",
+        "href": "#/Vinkit/AI-ML/llm-vs-rag-vs-ai-agent-vs-agentic-ai.md"
+      },
+      {
+        "title": "Miten rakennat AI-agentin",
+        "href": "#/Vinkit/AI-ML/how-to-build-an-ai-agent.md"
+      },
+      {
+        "title": "Multi-agentti-AI-järjestelmän arkkitehtuurikaavio",
+        "href": "#/Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.md"
+      },
+      {
+        "title": "No-code vs. vibe coding -vertailutaulukko",
+        "href": "#/Vinkit/AI-ML/no-code-vs-vibe-coding-vertailutaulukko.md"
+      },
+      {
+        "title": "Power BI pähkinänkuoressa",
+        "href": "#/Vinkit/AI-ML/power-bi-yhteenveto.md"
+      },
+      {
+        "title": "Tilastotieteen kaavat",
+        "href": "#/Vinkit/AI-ML/tilastotieteen-kaavat.md"
+      },
+      {
+        "title": "Top 10 avoimen lähdekoodin kirjastoa LLM-mallien hienosäätöön paikallisesti",
+        "href": "#/Vinkit/AI-ML/top-10-avoimen-lahdekoodin-kirjastoa-llm-hienosaatoon.md"
+      }
     ]
   },
   {
@@ -95,6 +2117,64 @@
     "anchor": "#/tags?id=devops",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "25 VS Code -laajennusta jokaiselle kehittäjälle",
+        "href": "#/Vinkit/DevOps/25-vs-code-laajennusta-jokaiselle-kehittajalle.md"
+      },
+      {
+        "title": "7 Git-komentoa -huijauslappu",
+        "href": "#/Vinkit/DevOps/7-git-komentoa-huijauslappu.md"
+      },
+      {
+        "title": "Bash-skriptauksen perusteet",
+        "href": "#/Vinkit/DevOps/bash-skriptauksen-perusteet.md"
+      },
+      {
+        "title": "CI/CD ja automaatio -projektilista",
+        "href": "#/Vinkit/DevOps/cicd-ja-automaatio-projektilista.md"
+      },
+      {
+        "title": "DevSecOps ja tietoturva-automaatio -projektilista",
+        "href": "#/Vinkit/DevOps/devsecops-ja-tietoturva-automaatio-projektilista.md"
+      },
+      {
+        "title": "Frontend-kehittäjän roadmap 2026",
+        "href": "#/Vinkit/DevOps/frontend-kehittajan-roadmap-2026.md"
+      },
+      {
+        "title": "Ilmaiset full-stack hosting-alustat",
+        "href": "#/Vinkit/DevOps/ilmaiset-full-stack-hosting-alustat.md"
+      },
+      {
+        "title": "Ilmaiset hosting-alustat frontendille",
+        "href": "#/Vinkit/DevOps/ilmaiset-hosting-alustat-frontendille.md"
+      },
+      {
+        "title": "Ilmaiset hosting-alustat moderneja sovelluksia varten",
+        "href": "#/Vinkit/DevOps/ilmaiset-moderneja-sovelluksia-varten.md"
+      },
+      {
+        "title": "Ilmaiset staattisten sivustojen hosting-alustat",
+        "href": "#/Vinkit/DevOps/ilmaiset-staattisten-sivustojen-hosting-alustat.md"
+      },
+      {
+        "title": "Koodaus-, esikatselu- ja julkaisualustat",
+        "href": "#/Vinkit/DevOps/koodaus-esikatselu-julkaisualustat.md"
+      },
+      {
+        "title": "Tulevaisuuden tech-urat",
+        "href": "#/Vinkit/DevOps/tulevaisuuden-tech-urat.md"
+      },
+      {
+        "title": "VS Code -laajennukset kehittäjille",
+        "href": "#/Vinkit/DevOps/vs-code-laajennukset-kehittajille.md"
+      },
+      {
+        "title": "cat ja nano — Linux-komentojen cheat sheet",
+        "href": "#/Vinkit/DevOps/cat-ja-nano-linux-komentojen-cheat-sheet.md"
+      }
     ]
   },
   {
@@ -103,6 +2183,48 @@
     "anchor": "#/tags?id=html-css",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "CSS-huijauslappu 2026",
+        "href": "#/Vinkit/Html-CSS/css-huijauslappu-2026.md"
+      },
+      {
+        "title": "HTML5:n img-elementti (40 päivän HTML-sarja, päivä 9)",
+        "href": "#/Vinkit/Html-CSS/html5-img-elementti.md"
+      },
+      {
+        "title": "HTML5:n semanttinen rakenne",
+        "href": "#/Vinkit/Html-CSS/html5-semanttinen-rakenne.md"
+      },
+      {
+        "title": "Kalenterin UI-toteutus HTML/CSS/JS:llä",
+        "href": "#/Vinkit/Html-CSS/kalenterin-ui-toteutus.md"
+      },
+      {
+        "title": "Kuvien optimointi verkkosivuille",
+        "href": "#/Vinkit/Html-CSS/kuvien-optimointi-verkkosivuille.md"
+      },
+      {
+        "title": "Margin vs padding CSS-box-mallissa",
+        "href": "#/Vinkit/Html-CSS/margin-vs-padding-css-box-malli.md"
+      },
+      {
+        "title": "Responsiivisen suunnittelun cheat sheet",
+        "href": "#/Vinkit/Html-CSS/responsiivisen-suunnittelun-cheat-sheet.md"
+      },
+      {
+        "title": "Responsiivisen suunnittelun pikaopas",
+        "href": "#/Vinkit/Html-CSS/responsiivisen-suunnittelun-pikaopas.md"
+      },
+      {
+        "title": "Web-suorituskyvyn optimointi (Core Web Vitals)",
+        "href": "#/Vinkit/Html-CSS/web-suorituskyvyn-optimointi.md"
+      },
+      {
+        "title": "Yleisimmät verkkosivujen layout-rakenteet",
+        "href": "#/Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.md"
+      }
     ]
   },
   {
@@ -111,6 +2233,44 @@
     "anchor": "#/tags?id=fastapi",
     "cats": [
       "Python"
+    ],
+    "pages": [
+      {
+        "title": "FastAPI Esimerkkisovellus",
+        "href": "#/Python/frameworks/FastApi/README.md"
+      },
+      {
+        "title": "basic_routes.py",
+        "href": "#/Python/frameworks/FastApi/basic_routes.py.md"
+      },
+      {
+        "title": "fastapi",
+        "href": "#/Python/frameworks/FastApi/fastapi.md"
+      },
+      {
+        "title": "fastapi_esimerkit",
+        "href": "#/Python/frameworks/FastApi/fastapi_esimerkit.md"
+      },
+      {
+        "title": "item.py",
+        "href": "#/Python/frameworks/FastApi/item.py.md"
+      },
+      {
+        "title": "item_routes.py",
+        "href": "#/Python/frameworks/FastApi/item_routes.py.md"
+      },
+      {
+        "title": "main.py",
+        "href": "#/Python/frameworks/FastApi/main.py.md"
+      },
+      {
+        "title": "test_main.py",
+        "href": "#/Python/frameworks/FastApi/test_main.py.md"
+      },
+      {
+        "title": "user.py",
+        "href": "#/Python/frameworks/FastApi/user.py.md"
+      }
     ]
   },
   {
@@ -119,6 +2279,44 @@
     "anchor": "#/tags?id=frameworks",
     "cats": [
       "Python"
+    ],
+    "pages": [
+      {
+        "title": "FastAPI Esimerkkisovellus",
+        "href": "#/Python/frameworks/FastApi/README.md"
+      },
+      {
+        "title": "basic_routes.py",
+        "href": "#/Python/frameworks/FastApi/basic_routes.py.md"
+      },
+      {
+        "title": "fastapi",
+        "href": "#/Python/frameworks/FastApi/fastapi.md"
+      },
+      {
+        "title": "fastapi_esimerkit",
+        "href": "#/Python/frameworks/FastApi/fastapi_esimerkit.md"
+      },
+      {
+        "title": "item.py",
+        "href": "#/Python/frameworks/FastApi/item.py.md"
+      },
+      {
+        "title": "item_routes.py",
+        "href": "#/Python/frameworks/FastApi/item_routes.py.md"
+      },
+      {
+        "title": "main.py",
+        "href": "#/Python/frameworks/FastApi/main.py.md"
+      },
+      {
+        "title": "test_main.py",
+        "href": "#/Python/frameworks/FastApi/test_main.py.md"
+      },
+      {
+        "title": "user.py",
+        "href": "#/Python/frameworks/FastApi/user.py.md"
+      }
     ]
   },
   {
@@ -127,6 +2325,44 @@
     "anchor": "#/tags?id=jarjestelmasuunnittelu",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "Dokumenttien skannausjärjestelmän arkkitehtuuri ja tietokantasuunnittelu",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/dokumenttien-skannausjarjestelman-arkkitehtuuri.md"
+      },
+      {
+        "title": "Järjestelmäsuunnittelu: miten WhatsApp toimii",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/jarjestelmasuunnittelu-whatsapp.md"
+      },
+      {
+        "title": "Kuinka selain renderoi sivun (DNS:stä pikseleihin)",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/miten-selain-renderoi-sivun.md"
+      },
+      {
+        "title": "Kulunseurantasovelluksen arkkitehtuuri ja tietokantasuunnittelu",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/kulunseurantasovelluksen-arkkitehtuuri.md"
+      },
+      {
+        "title": "Micro Frontend -arkkitehtuuri",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/micro-frontend-arkkitehtuuri.md"
+      },
+      {
+        "title": "Miten WebSocket toimii",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/miten-websocket-toimii.md"
+      },
+      {
+        "title": "SaaS-tilaussovelluksen arkkitehtuuri ja tietokantasuunnittelu",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/saas-tilaussovelluksen-arkkitehtuuri.md"
+      },
+      {
+        "title": "Server-side vs client-side renderointi",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/server-side-vs-client-side-renderointi.md"
+      },
+      {
+        "title": "Skaalautuva frontend-arkkitehtuuri",
+        "href": "#/Vinkit/Jarjestelmasuunnittelu/skaalautuva-frontend-arkkitehtuuri.md"
+      }
     ]
   },
   {
@@ -135,6 +2371,40 @@
     "anchor": "#/tags?id=esim1",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "code-style.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md"
+      },
+      {
+        "title": "highlight-heading.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md"
+      },
+      {
+        "title": "hyphenation.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md"
+      },
+      {
+        "title": "index.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/index.html.md"
+      },
+      {
+        "title": "rtl-text.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/rtl-text.css.md"
+      },
+      {
+        "title": "text-align-last.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md"
+      },
+      {
+        "title": "text-emphasis.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md"
+      },
+      {
+        "title": "text-style.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md"
+      }
     ]
   },
   {
@@ -143,6 +2413,36 @@
     "anchor": "#/tags?id=esim2-resp",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "flexmenu.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md"
+      },
+      {
+        "title": "grid.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md"
+      },
+      {
+        "title": "image.css",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md"
+      },
+      {
+        "title": "index-flexmenu.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-flexmenu.html.md"
+      },
+      {
+        "title": "index-grid.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md"
+      },
+      {
+        "title": "index-image.html",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md"
+      },
+      {
+        "title": "kuva.jpg",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md"
+      }
     ]
   },
   {
@@ -151,6 +2451,36 @@
     "anchor": "#/tags?id=formsit",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "appointment-form.html",
+        "href": "#/Html/Esimerkit/formsit/appointment-form.html.md"
+      },
+      {
+        "title": "feedback-form.html",
+        "href": "#/Html/Esimerkit/formsit/feedback-form.html.md"
+      },
+      {
+        "title": "file-upload-form.html",
+        "href": "#/Html/Esimerkit/formsit/file-upload-form.html.md"
+      },
+      {
+        "title": "forms.html",
+        "href": "#/Html/Esimerkit/formsit/forms.html.md"
+      },
+      {
+        "title": "forms1.html",
+        "href": "#/Html/Esimerkit/formsit/forms1.html.md"
+      },
+      {
+        "title": "forms2.html",
+        "href": "#/Html/Esimerkit/formsit/forms2.html.md"
+      },
+      {
+        "title": "index.html",
+        "href": "#/Html/Esimerkit/formsit/index.html.md"
+      }
     ]
   },
   {
@@ -159,6 +2489,36 @@
     "anchor": "#/tags?id=socket",
     "cats": [
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "App.js",
+        "href": "#/JavaScript/Socket/App.js.md"
+      },
+      {
+        "title": "ChatNamespace.js",
+        "href": "#/JavaScript/Socket/ChatNamespace.js.md"
+      },
+      {
+        "title": "ChatRoom.js",
+        "href": "#/JavaScript/Socket/ChatRoom.js.md"
+      },
+      {
+        "title": "Socket.IO Chat -esimerkki",
+        "href": "#/JavaScript/Socket/notes.md"
+      },
+      {
+        "title": "chat-server.js",
+        "href": "#/JavaScript/Socket/chat-server.js.md"
+      },
+      {
+        "title": "namespace-server.js",
+        "href": "#/JavaScript/Socket/namespace-server.js.md"
+      },
+      {
+        "title": "socket_io",
+        "href": "#/JavaScript/Socket/socket_io.md"
+      }
     ]
   },
   {
@@ -167,6 +2527,32 @@
     "anchor": "#/tags?id=ux-suunnittelu",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "Anatomy of a Portfolio Homepage – portfolio-etusivun jäsennys",
+        "href": "#/Vinkit/UX-Suunnittelu/portfolio-etusivun-anatomia.md"
+      },
+      {
+        "title": "Home Page vs Landing Page -vertailu",
+        "href": "#/Vinkit/UX-Suunnittelu/home-page-vs-landing-page.md"
+      },
+      {
+        "title": "Mikä tekee dashboardista hyvän?",
+        "href": "#/Vinkit/UX-Suunnittelu/mika-tekee-dashboardista-hyvan.md"
+      },
+      {
+        "title": "Mobile first vs desktop first -suunnittelu",
+        "href": "#/Vinkit/UX-Suunnittelu/mobile-first-vs-desktop-first.md"
+      },
+      {
+        "title": "Progress bar -tyyppien vertailu",
+        "href": "#/Vinkit/UX-Suunnittelu/progress-bar-tyyppien-vertailu.md"
+      },
+      {
+        "title": "UX-suunnittelun do's ja don'ts",
+        "href": "#/Vinkit/UX-Suunnittelu/ux-suunnittelun-dot-ja-dont.md"
+      }
     ]
   },
   {
@@ -175,6 +2561,20 @@
     "anchor": "#/tags?id=ajastin",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "index.html",
+        "href": "#/Html/projektit/Ajastin/index.html.md"
+      },
+      {
+        "title": "main.js",
+        "href": "#/Html/projektit/Ajastin/main.js.md"
+      },
+      {
+        "title": "style.css",
+        "href": "#/Html/projektit/Ajastin/style.css.md"
+      }
     ]
   },
   {
@@ -183,6 +2583,20 @@
     "anchor": "#/tags?id=excelit",
     "cats": [
       "Excelit"
+    ],
+    "pages": [
+      {
+        "title": "Excel Cheat Sheet insinööreille",
+        "href": "#/Excelit/excel_cheat_sheet.md"
+      },
+      {
+        "title": "Excel-pikanäppäimet insinööreille",
+        "href": "#/Excelit/excel_shortcuts.md"
+      },
+      {
+        "title": "Gantt-kaavio-ohjeet",
+        "href": "#/Excelit/gantt_chart_instructions.md"
+      }
     ]
   },
   {
@@ -191,6 +2605,20 @@
     "anchor": "#/tags?id=mfk-kaavat",
     "cats": [
       "MFK kaavat"
+    ],
+    "pages": [
+      {
+        "title": "Fysiikka",
+        "href": "#/MFK%20kaavat/Fysiikka/kaavat.md"
+      },
+      {
+        "title": "Kemia",
+        "href": "#/MFK%20kaavat/Kemia/kaavat.md"
+      },
+      {
+        "title": "Matematiikka",
+        "href": "#/MFK%20kaavat/Matematiikka/kaavat.md"
+      }
     ]
   },
   {
@@ -199,6 +2627,16 @@
     "anchor": "#/tags?id=excel",
     "cats": [
       "Excelit"
+    ],
+    "pages": [
+      {
+        "title": "Excel Cheat Sheet insinööreille",
+        "href": "#/Excelit/excel_cheat_sheet.md"
+      },
+      {
+        "title": "Excel-pikanäppäimet insinööreille",
+        "href": "#/Excelit/excel_shortcuts.md"
+      }
     ]
   },
   {
@@ -207,6 +2645,16 @@
     "anchor": "#/tags?id=kuva",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "kuva.jpg",
+        "href": "#/Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md"
+      },
+      {
+        "title": "kuva.jpg",
+        "href": "#/Html/Esimerkit/kuva.jpg.md"
+      }
     ]
   },
   {
@@ -215,6 +2663,16 @@
     "anchor": "#/tags?id=layoutit",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "layouts",
+        "href": "#/Html/Layoutit/layouts.md"
+      },
+      {
+        "title": "table.html",
+        "href": "#/Html/Layoutit/table/table.html.md"
+      }
     ]
   },
   {
@@ -223,6 +2681,16 @@
     "anchor": "#/tags?id=loginform",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "loginForm.html",
+        "href": "#/Html/projektit/loginform/loginForm.html.md"
+      },
+      {
+        "title": "styles.css",
+        "href": "#/Html/projektit/loginform/styles.css.md"
+      }
     ]
   },
   {
@@ -231,6 +2699,16 @@
     "anchor": "#/tags?id=sql",
     "cats": [
       "SQL"
+    ],
+    "pages": [
+      {
+        "title": "join",
+        "href": "#/SQL/join.md"
+      },
+      {
+        "title": "komennot",
+        "href": "#/SQL/komennot.md"
+      }
     ]
   },
   {
@@ -239,6 +2717,16 @@
     "anchor": "#/tags?id=tietoturva-verkot",
     "cats": [
       "Vinkit"
+    ],
+    "pages": [
+      {
+        "title": "15 verkkotekniikan peruskäsitettä",
+        "href": "#/Vinkit/Tietoturva-Verkot/15-verkkotekniikan-peruskasitetta.md"
+      },
+      {
+        "title": "Subnet mask -selitys (CCNA-muistiinpanot)",
+        "href": "#/Vinkit/Tietoturva-Verkot/subnet-mask-selitys.md"
+      }
     ]
   },
   {
@@ -247,6 +2735,16 @@
     "anchor": "#/tags?id=valmiit",
     "cats": [
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "password.js",
+        "href": "#/JavaScript/valmiit/password.js.md"
+      },
+      {
+        "title": "uploanFunc.js",
+        "href": "#/JavaScript/valmiit/uploanFunc.js.md"
+      }
     ]
   },
   {
@@ -255,6 +2753,12 @@
     "anchor": "#/tags?id=axios",
     "cats": [
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "axios",
+        "href": "#/JavaScript/Axios/axios.md"
+      }
     ]
   },
   {
@@ -263,6 +2767,12 @@
     "anchor": "#/tags?id=bash",
     "cats": [
       "Bash"
+    ],
+    "pages": [
+      {
+        "title": "Bash Cheat Sheet",
+        "href": "#/Bash/bash_cheat_sheet.md"
+      }
     ]
   },
   {
@@ -271,6 +2781,12 @@
     "anchor": "#/tags?id=chart",
     "cats": [
       "Excelit"
+    ],
+    "pages": [
+      {
+        "title": "Gantt-kaavio-ohjeet",
+        "href": "#/Excelit/gantt_chart_instructions.md"
+      }
     ]
   },
   {
@@ -279,6 +2795,12 @@
     "anchor": "#/tags?id=docker",
     "cats": [
       "Docker_"
+    ],
+    "pages": [
+      {
+        "title": "docker",
+        "href": "#/Docker_/docker.md"
+      }
     ]
   },
   {
@@ -287,6 +2809,12 @@
     "anchor": "#/tags?id=fysiikka",
     "cats": [
       "MFK kaavat"
+    ],
+    "pages": [
+      {
+        "title": "Fysiikka",
+        "href": "#/MFK%20kaavat/Fysiikka/kaavat.md"
+      }
     ]
   },
   {
@@ -295,6 +2823,12 @@
     "anchor": "#/tags?id=gantt",
     "cats": [
       "Excelit"
+    ],
+    "pages": [
+      {
+        "title": "Gantt-kaavio-ohjeet",
+        "href": "#/Excelit/gantt_chart_instructions.md"
+      }
     ]
   },
   {
@@ -303,6 +2837,12 @@
     "anchor": "#/tags?id=ideat",
     "cats": [
       "IDEAT.md"
+    ],
+    "pages": [
+      {
+        "title": "IDEAT",
+        "href": "#/IDEAT.md"
+      }
     ]
   },
   {
@@ -311,6 +2851,12 @@
     "anchor": "#/tags?id=instructions",
     "cats": [
       "Excelit"
+    ],
+    "pages": [
+      {
+        "title": "Gantt-kaavio-ohjeet",
+        "href": "#/Excelit/gantt_chart_instructions.md"
+      }
     ]
   },
   {
@@ -319,6 +2865,12 @@
     "anchor": "#/tags?id=io",
     "cats": [
       "JavaScript"
+    ],
+    "pages": [
+      {
+        "title": "socket_io",
+        "href": "#/JavaScript/Socket/socket_io.md"
+      }
     ]
   },
   {
@@ -327,6 +2879,12 @@
     "anchor": "#/tags?id=java",
     "cats": [
       "Java"
+    ],
+    "pages": [
+      {
+        "title": "hello_world.java",
+        "href": "#/Java/hello_world.java.md"
+      }
     ]
   },
   {
@@ -335,6 +2893,12 @@
     "anchor": "#/tags?id=join",
     "cats": [
       "SQL"
+    ],
+    "pages": [
+      {
+        "title": "join",
+        "href": "#/SQL/join.md"
+      }
     ]
   },
   {
@@ -343,6 +2907,12 @@
     "anchor": "#/tags?id=kemia",
     "cats": [
       "MFK kaavat"
+    ],
+    "pages": [
+      {
+        "title": "Kemia",
+        "href": "#/MFK%20kaavat/Kemia/kaavat.md"
+      }
     ]
   },
   {
@@ -351,6 +2921,12 @@
     "anchor": "#/tags?id=komennot",
     "cats": [
       "SQL"
+    ],
+    "pages": [
+      {
+        "title": "komennot",
+        "href": "#/SQL/komennot.md"
+      }
     ]
   },
   {
@@ -359,6 +2935,12 @@
     "anchor": "#/tags?id=layouts",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "layouts",
+        "href": "#/Html/Layoutit/layouts.md"
+      }
     ]
   },
   {
@@ -367,6 +2949,12 @@
     "anchor": "#/tags?id=matematiikka",
     "cats": [
       "MFK kaavat"
+    ],
+    "pages": [
+      {
+        "title": "Matematiikka",
+        "href": "#/MFK%20kaavat/Matematiikka/kaavat.md"
+      }
     ]
   },
   {
@@ -375,6 +2963,12 @@
     "anchor": "#/tags?id=multimedia",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "HTML-multimediatagit",
+        "href": "#/Html/Esimerkit/multimedia.md"
+      }
     ]
   },
   {
@@ -383,6 +2977,12 @@
     "anchor": "#/tags?id=shortcuts",
     "cats": [
       "Excelit"
+    ],
+    "pages": [
+      {
+        "title": "Excel-pikanäppäimet insinööreille",
+        "href": "#/Excelit/excel_shortcuts.md"
+      }
     ]
   },
   {
@@ -391,6 +2991,12 @@
     "anchor": "#/tags?id=table",
     "cats": [
       "Html"
+    ],
+    "pages": [
+      {
+        "title": "table.html",
+        "href": "#/Html/Layoutit/table/table.html.md"
+      }
     ]
   }
 ]
