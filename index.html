@@ -422,6 +422,25 @@
       color: var(--text-faint);
       font-size: 0.85rem;
     }
+    /* Visuaalinen ryhmäotsikko kategoriakorttien välissä (Kielet /
+       Työkalut & kaavat / Muu) - kansiorakenne ei muutu, tämä on vain
+       etusivun kortit järjestävä otsikko samassa gridissä. */
+    .category-group-heading {
+      grid-column: 1 / -1;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-faint);
+      margin: 1.4em 0 -0.2em;
+      padding-top: 1em;
+      border-top: 1px solid var(--border);
+    }
+    .category-group-heading:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
     .category-card {
       display: block;
       min-width: 0;
@@ -1038,11 +1057,18 @@
             fetch('categories.json')
               .then(function (r) { return r.json(); })
               .then(function (categories) {
+                var lastGroup = null;
                 grid.innerHTML = categories.map(function (c, i) {
                   var preview = (c.preview || []).map(function (t) {
                     return '<li>' + escapeHtml(t) + '</li>';
                   }).join('');
-                  return '<a class="category-card' + (i === 0 ? ' is-active' : '') + '" data-idx="' + i +
+                  var heading = '';
+                  if (c.group && c.group !== lastGroup) {
+                    heading = '<h3 class="category-group-heading">' + escapeHtml(c.group) + '</h3>';
+                    lastGroup = c.group;
+                  }
+                  return heading +
+                    '<a class="category-card' + (i === 0 ? ' is-active' : '') + '" data-idx="' + i +
                     '" href="' + c.href + '" style="--card-accent:' + c.color + '">' +
                     '<button type="button" class="preview-btn" data-example="' + escapeHtml(c.example) +
                       '" data-label="' + escapeHtml(c.example_title || c.display) +

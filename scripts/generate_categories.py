@@ -73,6 +73,23 @@ DISPLAY = {
     "Vinkit":       ("Vinkit",      "Vi", "#ec4899"),
 }
 
+# Visuaalinen ryhmittely etusivun kategoriakortteja varten. Kansiorakenne
+# (ja siis kaikki URL:t/linkit) pysyy TÄYSIN ennallaan - tämä vaikuttaa
+# vain siihen missä ryhmässä kortti näytetään etusivulla.
+GROUP_ORDER = ["Kielet", "Työkalut & kaavat", "Muu"]
+GROUP_OF = {
+    "Bash": "Kielet",
+    "Python": "Kielet",
+    "JavaScript": "Kielet",
+    "Java": "Kielet",
+    "Html": "Kielet",
+    "SQL": "Kielet",
+    "MFK kaavat": "Kielet",
+    "Docker_": "Työkalut & kaavat",
+    "Excelit": "Työkalut & kaavat",
+    "Vinkit": "Muu",
+}
+
 
 # vastaa TARKALLEEN index.html:n showFeaturedExample()-JS:n regexia
 # (/```+([a-z0-9]*)\n([\s\S]*?)\n```+/i) - lofytysryhma voi olla tyhja,
@@ -148,7 +165,9 @@ def build_categories():
             "example": example,
             "example_title": example_title,
             "preview": preview,
+            "group": GROUP_OF.get(d.name, "Muu"),
         })
+    categories.sort(key=lambda c: (GROUP_ORDER.index(c["group"]) if c["group"] in GROUP_ORDER else len(GROUP_ORDER), c["display"].lower()))
     return categories
 
 

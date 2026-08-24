@@ -11,37 +11,8 @@
     "example_title": "Bash Cheat Sheet",
     "preview": [
       "Bash Cheat Sheet"
-    ]
-  },
-  {
-    "name": "Docker_",
-    "display": "Docker",
-    "badge": "Do",
-    "color": "#22d3ee",
-    "count": 1,
-    "href": "#/README?id=docker_",
-    "first_href": "#/Docker_/docker.md",
-    "example": "Docker_/docker.md",
-    "example_title": "docker",
-    "preview": [
-      "docker"
-    ]
-  },
-  {
-    "name": "Excelit",
-    "display": "Excel",
-    "badge": "Xl",
-    "color": "#22c55e",
-    "count": 3,
-    "href": "#/README?id=excelit",
-    "first_href": "#/Excelit/excel_cheat_sheet.md",
-    "example": "Excelit/excel_cheat_sheet.md",
-    "example_title": "Excel Cheat Sheet insinööreille",
-    "preview": [
-      "Excel Cheat Sheet insinööreille",
-      "Excel-pikanäppäimet insinööreille",
-      "Gantt-kaavio-ohjeet"
-    ]
+    ],
+    "group": "Kielet"
   },
   {
     "name": "Html",
@@ -58,7 +29,8 @@
       "asettelut.css",
       "backround.css",
       "border.css"
-    ]
+    ],
+    "group": "Kielet"
   },
   {
     "name": "Java",
@@ -72,7 +44,8 @@
     "example_title": "hello_world.java",
     "preview": [
       "hello_world.java"
-    ]
+    ],
+    "group": "Kielet"
   },
   {
     "name": "JavaScript",
@@ -89,7 +62,8 @@
       "App.js",
       "ChatNamespace.js",
       "ChatRoom.js"
-    ]
+    ],
+    "group": "Kielet"
   },
   {
     "name": "MFK kaavat",
@@ -105,7 +79,8 @@
       "Fysiikka",
       "Kemia",
       "Matematiikka"
-    ]
+    ],
+    "group": "Kielet"
   },
   {
     "name": "Python",
@@ -122,7 +97,8 @@
       "basic_routes.py",
       "fastapi",
       "fastapi_esimerkit"
-    ]
+    ],
+    "group": "Kielet"
   },
   {
     "name": "SQL",
@@ -137,7 +113,40 @@
     "preview": [
       "join",
       "komennot"
-    ]
+    ],
+    "group": "Kielet"
+  },
+  {
+    "name": "Docker_",
+    "display": "Docker",
+    "badge": "Do",
+    "color": "#22d3ee",
+    "count": 1,
+    "href": "#/README?id=docker_",
+    "first_href": "#/Docker_/docker.md",
+    "example": "Docker_/docker.md",
+    "example_title": "docker",
+    "preview": [
+      "docker"
+    ],
+    "group": "Työkalut & kaavat"
+  },
+  {
+    "name": "Excelit",
+    "display": "Excel",
+    "badge": "Xl",
+    "color": "#22c55e",
+    "count": 3,
+    "href": "#/README?id=excelit",
+    "first_href": "#/Excelit/excel_cheat_sheet.md",
+    "example": "Excelit/excel_cheat_sheet.md",
+    "example_title": "Excel Cheat Sheet insinööreille",
+    "preview": [
+      "Excel Cheat Sheet insinööreille",
+      "Excel-pikanäppäimet insinööreille",
+      "Gantt-kaavio-ohjeet"
+    ],
+    "group": "Työkalut & kaavat"
   },
   {
     "name": "Vinkit",
@@ -154,6 +163,7 @@
       "100 Claude Tips",
       "ERP-järjestelmä rakennettuna Claude-tekoälyllä",
       "How to Build AI Agents from Scratch (10 vaihetta)"
-    ]
+    ],
+    "group": "Muu"
   }
 ]
