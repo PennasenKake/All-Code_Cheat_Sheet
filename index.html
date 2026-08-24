@@ -260,6 +260,14 @@
       min-width: 0;
       width: 100%;
       box-sizing: border-box;
+      /* teeman oma .cover-main on flex-itemi jolla flex:1 (kasvaa
+         täyttämään koko section.cover:in leveyden) - kun max-width
+         rajoittaa sen 920px:iin, ilman margin:autoa jaama tila jää
+         KOKONAAN oikealle puolelle (section.cover ei aseta
+         justify-content:centeriä), jolloin koko etusivun sisältö
+         näyttää olevan työnnetty vasempaan laitaan leveillä näytöillä.
+         margin:0 auto keskittää flex-itemin symmetrisesti. */
+      margin: 0 auto;
     }
     .cover-badge {
       width: 60px;
