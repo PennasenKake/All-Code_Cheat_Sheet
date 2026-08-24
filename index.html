@@ -312,7 +312,12 @@
         radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.2), transparent 45%),
         var(--bg) !important;
       min-height: calc(100vh - var(--header-h)) !important;
-      padding: 40px 20px !important;
+      /* section.cover EI ole .content-elementin sisällä (jolla on
+         padding-top: var(--header-h) kiinteän headerin varalle) - se on
+         oma erillinen lohkonsa joka alkaa suoraan y:0:sta. Ilman omaa
+         yläreunan tilaa kiinteä #site-header (60px, z-index:200) peitti
+         aaltosulku-badgen ja hero-otsikon yläosan. */
+      padding: calc(var(--header-h) + 40px) 20px 40px !important;
     }
     section.cover .cover-main {
       max-width: 920px;
@@ -781,7 +786,7 @@
 
     @media (max-width: 480px) {
       section.cover {
-        padding: 32px 14px !important;
+        padding: calc(var(--header-h) + 32px) 14px 32px !important;
       }
       .cover-hero {
         font-size: 1.6rem;
