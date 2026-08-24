@@ -756,6 +756,83 @@
     .tag-chip.tag-chip-lg { font-size: 0.95rem; padding: 7px 15px; }
     .tag-chip.tag-chip-hidden { display: none; }
 
+    /* --- Tags-sivun kategoriasuodatin --- */
+    .tag-cat-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+    }
+    .tag-cat-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-soft);
+      font-size: 0.78rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+    .tag-cat-btn .dotcolor {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .tag-cat-btn:hover {
+      color: var(--text);
+      border-color: var(--text-soft);
+    }
+    .tag-cat-btn.is-active {
+      color: #fff;
+      background: var(--cat-color, var(--accent));
+      border-color: var(--cat-color, var(--accent));
+    }
+
+    /* --- Sisältösivun omat tagichipit (otsikon alla) --- */
+    .page-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: -0.6em 0 1.6em;
+    }
+    .page-tags a.tag-chip {
+      font-size: 0.72rem;
+      padding: 3px 10px;
+    }
+
+    /* --- Etusivun pikavalinnat --- */
+    .quick-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 1em 0 0;
+    }
+    .quick-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-elevated);
+      color: var(--text-soft) !important;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none !important;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .quick-actions a:hover {
+      color: var(--text) !important;
+      border-color: var(--accent);
+    }
+
     /* --- Sivutus (pagination) --- */
     .pagination-item-label {
       color: var(--text-faint);
@@ -1082,19 +1159,55 @@
           });
         },
         function (hook) {
-          // tags.md: visuaalinen tagipilvi + tekstisuodatin sivun ylälaitaan
+          // tags.md: visuaalinen tagipilvi + teksti- ja kategoriasuodatin
+          // sivun ylälaitaan. Kategoriasuodatin (esim. "vain Python") toimii
+          // categories.json:in tag.cats-kentän avulla (generate_tags_page.py
+          // tallentaa jokaiselle tagille listan juuritason kansioista joissa
+          // se esiintyy), joten se ei vaadi mitään uutta sisällön merkintää.
           hook.doneEach(function () {
             if (!/\/tags([?#]|$)/.test(window.location.hash)) return;
             var section = document.querySelector('.markdown-section');
             if (!section || section.dataset.tagCloudLoaded) return;
             section.dataset.tagCloudLoaded = '1';
 
-            fetch('tags.json')
-              .then(function (r) { return r.json(); })
-              .then(function (tags) {
+            Promise.all([
+              fetch('tags.json').then(function (r) { return r.json(); }),
+              fetch('categories.json').then(function (r) { return r.json(); }).catch(function () { return []; }),
+            ])
+              .then(function (results) {
+                var tags = results[0];
+                var categories = results[1];
+                var catByName = {};
+                categories.forEach(function (c) { catByName[c.name] = c; });
+
                 var max = tags.reduce(function (m, t) { return Math.max(m, t.count); }, 1);
                 var wrap = document.createElement('div');
                 wrap.className = 'tag-cloud-wrap';
+
+                // Kategoriasuodatin: "Kaikki" + yksi nappi per juuritason
+                // kansio, jonka väri vastaa etusivun kategoriakortin väriä.
+                var activeCat = null;
+                var catFilter = document.createElement('div');
+                catFilter.className = 'tag-cat-filter';
+                var catNames = categories.map(function (c) { return c.name; }).filter(function (name) {
+                  return tags.some(function (t) { return (t.cats || []).indexOf(name) !== -1; });
+                });
+                var allBtn = document.createElement('button');
+                allBtn.type = 'button';
+                allBtn.className = 'tag-cat-btn is-active';
+                allBtn.textContent = 'Kaikki';
+                catFilter.appendChild(allBtn);
+                catNames.forEach(function (name) {
+                  var c = catByName[name] || { display: name, color: '#6366f1' };
+                  var btn = document.createElement('button');
+                  btn.type = 'button';
+                  btn.className = 'tag-cat-btn';
+                  btn.dataset.cat = name;
+                  btn.style.setProperty('--cat-color', c.color);
+                  btn.innerHTML = '<span class="dotcolor" style="background:' + c.color + '"></span>' + c.display;
+                  catFilter.appendChild(btn);
+                });
+
                 var input = document.createElement('input');
                 input.type = 'search';
                 input.className = 'tag-cloud-filter';
@@ -1103,9 +1216,11 @@
                 cloud.className = 'tag-cloud';
                 cloud.innerHTML = tags.map(function (t) {
                   var big = t.count >= max * 0.5 ? ' tag-chip-lg' : '';
-                  return '<a class="tag-chip' + big + '" data-tag="' + t.tag.toLowerCase() + '" href="' + t.anchor + '">' +
+                  return '<a class="tag-chip' + big + '" data-tag="' + t.tag.toLowerCase() + '" data-cats="' +
+                    (t.cats || []).join(',') + '" href="' + t.anchor + '">' +
                     t.tag + ' <span class="tag-chip-count">' + t.count + '</span></a>';
                 }).join('');
+                wrap.appendChild(catFilter);
                 wrap.appendChild(input);
                 wrap.appendChild(cloud);
                 var firstHeading = section.querySelector('h1');
@@ -1115,17 +1230,78 @@
                   section.insertBefore(wrap, section.firstChild);
                 }
 
-                input.addEventListener('input', function () {
+                function applyFilters() {
                   var q = input.value.trim().toLowerCase();
                   cloud.querySelectorAll('.tag-chip').forEach(function (chip) {
-                    var match = !q || chip.dataset.tag.indexOf(q) !== -1;
-                    chip.classList.toggle('tag-chip-hidden', !match);
+                    var matchesText = !q || chip.dataset.tag.indexOf(q) !== -1;
+                    var chipCats = chip.dataset.cats ? chip.dataset.cats.split(',') : [];
+                    var matchesCat = !activeCat || chipCats.indexOf(activeCat) !== -1;
+                    chip.classList.toggle('tag-chip-hidden', !(matchesText && matchesCat));
                   });
+                }
+
+                input.addEventListener('input', applyFilters);
+                catFilter.addEventListener('click', function (e) {
+                  var btn = e.target.closest('.tag-cat-btn');
+                  if (!btn) return;
+                  catFilter.querySelectorAll('.tag-cat-btn').forEach(function (b) { b.classList.remove('is-active'); });
+                  btn.classList.add('is-active');
+                  activeCat = btn.dataset.cat || null;
+                  applyFilters();
                 });
               })
               .catch(function () {
                 section.dataset.tagCloudLoaded = '';
               });
+          });
+        },
+        function (hook) {
+          // Sisältösivujen omat tagichipit: <!-- tags: ... --> -kommentti
+          // (add_tags.py:n lisäämä) säilyy renderöidyssä HTML:ssä näkymättömänä
+          // kommenttina - poimitaan se ja näytetään näkyvinä, klikattavina
+          // chippeinä otsikon alla, jotka vievät tags-sivun vastaavaan kohtaan.
+          hook.doneEach(function () {
+            if (/\/tags([?#]|$)/.test(window.location.hash)) return;
+            var section = document.querySelector('.markdown-section');
+            if (!section || section.querySelector('.page-tags')) return;
+            var walker = document.createTreeWalker(section, NodeFilter.SHOW_COMMENT, null);
+            var node;
+            var tagsText = null;
+            while ((node = walker.nextNode())) {
+              var m = node.nodeValue.match(/^\s*tags:\s*(.+?)\s*$/i);
+              if (m) { tagsText = m[1]; break; }
+            }
+            if (!tagsText) return;
+            var tags = tagsText.split(',').map(function (t) { return t.trim(); }).filter(Boolean);
+            if (!tags.length) return;
+            var row = document.createElement('div');
+            row.className = 'page-tags';
+            row.innerHTML = tags.map(function (t) {
+              return '<a class="tag-chip" href="#/tags?id=' + encodeURIComponent(t.toLowerCase().replace(/\s+/g, '-')) + '">' + t + '</a>';
+            }).join('');
+            var firstHeading = section.querySelector('h1');
+            if (firstHeading) {
+              firstHeading.insertAdjacentElement('afterend', row);
+            } else {
+              section.insertBefore(row, section.firstChild);
+            }
+          });
+        },
+        function (hook) {
+          // Etusivun "Etsi komento" -pikavalinta: fokusoi sivupalkin
+          // hakukentän sen sijaan että veisi erilliselle hakusivulle jota ei ole.
+          hook.doneEach(function () {
+            var link = document.getElementById('quick-search');
+            if (!link || link.dataset.wired) return;
+            link.dataset.wired = '1';
+            link.addEventListener('click', function (e) {
+              e.preventDefault();
+              var input = document.querySelector('.sidebar .search input');
+              if (input) {
+                document.body.classList.remove('close');
+                input.focus();
+              }
+            });
           });
         },
       ],

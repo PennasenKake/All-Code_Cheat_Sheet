@@ -10,6 +10,14 @@
 
 <p class="cover-buttons"><a href="#/README">Selaa muistilappuja</a><a href="https://github.com/PennasenKake/All-Code_Cheat_Sheet" target="_blank" rel="noopener">GitHub</a></p>
 
+<div class="quick-actions">
+  <a href="#" id="quick-search">🔍 Etsi komento</a>
+  <a href="#/README?id=python">🐍 Avaa Python-esimerkit</a>
+  <a href="#/README?id=javascript">🟨 Avaa JavaScript-esimerkit</a>
+  <a href="#/README?id=vinkit">💡 Avaa AI-agenttioppaat</a>
+  <a href="#/tags">🏷️ Näytä kaikki tunnisteet</a>
+</div>
+
 <p class="showcase-label">Esimerkki hakemistosta</p>
 
 <div id="featured-example" class="featured-example"></div>

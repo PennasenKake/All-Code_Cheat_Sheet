@@ -50,6 +50,7 @@ def read_tags_and_title(md_path: Path):
 
 def main():
     by_tag = defaultdict(list)
+    categories_by_tag = defaultdict(set)
 
     for md_path in sorted(ROOT.rglob("*.md")):
         rel_parts = md_path.relative_to(ROOT).parts
@@ -59,8 +60,14 @@ def main():
             continue
         tags, title = read_tags_and_title(md_path)
         rel = md_path.relative_to(ROOT).as_posix()
+        # juuritason kansio (esim. "Python", "Vinkit") - kaytetaan
+        # tags.md-sivun kategoriasuodattimeen, jotta tagipilvea voi
+        # rajata "vain nama kategoriat" ilman tekstihakua
+        top_category = rel_parts[0] if rel_parts else None
         for tag in tags:
             by_tag[tag].append((title, rel))
+            if top_category:
+                categories_by_tag[tag].add(top_category)
 
     lines = [
         "# Tunnisteet",
@@ -81,12 +88,15 @@ def main():
 
     TAGS_PAGE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
-    # tags.json: kevyt data etusivun/tags-sivun JS-tagipilvea varten
+    # tags.json: kevyt data etusivun/tags-sivun JS-tagipilvea varten.
+    # "cats" listaa juuritason kategoriat (kielet/Vinkit) joissa tama
+    # tagi esiintyy - tags.md:n kategoriasuodatin kayttaa tata.
     tag_list = [
         {
             "tag": tag,
             "count": len(by_tag[tag]),
             "anchor": "#/tags?id=" + docsify_slugify(tag),
+            "cats": sorted(categories_by_tag[tag]),
         }
         for tag in sorted(by_tag)
     ]

@@ -2,246 +2,395 @@
   {
     "tag": "vinkit",
     "count": 178,
-    "anchor": "#/tags?id=vinkit"
+    "anchor": "#/tags?id=vinkit",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "javascript",
     "count": 50,
-    "anchor": "#/tags?id=javascript"
+    "anchor": "#/tags?id=javascript",
+    "cats": [
+      "Html",
+      "JavaScript"
+    ]
   },
   {
     "tag": "python",
     "count": 49,
-    "anchor": "#/tags?id=python"
+    "anchor": "#/tags?id=python",
+    "cats": [
+      "Python",
+      "Vinkit"
+    ]
   },
   {
     "tag": "html",
     "count": 47,
-    "anchor": "#/tags?id=html"
+    "anchor": "#/tags?id=html",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "projekti-ideat",
     "count": 43,
-    "anchor": "#/tags?id=projekti-ideat"
+    "anchor": "#/tags?id=projekti-ideat",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "javascript-react",
     "count": 33,
-    "anchor": "#/tags?id=javascript-react"
+    "anchor": "#/tags?id=javascript-react",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "backend-api",
     "count": 25,
-    "anchor": "#/tags?id=backend-api"
+    "anchor": "#/tags?id=backend-api",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "css",
     "count": 25,
-    "anchor": "#/tags?id=css"
+    "anchor": "#/tags?id=css",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "framework",
     "count": 19,
-    "anchor": "#/tags?id=framework"
+    "anchor": "#/tags?id=framework",
+    "cats": [
+      "JavaScript"
+    ]
   },
   {
     "tag": "react",
     "count": 19,
-    "anchor": "#/tags?id=react"
+    "anchor": "#/tags?id=react",
+    "cats": [
+      "JavaScript"
+    ]
   },
   {
     "tag": "ai-ml",
     "count": 15,
-    "anchor": "#/tags?id=ai-ml"
+    "anchor": "#/tags?id=ai-ml",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "devops",
     "count": 14,
-    "anchor": "#/tags?id=devops"
+    "anchor": "#/tags?id=devops",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "html-css",
     "count": 11,
-    "anchor": "#/tags?id=html-css"
+    "anchor": "#/tags?id=html-css",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "fastapi",
     "count": 9,
-    "anchor": "#/tags?id=fastapi"
+    "anchor": "#/tags?id=fastapi",
+    "cats": [
+      "Python"
+    ]
   },
   {
     "tag": "frameworks",
     "count": 9,
-    "anchor": "#/tags?id=frameworks"
+    "anchor": "#/tags?id=frameworks",
+    "cats": [
+      "Python"
+    ]
   },
   {
     "tag": "jarjestelmasuunnittelu",
     "count": 9,
-    "anchor": "#/tags?id=jarjestelmasuunnittelu"
+    "anchor": "#/tags?id=jarjestelmasuunnittelu",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "esim1",
     "count": 8,
-    "anchor": "#/tags?id=esim1"
+    "anchor": "#/tags?id=esim1",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "esim2-resp",
     "count": 7,
-    "anchor": "#/tags?id=esim2-resp"
+    "anchor": "#/tags?id=esim2-resp",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "formsit",
     "count": 7,
-    "anchor": "#/tags?id=formsit"
+    "anchor": "#/tags?id=formsit",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "socket",
     "count": 7,
-    "anchor": "#/tags?id=socket"
+    "anchor": "#/tags?id=socket",
+    "cats": [
+      "JavaScript"
+    ]
   },
   {
     "tag": "ux-suunnittelu",
     "count": 6,
-    "anchor": "#/tags?id=ux-suunnittelu"
+    "anchor": "#/tags?id=ux-suunnittelu",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "ajastin",
     "count": 3,
-    "anchor": "#/tags?id=ajastin"
+    "anchor": "#/tags?id=ajastin",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "excelit",
     "count": 3,
-    "anchor": "#/tags?id=excelit"
+    "anchor": "#/tags?id=excelit",
+    "cats": [
+      "Excelit"
+    ]
   },
   {
     "tag": "mfk-kaavat",
     "count": 3,
-    "anchor": "#/tags?id=mfk-kaavat"
+    "anchor": "#/tags?id=mfk-kaavat",
+    "cats": [
+      "MFK kaavat"
+    ]
   },
   {
     "tag": "excel",
     "count": 2,
-    "anchor": "#/tags?id=excel"
+    "anchor": "#/tags?id=excel",
+    "cats": [
+      "Excelit"
+    ]
   },
   {
     "tag": "kuva",
     "count": 2,
-    "anchor": "#/tags?id=kuva"
+    "anchor": "#/tags?id=kuva",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "layoutit",
     "count": 2,
-    "anchor": "#/tags?id=layoutit"
+    "anchor": "#/tags?id=layoutit",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "loginform",
     "count": 2,
-    "anchor": "#/tags?id=loginform"
+    "anchor": "#/tags?id=loginform",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "sql",
     "count": 2,
-    "anchor": "#/tags?id=sql"
+    "anchor": "#/tags?id=sql",
+    "cats": [
+      "SQL"
+    ]
   },
   {
     "tag": "tietoturva-verkot",
     "count": 2,
-    "anchor": "#/tags?id=tietoturva-verkot"
+    "anchor": "#/tags?id=tietoturva-verkot",
+    "cats": [
+      "Vinkit"
+    ]
   },
   {
     "tag": "valmiit",
     "count": 2,
-    "anchor": "#/tags?id=valmiit"
+    "anchor": "#/tags?id=valmiit",
+    "cats": [
+      "JavaScript"
+    ]
   },
   {
     "tag": "axios",
     "count": 1,
-    "anchor": "#/tags?id=axios"
+    "anchor": "#/tags?id=axios",
+    "cats": [
+      "JavaScript"
+    ]
   },
   {
     "tag": "bash",
     "count": 1,
-    "anchor": "#/tags?id=bash"
+    "anchor": "#/tags?id=bash",
+    "cats": [
+      "Bash"
+    ]
   },
   {
     "tag": "chart",
     "count": 1,
-    "anchor": "#/tags?id=chart"
+    "anchor": "#/tags?id=chart",
+    "cats": [
+      "Excelit"
+    ]
   },
   {
     "tag": "docker",
     "count": 1,
-    "anchor": "#/tags?id=docker"
+    "anchor": "#/tags?id=docker",
+    "cats": [
+      "Docker_"
+    ]
   },
   {
     "tag": "fysiikka",
     "count": 1,
-    "anchor": "#/tags?id=fysiikka"
+    "anchor": "#/tags?id=fysiikka",
+    "cats": [
+      "MFK kaavat"
+    ]
   },
   {
     "tag": "gantt",
     "count": 1,
-    "anchor": "#/tags?id=gantt"
+    "anchor": "#/tags?id=gantt",
+    "cats": [
+      "Excelit"
+    ]
   },
   {
     "tag": "ideat",
     "count": 1,
-    "anchor": "#/tags?id=ideat"
+    "anchor": "#/tags?id=ideat",
+    "cats": [
+      "IDEAT.md"
+    ]
   },
   {
     "tag": "instructions",
     "count": 1,
-    "anchor": "#/tags?id=instructions"
+    "anchor": "#/tags?id=instructions",
+    "cats": [
+      "Excelit"
+    ]
   },
   {
     "tag": "io",
     "count": 1,
-    "anchor": "#/tags?id=io"
+    "anchor": "#/tags?id=io",
+    "cats": [
+      "JavaScript"
+    ]
   },
   {
     "tag": "java",
     "count": 1,
-    "anchor": "#/tags?id=java"
+    "anchor": "#/tags?id=java",
+    "cats": [
+      "Java"
+    ]
   },
   {
     "tag": "join",
     "count": 1,
-    "anchor": "#/tags?id=join"
+    "anchor": "#/tags?id=join",
+    "cats": [
+      "SQL"
+    ]
   },
   {
     "tag": "kemia",
     "count": 1,
-    "anchor": "#/tags?id=kemia"
+    "anchor": "#/tags?id=kemia",
+    "cats": [
+      "MFK kaavat"
+    ]
   },
   {
     "tag": "komennot",
     "count": 1,
-    "anchor": "#/tags?id=komennot"
+    "anchor": "#/tags?id=komennot",
+    "cats": [
+      "SQL"
+    ]
   },
   {
     "tag": "layouts",
     "count": 1,
-    "anchor": "#/tags?id=layouts"
+    "anchor": "#/tags?id=layouts",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "matematiikka",
     "count": 1,
-    "anchor": "#/tags?id=matematiikka"
+    "anchor": "#/tags?id=matematiikka",
+    "cats": [
+      "MFK kaavat"
+    ]
   },
   {
     "tag": "multimedia",
     "count": 1,
-    "anchor": "#/tags?id=multimedia"
+    "anchor": "#/tags?id=multimedia",
+    "cats": [
+      "Html"
+    ]
   },
   {
     "tag": "shortcuts",
     "count": 1,
-    "anchor": "#/tags?id=shortcuts"
+    "anchor": "#/tags?id=shortcuts",
+    "cats": [
+      "Excelit"
+    ]
   },
   {
     "tag": "table",
     "count": 1,
-    "anchor": "#/tags?id=table"
+    "anchor": "#/tags?id=table",
+    "cats": [
+      "Html"
+    ]
   }
 ]
