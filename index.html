@@ -1058,6 +1058,10 @@
               .then(function (r) { return r.json(); })
               .then(function (categories) {
                 var lastGroup = null;
+                // Arvotaan yksi kategoria kerrallaan sivun latauksesta, jotta
+                // "Esimerkki hakemistosta" -paneeli ei nayta aina samaa
+                // (esim. Bash) sisaltoa, vaan vaihtelee joka lataus kerralla.
+                var featuredIdx = categories.length ? Math.floor(Math.random() * categories.length) : 0;
                 grid.innerHTML = categories.map(function (c, i) {
                   var preview = (c.preview || []).map(function (t) {
                     return '<li>' + escapeHtml(t) + '</li>';
@@ -1068,7 +1072,7 @@
                     lastGroup = c.group;
                   }
                   return heading +
-                    '<a class="category-card' + (i === 0 ? ' is-active' : '') + '" data-idx="' + i +
+                    '<a class="category-card' + (i === featuredIdx ? ' is-active' : '') + '" data-idx="' + i +
                     '" href="' + c.href + '" style="--card-accent:' + c.color + '">' +
                     '<button type="button" class="preview-btn" data-example="' + escapeHtml(c.example) +
                       '" data-label="' + escapeHtml(c.example_title || c.display) +
@@ -1093,7 +1097,8 @@
                 });
 
                 if (box && categories.length) {
-                  showFeaturedExample(box, categories[0].example, categories[0].example_title || categories[0].display);
+                  var featured = categories[featuredIdx];
+                  showFeaturedExample(box, featured.example, featured.example_title || featured.display);
                 }
               })
               .catch(function () {
