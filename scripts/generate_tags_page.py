@@ -7,6 +7,7 @@ Kaytto:
     python3 scripts/add_tags.py            # lisaa tagit ensin
     python3 scripts/generate_tags_page.py  # rakentaa tags.md niista
 """
+import json
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -14,10 +15,24 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 TAGS_PAGE = ROOT / "tags.md"
+TAGS_JSON = ROOT / "tags.json"
 
 SKIP_DIRS = {".git", ".github", "scripts", "_site", "site", "_to_delete", "_to_delete_trash"}
 TAG_RE = re.compile(r"^<!--\s*tags:\s*(.+?)\s*-->\s*$", re.IGNORECASE)
 HEADING_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
+
+# vastaa docsifyn omaa otsikko-id:n muodostustapaa (ks. generate_categories.py)
+_SLUG_PUNCT_RE = re.compile(
+    "[ -⁯⸀-⹿\\\\'!\"#$%&()*+,./:;<=>?@\\[\\]^`{|}~]"
+)
+
+
+def docsify_slugify(text: str) -> str:
+    slug = text.strip().lower()
+    slug = _SLUG_PUNCT_RE.sub("", slug)
+    slug = re.sub(r"\s", "-", slug)
+    slug = re.sub(r"^(\d)", r"_\1", slug)
+    return slug
 
 
 def read_tags_and_title(md_path: Path):
@@ -65,6 +80,19 @@ def main():
         lines.append("")
 
     TAGS_PAGE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+    # tags.json: kevyt data etusivun/tags-sivun JS-tagipilvea varten
+    tag_list = [
+        {
+            "tag": tag,
+            "count": len(by_tag[tag]),
+            "anchor": "#/tags?id=" + docsify_slugify(tag),
+        }
+        for tag in sorted(by_tag)
+    ]
+    tag_list.sort(key=lambda t: t["count"], reverse=True)
+    TAGS_JSON.write_text(json.dumps(tag_list, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
     print(f"tags.md rakennettu, {len(by_tag)} tunnistetta.")
 
 

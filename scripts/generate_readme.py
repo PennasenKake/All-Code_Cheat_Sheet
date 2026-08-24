@@ -50,6 +50,37 @@ def first_heading_or_name(path: Path) -> str:
     return path.stem
 
 
+def build_dir_tree(files, base: Path) -> dict:
+    """Sama sisakkainen hakemistopuu kuin generate_sidebar.py:ssa, jotta
+    sisallysluettelo ryhmittelee alikansiot (esim. Vinkit/AI-ML) omiksi
+    otsikoikseen litean listan sijaan."""
+    tree: dict = {}
+    for f in files:
+        parts = f.relative_to(base).parts
+        node = tree
+        for part in parts[:-1]:
+            node = node.setdefault(part, {})
+        node.setdefault("__files__", []).append(f)
+    return tree
+
+
+def emit_tree(node: dict, depth: int, lines: list) -> None:
+    heading_level = min(depth + 3, 6)  # d.name on ###, alikansiot ####, #####...
+    file_items = []
+    for f in node.get("__files__", []):
+        rel = f.relative_to(ROOT).as_posix()
+        href = quote(rel, safe="/")
+        title = first_heading_or_name(f)
+        file_items.append((title, href))
+    for title, href in sorted(file_items, key=lambda t: t[0].lower()):
+        lines.append(f"- [{title}]({href})")
+    if file_items:
+        lines.append("")
+    for dirname in sorted(k for k in node if k != "__files__"):
+        lines.append(f"{'#' * heading_level} {dirname}\n")
+        emit_tree(node[dirname], depth + 1, lines)
+
+
 def build_toc() -> str:
     top_dirs = sorted(
         p for p in ROOT.iterdir()
@@ -68,14 +99,8 @@ def build_toc() -> str:
         if not files:
             lines.append("Ei viela sisaltoa.\n")
             continue
-        for f in files:
-            rel = f.relative_to(ROOT).as_posix()
-            # polun välilyönnit ym. pitää enkoodata, muuten markdown-linkki
-            # katkeaa ensimmäiseen välilyöntiin (esim. "MFK kaavat/...")
-            href = quote(rel, safe="/")
-            title = first_heading_or_name(f)
-            lines.append(f"- [{title}]({href})")
-        lines.append("")
+        tree = build_dir_tree(files, d)
+        emit_tree(tree, 1, lines)
 
     return "\n".join(lines).rstrip() + "\n"
 

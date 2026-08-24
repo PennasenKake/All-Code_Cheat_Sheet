@@ -22,10 +22,21 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 ### Html
 
+#### CSS
+
 - [animations.css](Html/CSS/animations.css.md)
 - [asettelut.css](Html/CSS/asettelut.css.md)
 - [backround.css](Html/CSS/backround.css.md)
 - [border.css](Html/CSS/border.css.md)
+- [fontit.css](Html/CSS/fontit.css.md)
+- [sarakkeet.css](Html/CSS/sarakkeet.css.md)
+- [styles.css](Html/CSS/styles.css.md)
+- [teksti.css](Html/CSS/teksti.css.md)
+
+##### esimerkkejä
+
+###### esim1
+
 - [code-style.css](Html/CSS/esimerkkej%C3%A4/esim1/code-style.css.md)
 - [highlight-heading.css](Html/CSS/esimerkkej%C3%A4/esim1/highlight-heading.css.md)
 - [hyphenation.css](Html/CSS/esimerkkej%C3%A4/esim1/hyphenation.css.md)
@@ -34,6 +45,9 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [text-align-last.css](Html/CSS/esimerkkej%C3%A4/esim1/text-align-last.css.md)
 - [text-emphasis.css](Html/CSS/esimerkkej%C3%A4/esim1/text-emphasis.css.md)
 - [text-style.css](Html/CSS/esimerkkej%C3%A4/esim1/text-style.css.md)
+
+###### esim2 resp
+
 - [flexmenu.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/flexmenu.css.md)
 - [grid.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/grid.css.md)
 - [image.css](Html/CSS/esimerkkej%C3%A4/esim2%20resp/image.css.md)
@@ -41,12 +55,19 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [index-grid.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-grid.html.md)
 - [index-image.html](Html/CSS/esimerkkej%C3%A4/esim2%20resp/index-image.html.md)
 - [kuva.jpg](Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md)
-- [fontit.css](Html/CSS/fontit.css.md)
-- [sarakkeet.css](Html/CSS/sarakkeet.css.md)
-- [styles.css](Html/CSS/styles.css.md)
-- [teksti.css](Html/CSS/teksti.css.md)
-- [Tagit.html](Html/Esimerkit/Tagit.html.md)
+
+#### Esimerkit
+
 - [basic.html](Html/Esimerkit/basic.html.md)
+- [HTML-multimediatagit](Html/Esimerkit/multimedia.md)
+- [kuva.jpg](Html/Esimerkit/kuva.jpg.md)
+- [multimedia.html](Html/Esimerkit/multimedia.html.md)
+- [tables.html](Html/Esimerkit/tables.html.md)
+- [Tagit.html](Html/Esimerkit/Tagit.html.md)
+- [to-do.html](Html/Esimerkit/to-do.html.md)
+
+##### formsit
+
 - [appointment-form.html](Html/Esimerkit/formsit/appointment-form.html.md)
 - [feedback-form.html](Html/Esimerkit/formsit/feedback-form.html.md)
 - [file-upload-form.html](Html/Esimerkit/formsit/file-upload-form.html.md)
@@ -54,21 +75,31 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [forms1.html](Html/Esimerkit/formsit/forms1.html.md)
 - [forms2.html](Html/Esimerkit/formsit/forms2.html.md)
 - [index.html](Html/Esimerkit/formsit/index.html.md)
-- [kuva.jpg](Html/Esimerkit/kuva.jpg.md)
-- [multimedia.html](Html/Esimerkit/multimedia.html.md)
-- [HTML-multimediatagit](Html/Esimerkit/multimedia.md)
-- [tables.html](Html/Esimerkit/tables.html.md)
-- [to-do.html](Html/Esimerkit/to-do.html.md)
+
+#### Layoutit
+
 - [layouts](Html/Layoutit/layouts.md)
+
+##### table
+
 - [table.html](Html/Layoutit/table/table.html.md)
-- [index.html](Html/projektit/Ajastin/index.html.md)
-- [main.js](Html/projektit/Ajastin/main.js.md)
-- [style.css](Html/projektit/Ajastin/style.css.md)
-- [loginForm.html](Html/projektit/loginform/loginForm.html.md)
-- [styles.css](Html/projektit/loginform/styles.css.md)
+
+#### projektit
+
 - [rps.html](Html/projektit/rps.html.md)
 - [salasanageneraattori.html](Html/projektit/salasanageneraattori.html.md)
 - [website1.html](Html/projektit/website1.html.md)
+
+##### Ajastin
+
+- [index.html](Html/projektit/Ajastin/index.html.md)
+- [main.js](Html/projektit/Ajastin/main.js.md)
+- [style.css](Html/projektit/Ajastin/style.css.md)
+
+##### loginform
+
+- [loginForm.html](Html/projektit/loginform/loginForm.html.md)
+- [styles.css](Html/projektit/loginform/styles.css.md)
 
 ### Java
 
@@ -76,14 +107,24 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 ### JavaScript
 
+#### Axios
+
 - [axios](JavaScript/Axios/axios.md)
+
+#### Socket
+
 - [App.js](JavaScript/Socket/App.js.md)
+- [chat-server.js](JavaScript/Socket/chat-server.js.md)
 - [ChatNamespace.js](JavaScript/Socket/ChatNamespace.js.md)
 - [ChatRoom.js](JavaScript/Socket/ChatRoom.js.md)
-- [chat-server.js](JavaScript/Socket/chat-server.js.md)
 - [namespace-server.js](JavaScript/Socket/namespace-server.js.md)
 - [Socket.IO Chat -esimerkki](JavaScript/Socket/notes.md)
 - [socket_io](JavaScript/Socket/socket_io.md)
+
+#### framework
+
+##### React
+
 - [App.js](JavaScript/framework/React/App.js.md)
 - [CallbackEsimerkki.js](JavaScript/framework/React/CallbackEsimerkki.js.md)
 - [ContextEsimerkki.js](JavaScript/framework/React/ContextEsimerkki.js.md)
@@ -103,7 +144,9 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [TapahtumaJaTilaEsimerkki.js](JavaScript/framework/React/TapahtumaJaTilaEsimerkki.js.md)
 - [TapahtumankuuntelijaEsimerkki.js](JavaScript/framework/React/TapahtumankuuntelijaEsimerkki.js.md)
 - [TilaEsimerkki.js](JavaScript/framework/React/TilaEsimerkki.js.md)
-- [README](JavaScript/perusteet/README.md)
+
+#### perusteet
+
 - [array_basics.js](JavaScript/perusteet/array_basics.js.md)
 - [async_await.js](JavaScript/perusteet/async_await.js.md)
 - [callbacks.js](JavaScript/perusteet/callbacks.js.md)
@@ -112,38 +155,58 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [error_handling.js](JavaScript/perusteet/error_handling.js.md)
 - [events.js](JavaScript/perusteet/events.js.md)
 - [functions.js](JavaScript/perusteet/functions.js.md)
-- [helloWorld.js](JavaScript/perusteet/helloWorld.js.md)
 - [hello_world.js](JavaScript/perusteet/hello_world.js.md)
+- [helloWorld.js](JavaScript/perusteet/helloWorld.js.md)
 - [json_examples.js](JavaScript/perusteet/json_examples.js.md)
 - [loops_and_conditions.js](JavaScript/perusteet/loops_and_conditions.js.md)
 - [modules.js](JavaScript/perusteet/modules.js.md)
 - [number_examples.js](JavaScript/perusteet/number_examples.js.md)
 - [object_basics.js](JavaScript/perusteet/object_basics.js.md)
+- [README](JavaScript/perusteet/README.md)
 - [scope_examples.js](JavaScript/perusteet/scope_examples.js.md)
 - [string_methods.js](JavaScript/perusteet/string_methods.js.md)
 - [template_literals.js](JavaScript/perusteet/template_literals.js.md)
 - [variables_and_types.js](JavaScript/perusteet/variables_and_types.js.md)
+
+#### valmiit
+
 - [password.js](JavaScript/valmiit/password.js.md)
 - [uploanFunc.js](JavaScript/valmiit/uploanFunc.js.md)
 
 ### MFK kaavat
 
+#### Fysiikka
+
 - [Fysiikka](MFK%20kaavat/Fysiikka/kaavat.md)
+
+#### Kemia
+
 - [Kemia](MFK%20kaavat/Kemia/kaavat.md)
+
+#### Matematiikka
+
 - [Matematiikka](MFK%20kaavat/Matematiikka/kaavat.md)
 
 ### Python
 
-- [FastAPI Esimerkkisovellus](Python/frameworks/FastApi/README.md)
+- [hello_world.py](Python/hello_world.py.md)
+
+#### frameworks
+
+##### FastApi
+
 - [basic_routes.py](Python/frameworks/FastApi/basic_routes.py.md)
 - [fastapi](Python/frameworks/FastApi/fastapi.md)
+- [FastAPI Esimerkkisovellus](Python/frameworks/FastApi/README.md)
 - [fastapi_esimerkit](Python/frameworks/FastApi/fastapi_esimerkit.md)
 - [item.py](Python/frameworks/FastApi/item.py.md)
 - [item_routes.py](Python/frameworks/FastApi/item_routes.py.md)
 - [main.py](Python/frameworks/FastApi/main.py.md)
 - [test_main.py](Python/frameworks/FastApi/test_main.py.md)
 - [user.py](Python/frameworks/FastApi/user.py.md)
-- [hello_world.py](Python/hello_world.py.md)
+
+#### perusteet
+
 - [async_await.py](Python/perusteet/async_await.py.md)
 - [dict_basics.py](Python/perusteet/dict_basics.py.md)
 - [error_handling.py](Python/perusteet/error_handling.py.md)
@@ -155,6 +218,9 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [number_examples.py](Python/perusteet/number_examples.py.md)
 - [string_methods.py](Python/perusteet/string_methods.py.md)
 - [user_input.py](Python/perusteet/user_input.py.md)
+
+#### projects
+
 - [barcode.py](Python/projects/barcode.py.md)
 - [hangman.py](Python/projects/hangman.py.md)
 - [ip_osoitteet.py](Python/projects/ip_osoitteet.py.md)
@@ -171,37 +237,40 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 
 ### Vinkit
 
+#### AI-ML
+
 - [$0 AI Architecture Stack 2026 (versio 2)](Vinkit/AI-ML/0-ai-arkkitehtuuripino-2026.md)
 - [100 Claude Tips](Vinkit/AI-ML/100-claude-tips.md)
 - [ERP-järjestelmä rakennettuna Claude-tekoälyllä](Vinkit/AI-ML/erp-jarjestelma-claude-tekoalylla.md)
 - [How to Build AI Agents from Scratch (10 vaihetta)](Vinkit/AI-ML/how-to-build-ai-agents-from-scratch.md)
-- [Miten rakennat AI-agentin](Vinkit/AI-ML/how-to-build-an-ai-agent.md)
 - [How to Build Claude Skills That Really Work](Vinkit/AI-ML/how-to-build-claude-skills-that-really-work.md)
 - [Koneoppimisen features ja labels -peruskäsitteet](Vinkit/AI-ML/koneoppimisen-features-ja-labels.md)
 - [Koneoppimisen kaavat](Vinkit/AI-ML/koneoppimisen-kaavat.md)
 - [LLM vs RAG vs AI Agent vs Agentic AI -vertailu](Vinkit/AI-ML/llm-vs-rag-vs-ai-agent-vs-agentic-ai.md)
+- [Miten rakennat AI-agentin](Vinkit/AI-ML/how-to-build-an-ai-agent.md)
 - [Miten rakennetaan AI-agentti (arkkitehtuurikaavio)](Vinkit/AI-ML/miten-rakennetaan-ai-agentti.md)
-- [multi-agentti-ai-arkkitehtuuri.jpg](Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.jpg.md)
 - [Multi-agentti-AI-järjestelmän arkkitehtuurikaavio](Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.md)
 - [No-code vs. vibe coding -vertailutaulukko](Vinkit/AI-ML/no-code-vs-vibe-coding-vertailutaulukko.md)
 - [Power BI pähkinänkuoressa](Vinkit/AI-ML/power-bi-yhteenveto.md)
 - [Tilastotieteen kaavat](Vinkit/AI-ML/tilastotieteen-kaavat.md)
 - [Top 10 avoimen lähdekoodin kirjastoa LLM-mallien hienosäätöön paikallisesti](Vinkit/AI-ML/top-10-avoimen-lahdekoodin-kirjastoa-llm-hienosaatoon.md)
+
+#### Backend-API
+
 - [API-tyyppien vertailu (REST, GraphQL, SOAP, WebSocket ym.)](Vinkit/Backend-API/api-tyyppien-vertailu.md)
-- [Cookies vs JWT -vertailu (toinen versio)](Vinkit/Backend-API/cookies-vs-jwt-vertailu-toinen-versio.md)
 - [Cookies vs JWT -vertailu](Vinkit/Backend-API/cookies-vs-jwt-vertailu.md)
+- [Cookies vs JWT -vertailu (toinen versio)](Vinkit/Backend-API/cookies-vs-jwt-vertailu-toinen-versio.md)
 - [Cookies vs LocalStorage vs SessionStorage](Vinkit/Backend-API/cookies-vs-localstorage-vs-sessionstorage.md)
 - [Express.js-huijauslappu](Vinkit/Backend-API/expressjs-huijauslappu.md)
+- [JWT vs OAuth 2.0 -autentikaatio](Vinkit/Backend-API/jwt-vs-oauth-autentikaatio.md)
 - [JWT-autentikaation vuokaavio](Vinkit/Backend-API/jwt-autentikaation-vuokaavio.md)
 - [JWT-tokenien refresh-rotaatio](Vinkit/Backend-API/jwt-tokenien-refresh-rotaatio.md)
-- [JWT vs OAuth 2.0 -autentikaatio](Vinkit/Backend-API/jwt-vs-oauth-autentikaatio.md)
-- [kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg](Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg.md)
 - [Kaksivaiheisen tunnistautumisen (2FA) vuokaavio](Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.md)
 - [Käyttäjän kirjautumisen vuokaavio (bcrypt, JWT)](Vinkit/Backend-API/kayttajan-kirjautumisen-vuokaavio.md)
 - [Miksi tietokantakyselyt hidastuvat](Vinkit/Backend-API/miksi-tietokantakyselyt-hidastuvat.md)
 - [Next.js + backend -aloittelijaprojektit](Vinkit/Backend-API/nextjs-backend-aloittelijaprojektit.md)
-- [Node.js/backend-edistyneet projektit](Vinkit/Backend-API/nodejs-backend-edistyneet-projektit.md)
 - [Node.js CRUD-operaatiot Expressilla](Vinkit/Backend-API/nodejs-crud-operaatiot-expressilla.md)
+- [Node.js/backend-edistyneet projektit](Vinkit/Backend-API/nodejs-backend-edistyneet-projektit.md)
 - [OAuth-kirjautumisen vuokaavio](Vinkit/Backend-API/oauth-kirjautumisen-vuokaavio.md)
 - [OpenWeather API -esittely](Vinkit/Backend-API/openweather-api-esittely.md)
 - [REST API -arkkitehtuuri](Vinkit/Backend-API/rest-api-arkkitehtuuri.md)
@@ -213,6 +282,9 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [Spring Boot -sovelluksen rakennekaavio](Vinkit/Backend-API/spring-boot-sovelluksen-rakenne.md)
 - [Supabase-tietokantaclientin yhdistäminen Next.js-sovellukseen](Vinkit/Backend-API/supabase-tietokantaclientin-yhdistaminen-nextjs-sovellukseen.md)
 - [Tietokantaintegraatio Next.js:ssä (Prisma, PostgreSQL)](Vinkit/Backend-API/tietokantaintegraatio-nextjs-prisma-postgresql.md)
+
+#### DevOps
+
 - [25 VS Code -laajennusta jokaiselle kehittäjälle](Vinkit/DevOps/25-vs-code-laajennusta-jokaiselle-kehittajalle.md)
 - [7 Git-komentoa -huijauslappu](Vinkit/DevOps/7-git-komentoa-huijauslappu.md)
 - [Bash-skriptauksen perusteet](Vinkit/DevOps/bash-skriptauksen-perusteet.md)
@@ -227,6 +299,9 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [Koodaus-, esikatselu- ja julkaisualustat](Vinkit/DevOps/koodaus-esikatselu-julkaisualustat.md)
 - [Tulevaisuuden tech-urat](Vinkit/DevOps/tulevaisuuden-tech-urat.md)
 - [VS Code -laajennukset kehittäjille](Vinkit/DevOps/vs-code-laajennukset-kehittajille.md)
+
+#### Html-CSS
+
 - [CSS-huijauslappu 2026](Vinkit/Html-CSS/css-huijauslappu-2026.md)
 - [HTML5:n img-elementti (40 päivän HTML-sarja, päivä 9)](Vinkit/Html-CSS/html5-img-elementti.md)
 - [HTML5:n semanttinen rakenne](Vinkit/Html-CSS/html5-semanttinen-rakenne.md)
@@ -237,17 +312,22 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [Responsiivisen suunnittelun huijauslappu](Vinkit/Html-CSS/responsiivisen-suunnittelun-huijauslappu.md)
 - [Responsiivisen suunnittelun pikaopas](Vinkit/Html-CSS/responsiivisen-suunnittelun-pikaopas.md)
 - [Web-suorituskyvyn optimointi (Core Web Vitals)](Vinkit/Html-CSS/web-suorituskyvyn-optimointi.md)
-- [yleisimmat-verkkosivujen-layout-rakenteet.jpg](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.jpg.md)
 - [Yleisimmät verkkosivujen layout-rakenteet](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.md)
+
+#### Jarjestelmasuunnittelu
+
 - [Dokumenttien skannausjärjestelmän arkkitehtuuri ja tietokantasuunnittelu](Vinkit/Jarjestelmasuunnittelu/dokumenttien-skannausjarjestelman-arkkitehtuuri.md)
 - [Järjestelmäsuunnittelu: miten WhatsApp toimii](Vinkit/Jarjestelmasuunnittelu/jarjestelmasuunnittelu-whatsapp.md)
+- [Kuinka selain renderoi sivun (DNS:stä pikseleihin)](Vinkit/Jarjestelmasuunnittelu/miten-selain-renderoi-sivun.md)
 - [Kulunseurantasovelluksen arkkitehtuuri ja tietokantasuunnittelu](Vinkit/Jarjestelmasuunnittelu/kulunseurantasovelluksen-arkkitehtuuri.md)
 - [Micro Frontend -arkkitehtuuri](Vinkit/Jarjestelmasuunnittelu/micro-frontend-arkkitehtuuri.md)
-- [Kuinka selain renderoi sivun (DNS:stä pikseleihin)](Vinkit/Jarjestelmasuunnittelu/miten-selain-renderoi-sivun.md)
 - [Miten WebSocket toimii](Vinkit/Jarjestelmasuunnittelu/miten-websocket-toimii.md)
 - [SaaS-tilaussovelluksen arkkitehtuuri ja tietokantasuunnittelu](Vinkit/Jarjestelmasuunnittelu/saas-tilaussovelluksen-arkkitehtuuri.md)
 - [Server-side vs client-side renderointi](Vinkit/Jarjestelmasuunnittelu/server-side-vs-client-side-renderointi.md)
 - [Skaalautuva frontend-arkkitehtuuri](Vinkit/Jarjestelmasuunnittelu/skaalautuva-frontend-arkkitehtuuri.md)
+
+#### JavaScript-React
+
 - [Axios API-pyyntöihin Reactissa](Vinkit/JavaScript-React/axios-api-pyyntoihin-reactissa.md)
 - [CRUD-operaatiot Reactissa (useState-esimerkki)](Vinkit/JavaScript-React/crud-operaatiot-reactissa.md)
 - [CSV-vienti Reactissa (react-csv)](Vinkit/JavaScript-React/csv-vienti-reactissa.md)
@@ -256,34 +336,36 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [Excel-tiedoston lukeminen Reactissa (xlsx)](Vinkit/JavaScript-React/excel-tiedoston-lukeminen-reactissa.md)
 - [Fetch API:n perusteet (JS-sarja, päivä 29)](Vinkit/JavaScript-React/fetch-api-perusteet.md)
 - [Firebase-autentikointi Reactissa](Vinkit/JavaScript-React/firebase-autentikointi-reactissa.md)
-- [JavaScript-operaattorit](Vinkit/JavaScript-React/javascript-operaattorit.md)
 - [JavaScript switch-lause](Vinkit/JavaScript-React/javascript-switch-lause.md)
+- [JavaScript-operaattorit](Vinkit/JavaScript-React/javascript-operaattorit.md)
 - [JavaScriptin hiiritapahtumat (click, hover, drag)](Vinkit/JavaScript-React/javascriptin-hiiritapahtumat.md)
 - [Karttojen toteutus Reactissa (react-leaflet)](Vinkit/JavaScript-React/karttojen-toteutus-react-leaflet.md)
 - [Navigointi Link-komponentilla (React Router)](Vinkit/JavaScript-React/navigointi-link-komponentilla.md)
-- [Next.js Middleware -opas (toinen versio)](Vinkit/JavaScript-React/nextjs-middleware-opas-versio-2.md)
 - [Next.js Middleware -opas](Vinkit/JavaScript-React/nextjs-middleware-opas.md)
+- [Next.js Middleware -opas (toinen versio)](Vinkit/JavaScript-React/nextjs-middleware-opas-versio-2.md)
 - [Progressive Web Apps (service worker, manifest)](Vinkit/JavaScript-React/progressive-web-apps.md)
 - [QR-koodien generointi Reactissa (qrcode.react)](Vinkit/JavaScript-React/qr-koodien-generointi-reactissa.md)
 - [React Context API -perusteet](Vinkit/JavaScript-React/react-context-api-perusteet.md)
 - [React Contextin datanjako -kaavio](Vinkit/JavaScript-React/react-context-datanjako-kaavio.md)
-- [React-edistyneet projektit](Vinkit/JavaScript-React/react-edistyneet-projektit.md)
 - [React Hooks -cheat sheet](Vinkit/JavaScript-React/react-hooks-cheat-sheet.md)
 - [React JS -komentolista](Vinkit/JavaScript-React/react-js-komentolista.md)
-- [React-kansiorakenne (30 Days -sarja, päivä 25)](Vinkit/JavaScript-React/react-kansiorakenne-30-days-paiva-25.md)
-- [React-kansiorakenne](Vinkit/JavaScript-React/react-kansiorakenne.md)
-- [React-portfolioprojektit: SaaS dashboard ja verkkokauppa](Vinkit/JavaScript-React/react-portfolioprojektit-saas-dashboard-ja-verkkokauppa.md)
 - [React Router -perusteet](Vinkit/JavaScript-React/react-router-perusteet.md)
 - [React Routerin arkkitehtuuri](Vinkit/JavaScript-React/react-routerin-arkkitehtuuri.md)
+- [React-edistyneet projektit](Vinkit/JavaScript-React/react-edistyneet-projektit.md)
+- [React-kansiorakenne](Vinkit/JavaScript-React/react-kansiorakenne.md)
+- [React-kansiorakenne (30 Days -sarja, päivä 25)](Vinkit/JavaScript-React/react-kansiorakenne-30-days-paiva-25.md)
+- [React-portfolioprojektit: SaaS dashboard ja verkkokauppa](Vinkit/JavaScript-React/react-portfolioprojektit-saas-dashboard-ja-verkkokauppa.md)
 - [React/Tailwind/TypeScript-projektit (aloittelijataso)](Vinkit/JavaScript-React/react-tailwind-typescript-projektit.md)
 - [Reactin oleelliset kirjastot (Router, Axios, Zustand ym.)](Vinkit/JavaScript-React/reactin-oleelliset-kirjastot.md)
 - [Suojatut reitit (Protected Routes) Reactissa](Vinkit/JavaScript-React/suojatut-reitit-reactissa.md)
 - [useMemo vs useCallback -vertailu](Vinkit/JavaScript-React/usememo-vs-usecallback.md)
 - [Valuuttamuunnin HTML/CSS/JS-projektina](Vinkit/JavaScript-React/valuuttamuunnin-html-css-js.md)
 - [Viivakoodin generointi Reactissa (react-barcode)](Vinkit/JavaScript-React/viivakoodin-generointi-react-barcode.md)
+
+#### Projekti-ideat
+
 - [15 CSS-projekti-ideaa](Vinkit/Projekti-ideat/15-css-projekti-ideaa.md)
 - [30 päivän React-projektihaaste](Vinkit/Projekti-ideat/30-paivan-react-projektihaaste.md)
-- [Lista 60 Python-projekti-ideasta](Vinkit/Projekti-ideat/60-python-projekti-ideaa.md)
 - [AI-integroidut edistyneet projekti-ideat](Vinkit/Projekti-ideat/ai-integroidut-edistyneet-projekti-ideoita.md)
 - [AI-integroidut projekti-ideat (aloittelijataso)](Vinkit/Projekti-ideat/ai-integroidut-projekti-ideoita-aloittelija.md)
 - [Aloittelijan koodausprojektilista](Vinkit/Projekti-ideat/aloittelijan-koodausprojektilista.md)
@@ -293,14 +375,14 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [Data scientist -projekteja: agenttinen AI](Vinkit/Projekti-ideat/data-scientist-projektit-agenttinen-ai.md)
 - [Data scientist -projekteja: deep learning](Vinkit/Projekti-ideat/data-scientist-projektit-deep-learning.md)
 - [Data scientist -projekteja: generatiivinen AI](Vinkit/Projekti-ideat/data-scientist-projektit-generatiivinen-ai.md)
-- [Data scientist -projekti-ideoita: koneoppiminen](Vinkit/Projekti-ideat/data-scientist-projektit-koneoppiminen.md)
 - [Data scientist -projekteja: tilastollinen mallinnus](Vinkit/Projekti-ideat/data-scientist-projektit-tilastollinen-mallinnus.md)
+- [Data scientist -projekti-ideoita: koneoppiminen](Vinkit/Projekti-ideat/data-scientist-projektit-koneoppiminen.md)
 - [Deep learning -projekti-ideoita (keskitaso)](Vinkit/Projekti-ideat/deep-learning-projekti-ideoita.md)
 - [Edistyneet API-projektit (ilmoitukset, rate limiting, haku, lokitus)](Vinkit/Projekti-ideat/edistyneet-api-projektit-ilmoitukset-rate-limiting-haku-lokitus.md)
 - [Edistyneet API-projektit (JWT, tiedostolataus, chat, maksu)](Vinkit/Projekti-ideat/edistyneet-api-projektit-jwt-tiedostolataus-chat-maksu.md)
 - [Edistyneet API-projektit (reaaliaikainen yhteistyö, mikropalvelut)](Vinkit/Projekti-ideat/edistyneet-api-projektit-reaaliaikainen-yhteistyo-mikropalvelut.md)
-- [Edistyneitä SaaS/AI-projekti-ideoita (FullStack)](Vinkit/Projekti-ideat/edistyneet-saas-ai-projekti-ideoita.md)
 - [Edistyneiden koodausprojektien lista](Vinkit/Projekti-ideat/edistyneiden-koodausprojektien-lista.md)
+- [Edistyneitä SaaS/AI-projekti-ideoita (FullStack)](Vinkit/Projekti-ideat/edistyneet-saas-ai-projekti-ideoita.md)
 - [Frontend- ja Backend-kehittäjän kansiorakenne](Vinkit/Projekti-ideat/frontend-ja-backend-kansiorakenne.md)
 - [HTML/CSS/JS-aloittelijaprojektit](Vinkit/Projekti-ideat/html-css-js-aloittelijaprojektit.md)
 - [Ilmaisia API:ja projekteihin](Vinkit/Projekti-ideat/ilmaisia-apeja-projekteihin.md)
@@ -309,50 +391,57 @@ Laaja koodi-cheat sheet -kirjasto usealle eri kielelle ja työkalulle, selityksi
 - [Koneoppimis- ja tekoälyprojektien ideoita](Vinkit/Projekti-ideat/koneoppimis-ai-projektien-listaus.md)
 - [Koneoppimisprojekti-ideoita (aloittelijataso)](Vinkit/Projekti-ideat/koneoppimisprojekti-ideoita-spam-luokittelu.md)
 - [Kyberturvallisuusprojektien listaus](Vinkit/Projekti-ideat/kyberturvallisuusprojektien-listaus.md)
+- [Lista 60 Python-projekti-ideasta](Vinkit/Projekti-ideat/60-python-projekti-ideaa.md)
 - [Lisää deep learning -projekteja](Vinkit/Projekti-ideat/lisaa-dl-projekteja.md)
-- [Lisää MERN-projekti-ideoita](Vinkit/Projekti-ideat/lisaa-mern-projekti-ideoita.md)
 - [Lisää koneoppimisprojekteja (ennustemallit, sentimenttianalyysi)](Vinkit/Projekti-ideat/lisaa-ml-projekteja-ennustemallit-sentimenttianalyysi.md)
-- [Miksi useimmat kehittäjät eivät koskaan tule työmarkkinakelpoisiksi](Vinkit/Projekti-ideat/mainos-100-ohjelmointiprojektille.md)
+- [Lisää MERN-projekti-ideoita](Vinkit/Projekti-ideat/lisaa-mern-projekti-ideoita.md)
 - [MERN-pino -projekti-ideoita (advanced)](Vinkit/Projekti-ideat/mern-pino-projekti-ideoita-advanced.md)
-- [ml-projektin-kansiorakenne.jpg](Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.jpg.md)
+- [Miksi useimmat kehittäjät eivät koskaan tule työmarkkinakelpoisiksi](Vinkit/Projekti-ideat/mainos-100-ohjelmointiprojektille.md)
 - [ML-projektin kansiorakennekaavio](Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.md)
 - [Node.js-projektin kansiorakenne (frontend/backend-jako)](Vinkit/Projekti-ideat/nodejs-projektin-kansiorakenne.md)
 - [Ohjelmistokehitysprojekti-ideoita (web, mobiili, backend)](Vinkit/Projekti-ideat/ohjelmistokehitysprojekti-ideoita.md)
 - [Osakekurssiennustus- ja tunnistusprojekteja](Vinkit/Projekti-ideat/osakekurssiennustus-ja-tunnistusprojekteja.md)
 - [Python-projekti-ideoita eri tasoille](Vinkit/Projekti-ideat/python-projekti-ideoita-eri-tasoille.md)
 - [Ravintolan hallintajärjestelmän projekti-idea](Vinkit/Projekti-ideat/ravintolan-hallintajarjestelman-projekti-idea.md)
-- [React-projektin kansiorakenne: "Good" vs "Best"](Vinkit/Projekti-ideat/react-kansiorakenne-good-vs-best.md)
 - [React-projekti-ideoita aloittelijoille](Vinkit/Projekti-ideat/react-projekti-ideoita-aloittelijoille.md)
+- [React-projektin kansiorakenne: "Good" vs "Best"](Vinkit/Projekti-ideat/react-kansiorakenne-good-vs-best.md)
 - [Tietorakenne- ja algoritmi (DSA) -projektilista](Vinkit/Projekti-ideat/tietorakenne-algoritmi-dsa-projektilista.md)
-- [varastonhallinnan-dashboard-esimerkki.jpg](Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.jpg.md)
 - [Varastonhallinnan dashboard -esimerkki (dev-projektin UI)](Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.md)
+
+#### Python
+
 - [Data Viz -huijauslappu (Matplotlib/Seaborn)](Vinkit/Python/dataviz-huijauslappu-matplotlib-seaborn.md)
-- [Python JSON: tietyn arvon haku ja avainten lajittelu](Vinkit/Python/json-arvon-haku-ja-avainten-lajittelu.md)
-- [Python JSON: dictin muunto JSON-merkkijonoksi ja takaisin](Vinkit/Python/json-dict-muunto-merkkijonoksi.md)
-- [Python JSON: pretty print ja listan tallennus](Vinkit/Python/json-pretty-print-ja-listan-tallennus.md)
-- [Python JSON: tallennus ja luku tiedostosta](Vinkit/Python/json-tallennus-ja-luku-tiedostosta.md)
-- [kasvontunnistus-ai-opencv-haar-cascade.jpg](Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.jpg.md)
 - [Kasvontunnistus-AI Python-koodilla (OpenCV/Haar Cascade)](Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.md)
 - [Mitä JSON on (Python-esimerkki)](Vinkit/Python/mita-json-on-python-esimerkki.md)
 - [NumPy-huijauslappu (taulukot, matematiikka, muokkaus)](Vinkit/Python/numpy-huijauslappu.md)
-- [Pandas-huijauslappu osa 2 (aggregointi, visualisointi, CSV-vienti)](Vinkit/Python/pandas-huijauslappu-osa-2-aggregointi-visualisointi.md)
 - [Pandas-huijauslappu (rivien/sarakkeiden valinta, data wrangling)](Vinkit/Python/pandas-huijauslappu-valinta-ja-wrangling.md)
-- [Python: PDF-todistuksen generointi (fpdf)](Vinkit/Python/pdf-todistuksen-generointi-fpdf.md)
-- [Python: PDF-vesileiman lisääminen (fpdf)](Vinkit/Python/pdf-vesileima-fpdf.md)
+- [Pandas-huijauslappu osa 2 (aggregointi, visualisointi, CSV-vienti)](Vinkit/Python/pandas-huijauslappu-osa-2-aggregointi-visualisointi.md)
+- [Python JSON: dictin muunto JSON-merkkijonoksi ja takaisin](Vinkit/Python/json-dict-muunto-merkkijonoksi.md)
+- [Python JSON: pretty print ja listan tallennus](Vinkit/Python/json-pretty-print-ja-listan-tallennus.md)
+- [Python JSON: tallennus ja luku tiedostosta](Vinkit/Python/json-tallennus-ja-luku-tiedostosta.md)
+- [Python JSON: tietyn arvon haku ja avainten lajittelu](Vinkit/Python/json-arvon-haku-ja-avainten-lajittelu.md)
+- [Python tkinter: mini-chatbotin GUI](Vinkit/Python/tkinter-mini-chatbot-gui.md)
 - [Python-huijauslappusarja: keskeiset data- ja automaatiokirjastot](Vinkit/Python/python-huijauslappu-kirjastot-yleiskatsaus.md)
 - [Python-kirjastojen käyttötarkoitukset](Vinkit/Python/python-kirjaston-yhdistelmataulukko.md)
+- [Python: PDF-todistuksen generointi (fpdf)](Vinkit/Python/pdf-todistuksen-generointi-fpdf.md)
+- [Python: PDF-vesileiman lisääminen (fpdf)](Vinkit/Python/pdf-vesileima-fpdf.md)
 - [QR-koodin generointi Pythonilla](Vinkit/Python/qr-koodin-generointi-pythonilla.md)
 - [Scikit-Learn-huijauslappu (esikäsittely, koulutus/testijako)](Vinkit/Python/scikit-learn-huijauslappu-esikasittely-koulutus-testijako.md)
 - [Scikit-learn-huijauslappu: mallin luonti, arviointi, viritys](Vinkit/Python/scikit-learn-huijauslappu-malli-arviointi-viritys.md)
 - [Selenium ja Scrapy -huijauslappu](Vinkit/Python/selenium-ja-scrapy-huijauslappu.md)
-- [Python tkinter: mini-chatbotin GUI](Vinkit/Python/tkinter-mini-chatbot-gui.md)
 - [Web scraping -huijauslappu (HTML, BeautifulSoup, XPath)](Vinkit/Python/web-scraping-huijauslappu-html-beautifulsoup-xpath.md)
+
+#### Tietoturva-Verkot
+
 - [15 verkkotekniikan peruskäsitettä](Vinkit/Tietoturva-Verkot/15-verkkotekniikan-peruskasitetta.md)
 - [Subnet mask -selitys (CCNA-muistiinpanot)](Vinkit/Tietoturva-Verkot/subnet-mask-selitys.md)
+
+#### UX-Suunnittelu
+
+- [Anatomy of a Portfolio Homepage – portfolio-etusivun jäsennys](Vinkit/UX-Suunnittelu/portfolio-etusivun-anatomia.md)
 - [Home Page vs Landing Page -vertailu](Vinkit/UX-Suunnittelu/home-page-vs-landing-page.md)
 - [Mikä tekee dashboardista hyvän?](Vinkit/UX-Suunnittelu/mika-tekee-dashboardista-hyvan.md)
 - [Mobile first vs desktop first -suunnittelu](Vinkit/UX-Suunnittelu/mobile-first-vs-desktop-first.md)
-- [Anatomy of a Portfolio Homepage – portfolio-etusivun jäsennys](Vinkit/UX-Suunnittelu/portfolio-etusivun-anatomia.md)
 - [Progress bar -tyyppien vertailu](Vinkit/UX-Suunnittelu/progress-bar-tyyppien-vertailu.md)
 - [UX-suunnittelun do's ja don'ts](Vinkit/UX-Suunnittelu/ux-suunnittelun-dot-ja-dont.md)
 

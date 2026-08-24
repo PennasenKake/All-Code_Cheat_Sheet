@@ -19,7 +19,6 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [Power BI pähkinänkuoressa](Vinkit/AI-ML/power-bi-yhteenveto.md)
 - [Tilastotieteen kaavat](Vinkit/AI-ML/tilastotieteen-kaavat.md)
 - [Top 10 avoimen lähdekoodin kirjastoa LLM-mallien hienosäätöön paikallisesti](Vinkit/AI-ML/top-10-avoimen-lahdekoodin-kirjastoa-llm-hienosaatoon.md)
-- [multi-agentti-ai-arkkitehtuuri.jpg](Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.jpg.md)
 
 ## ajastin
 
@@ -58,7 +57,6 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [Spring Boot -sovelluksen rakennekaavio](Vinkit/Backend-API/spring-boot-sovelluksen-rakenne.md)
 - [Supabase-tietokantaclientin yhdistäminen Next.js-sovellukseen](Vinkit/Backend-API/supabase-tietokantaclientin-yhdistaminen-nextjs-sovellukseen.md)
 - [Tietokantaintegraatio Next.js:ssä (Prisma, PostgreSQL)](Vinkit/Backend-API/tietokantaintegraatio-nextjs-prisma-postgresql.md)
-- [kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg](Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg.md)
 
 ## bash
 
@@ -276,7 +274,6 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [Responsiivisen suunnittelun pikaopas](Vinkit/Html-CSS/responsiivisen-suunnittelun-pikaopas.md)
 - [Web-suorituskyvyn optimointi (Core Web Vitals)](Vinkit/Html-CSS/web-suorituskyvyn-optimointi.md)
 - [Yleisimmät verkkosivujen layout-rakenteet](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.md)
-- [yleisimmat-verkkosivujen-layout-rakenteet.jpg](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.jpg.md)
 
 ## ideat
 
@@ -409,14 +406,8 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 
 ## kuva
 
-- [kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg](Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg.md)
-- [kasvontunnistus-ai-opencv-haar-cascade.jpg](Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.jpg.md)
 - [kuva.jpg](Html/CSS/esimerkkej%C3%A4/esim2%20resp/kuva.jpg.md)
 - [kuva.jpg](Html/Esimerkit/kuva.jpg.md)
-- [ml-projektin-kansiorakenne.jpg](Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.jpg.md)
-- [multi-agentti-ai-arkkitehtuuri.jpg](Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.jpg.md)
-- [varastonhallinnan-dashboard-esimerkki.jpg](Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.jpg.md)
-- [yleisimmat-verkkosivujen-layout-rakenteet.jpg](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.jpg.md)
 
 ## layoutit
 
@@ -491,8 +482,6 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [React-projektin kansiorakenne: "Good" vs "Best"](Vinkit/Projekti-ideat/react-kansiorakenne-good-vs-best.md)
 - [Tietorakenne- ja algoritmi (DSA) -projektilista](Vinkit/Projekti-ideat/tietorakenne-algoritmi-dsa-projektilista.md)
 - [Varastonhallinnan dashboard -esimerkki (dev-projektin UI)](Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.md)
-- [ml-projektin-kansiorakenne.jpg](Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.jpg.md)
-- [varastonhallinnan-dashboard-esimerkki.jpg](Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.jpg.md)
 
 ## python
 
@@ -533,7 +522,6 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [item.py](Python/frameworks/FastApi/item.py.md)
 - [item_routes.py](Python/frameworks/FastApi/item_routes.py.md)
 - [jatkanshakki.py](Python/projects/jatkanshakki.py.md)
-- [kasvontunnistus-ai-opencv-haar-cascade.jpg](Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.jpg.md)
 - [list_basics.py](Python/perusteet/list_basics.py.md)
 - [loops_and_conditions.py](Python/perusteet/loops_and_conditions.py.md)
 - [main.py](Python/frameworks/FastApi/main.py.md)
@@ -790,10 +778,4 @@ Kaikki muistilaput ryhmiteltyna tunnisteiden mukaan. Tunnisteet generoidaan auto
 - [Web-suorituskyvyn optimointi (Core Web Vitals)](Vinkit/Html-CSS/web-suorituskyvyn-optimointi.md)
 - [Yleisimmät verkkosivujen layout-rakenteet](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.md)
 - [cat ja nano — Linux-komentojen cheat sheet](Vinkit/DevOps/cat-ja-nano-linux-komentojen-cheat-sheet.md)
-- [kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg](Vinkit/Backend-API/kaksivaiheinen-tunnistautuminen-2fa-vuokaavio.jpg.md)
-- [kasvontunnistus-ai-opencv-haar-cascade.jpg](Vinkit/Python/kasvontunnistus-ai-opencv-haar-cascade.jpg.md)
-- [ml-projektin-kansiorakenne.jpg](Vinkit/Projekti-ideat/ml-projektin-kansiorakenne.jpg.md)
-- [multi-agentti-ai-arkkitehtuuri.jpg](Vinkit/AI-ML/multi-agentti-ai-arkkitehtuuri.jpg.md)
 - [useMemo vs useCallback -vertailu](Vinkit/JavaScript-React/usememo-vs-usecallback.md)
-- [varastonhallinnan-dashboard-esimerkki.jpg](Vinkit/Projekti-ideat/varastonhallinnan-dashboard-esimerkki.jpg.md)
-- [yleisimmat-verkkosivujen-layout-rakenteet.jpg](Vinkit/Html-CSS/yleisimmat-verkkosivujen-layout-rakenteet.jpg.md)

@@ -36,6 +36,36 @@ def first_heading_or_name(path: Path) -> str:
     return path.stem
 
 
+def build_dir_tree(files, base: Path) -> dict:
+    """Rakentaa sisakkaisen hakemistopuun tiedostoista (suhteessa base-kansioon),
+    jotta alikansiot (esim. Vinkit/AI-ML, Html/Esimerkit/formsit) nakyvat
+    sivupalkissa omina supistettavina ryhminaan sen sijaan etta kaikki
+    tiedostot listattaisiin yhdessa litteassa listassa."""
+    tree: dict = {}
+    for f in files:
+        parts = f.relative_to(base).parts
+        node = tree
+        for part in parts[:-1]:
+            node = node.setdefault(part, {})
+        node.setdefault("__files__", []).append(f)
+    return tree
+
+
+def emit_tree(node: dict, depth: int, lines: list) -> None:
+    indent = "  " * depth
+    for dirname in sorted(k for k in node if k != "__files__"):
+        lines.append(f"{indent}- {dirname}")
+        emit_tree(node[dirname], depth + 1, lines)
+    file_items = []
+    for f in node.get("__files__", []):
+        rel = f.relative_to(ROOT).as_posix()
+        href = quote(rel, safe="/")
+        title = first_heading_or_name(f)
+        file_items.append((title, href))
+    for title, href in sorted(file_items, key=lambda t: t[0].lower()):
+        lines.append(f"{indent}- [{title}]({href})")
+
+
 def build_sidebar() -> str:
     top_dirs = sorted(
         p for p in ROOT.iterdir()
@@ -54,11 +84,8 @@ def build_sidebar() -> str:
         if not files:
             continue
         lines.append(f"- {d.name}")
-        for f in files:
-            rel = f.relative_to(ROOT).as_posix()
-            href = quote(rel, safe="/")
-            title = first_heading_or_name(f)
-            lines.append(f"  - [{title}]({href})")
+        tree = build_dir_tree(files, d)
+        emit_tree(tree, 1, lines)
 
     return "\n".join(lines).rstrip() + "\n"
 

@@ -20,6 +20,21 @@ from urllib.parse import quote
 TAG_COMMENT_RE = re.compile(r"^<!--\s*tags:.*-->\s*$", re.IGNORECASE)
 HEADING_RE = re.compile(r"^#\s+(.+)$", re.MULTILINE)
 
+# Vastaa docsifyn omaa otsikko-id:n muodostustapaa (src/core/render/slugify.js),
+# jotta kategoriakortin linkki (#/README?id=<slug>) osuu oikeasti README.md:n
+# "### <kategoria>" -otsikon docsifyn generoimaan ankkuriin.
+_SLUG_PUNCT_RE = re.compile(
+    "[\u2000-\u206f\u2e00-\u2e7f\\\\'!\"#$%&()*+,./:;<=>?@\\[\\]^`{|}~]"
+)
+
+
+def docsify_slugify(text: str) -> str:
+    slug = text.strip().lower()
+    slug = _SLUG_PUNCT_RE.sub("", slug)
+    slug = re.sub(r"\s", "-", slug)
+    slug = re.sub(r"^(\d)", r"_\1", slug)
+    return slug
+
 
 def strip_leading_comment(text: str) -> str:
     lines = text.splitlines()
@@ -59,6 +74,27 @@ DISPLAY = {
 }
 
 
+# vastaa TARKALLEEN index.html:n showFeaturedExample()-JS:n regexia
+# (/```+([a-z0-9]*)\n([\s\S]*?)\n```+/i) - lofytysryhma voi olla tyhja,
+# joten taytyy poimia sama ENSIMMAINEN lohko kuin JS poimisi, eika vain
+# etsia ensimmaista lohkoa jolla SATTUU olemaan kielimaarite.
+_FIRST_FENCE_RE = re.compile(r"```+([a-zA-Z0-9]*)\n[\s\S]*?\n```+")
+
+
+def first_fence_has_lang(path: Path) -> bool:
+    """Palauttaa True vain jos tiedoston ENSIMMAISELLA koodilohkolla
+    (sama lohko jonka esimerkkipaneelin JS-puoli poimii) on kielimaarite
+    (esim. ```python). Jos ensimmainen lohko on kieleton (esim. pelkka
+    hakemistopuu ```...```), paneeliin paatyisi kieleksi "text" vaikka
+    tiedostossa myohemmin olisikin oikea koodilohko."""
+    try:
+        text = path.read_text(encoding="utf-8", errors="ignore")
+    except OSError:
+        return False
+    m = _FIRST_FENCE_RE.search(text)
+    return bool(m and m.group(1))
+
+
 def build_categories():
     top_dirs = sorted(
         p for p in ROOT.iterdir()
@@ -79,7 +115,23 @@ def build_categories():
         first = files[0].relative_to(ROOT).as_posix()
         # docsify purkaa hash-reitit decodeURIComponentilla, joten polun
         # välilyönnit ym. pitää enkoodata (mutta ei kauttaviivoja)
-        href = "#/" + quote(first, safe="/")
+        first_href = "#/" + quote(first, safe="/")
+        # kortin PÄÄlinkki vie README:n omaan osioon (kaikki kategorian
+        # tiedostot listattuna), ei suoraan ensimmäiseen tiedostoon
+        anchor = "#/README?id=" + docsify_slugify(d.name)
+        # esimerkkipaneelin nayte: ensimmainen tiedosto jossa OIKEASTI on
+        # koodilohko (```...```), ei vain aakkosjarjestyksen ensimmainen -
+        # muuten esim. pelkka arkkitehtuurikaavio-sivu paatyisi paneeliin
+        # raakana tekstina ilman koodia
+        example_file = files[0]
+        for f in files:
+            if first_fence_has_lang(f):
+                example_file = f
+                break
+        example_title = first_heading_or_name(example_file)
+        # esimerkkipaneelin fetch-osoite (ilman "#/"-etuliitettä koska tama
+        # on suora staattinen polku, ei docsify-reitti)
+        example = quote(example_file.relative_to(ROOT).as_posix(), safe="/")
         preview = []
         for f in files[:4]:
             title = first_heading_or_name(f)
@@ -91,7 +143,10 @@ def build_categories():
             "badge": badge,
             "color": color,
             "count": len(files),
-            "href": href,
+            "href": anchor,
+            "first_href": first_href,
+            "example": example,
+            "example_title": example_title,
             "preview": preview,
         })
     return categories

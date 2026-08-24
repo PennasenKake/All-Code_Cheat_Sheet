@@ -5,3 +5,7 @@ _to_delete_trash/
 *.bundle
 *.stale_*
 .git/*.lock.stale*
+
+# Python-skriptien välimuisti
+__pycache__/
+*.pyc

@@ -46,7 +46,7 @@ MAX_EMBED_BYTES = 200_000  # isommat (esim. valmiiksi renderoidut export-tiedost
 # repon JUURESSA olevat infratiedostot (ei sisallytetä koodisivuiksi) -
 # huom: polku tarkistetaan vain juuresta, joten esim. Html/.../index.html
 # (oikea esimerkkitiedosto) käsitellään edelleen normaalisti
-ROOT_SKIP_FILES = {"index.html", "categories.json"}
+ROOT_SKIP_FILES = {"index.html", "categories.json", "tags.json"}
 
 STOP_WORDS = {
     "readme", "notes", "esimerkit", "esimerkkeja", "esimerkkejä", "projects",
@@ -138,6 +138,12 @@ def main():
     for src in sorted(iter_source_files()):
         ext = src.suffix.lower()
         if ext not in CODE_LANGS and ext not in IMAGE_EXTS:
+            continue
+        rel_parts = src.relative_to(ROOT).parts
+        if ext in IMAGE_EXTS and rel_parts and rel_parts[0] == "Vinkit":
+            # Vinkit-kuvat ovat aina upotettuna suoraan niiden omaan sisalto-
+            # sivuun (![...](kuva.jpg)) - erillinen "katselusivu" niille on
+            # vain paallekkaista roskaa sivupalkissa/sisallysluettelossa.
             continue
 
         wrapper = wrapper_path(src)
