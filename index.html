@@ -228,7 +228,10 @@
       padding-top: 0.4em;
       border-top: 1px solid var(--border);
     }
-    .markdown-section h3 { font-weight: 700; }
+    .markdown-section h3 {
+      font-weight: 700;
+      margin-top: 2em;
+    }
     .markdown-section p, .markdown-section li {
       line-height: 1.7;
       color: var(--text);
@@ -240,6 +243,43 @@
     }
     .markdown-section a:hover {
       border-bottom-color: var(--accent);
+    }
+    /* Docsifyn otsikoiden automaattiset itse-linkki-ankkurit (a.anchor)
+       eivät saa näyttää samalta kuin tavalliset tekstilinkit - muuten
+       jokainen otsikko (H1-H6) näyttää rikkinäiseltä/alleviivatulta
+       linkiltä, vaikka se ei ole tavallinen sisältölinkki. */
+    .markdown-section h1 a.anchor,
+    .markdown-section h2 a.anchor,
+    .markdown-section h3 a.anchor,
+    .markdown-section h4 a.anchor,
+    .markdown-section h5 a.anchor,
+    .markdown-section h6 a.anchor {
+      color: inherit;
+      border-bottom: none;
+    }
+    .markdown-section h1 a.anchor:hover,
+    .markdown-section h2 a.anchor:hover,
+    .markdown-section h3 a.anchor:hover,
+    .markdown-section h4 a.anchor:hover,
+    .markdown-section h5 a.anchor:hover,
+    .markdown-section h6 a.anchor:hover {
+      color: var(--accent);
+    }
+    /* Kategoriabadge README:n ### -otsikoiden eteen (ks. plugins-taulukon
+       viimeisin hook) - sama väri/lyhenne kuin etusivun kategoriakortissa. */
+    .cat-heading-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 1.6em;
+      height: 1.6em;
+      padding: 0 0.35em;
+      margin-right: 0.5em;
+      border-radius: 7px;
+      font-size: 0.62em;
+      font-weight: 800;
+      vertical-align: middle;
+      background: var(--bg-elevated);
     }
 
     /* --- Koodilohkot --- */
@@ -1333,6 +1373,56 @@
                 input.focus();
               }
             });
+          });
+        },
+        function (hook) {
+          // README:n sisällysluettelon kategriaotsikot (### Bash, ### Python...)
+          // saavat saman värikoodatun badgen kuin etusivun kategoriakortit,
+          // jotta sisältösivu tuntuu samalta järjestelmältä kuin etusivu -
+          // ei vaadi muutoksia otsikkotekstiin/ankkuri-id:hin, koska badge
+          // lisätään DOM:iin jälkikäteen otsikon tekstin eteen.
+          var categoriesCache = null;
+          hook.doneEach(function () {
+            var section = document.querySelector('.markdown-section');
+            if (!section) return;
+            var h3s = Array.prototype.slice.call(section.querySelectorAll('h3'));
+            h3s = h3s.filter(function (h) { return !h.dataset.catBadged; });
+            if (!h3s.length) return;
+
+            var ready = categoriesCache
+              ? Promise.resolve(categoriesCache)
+              : fetch('categories.json').then(function (r) { return r.json(); }).then(function (c) {
+                  categoriesCache = c;
+                  return c;
+                });
+
+            ready.then(function (categories) {
+              var byLabel = {};
+              categories.forEach(function (c) {
+                byLabel[c.display] = c;
+                byLabel[c.name] = c;
+              });
+              h3s.forEach(function (h) {
+                h.dataset.catBadged = '1';
+                var span = h.querySelector('a.anchor span');
+                var text = (span ? span.textContent : h.textContent).trim();
+                var c = byLabel[text];
+                if (!c) return;
+                var badge = document.createElement('span');
+                badge.className = 'cat-heading-badge';
+                badge.textContent = c.badge;
+                badge.style.color = c.color;
+                var hex = String(c.color || '').replace('#', '');
+                if (hex.length === 6) {
+                  var r = parseInt(hex.substring(0, 2), 16);
+                  var g = parseInt(hex.substring(2, 4), 16);
+                  var b = parseInt(hex.substring(4, 6), 16);
+                  badge.style.background = 'rgba(' + r + ',' + g + ',' + b + ',0.16)';
+                }
+                var anchor = h.querySelector('a.anchor') || h;
+                anchor.insertBefore(badge, anchor.firstChild);
+              });
+            }).catch(function () {});
           });
         },
       ],
